@@ -8,8 +8,12 @@ import '../services/tts_service.dart';
 
 import '../models/pomodoro_session.dart';
 import '../constants/app_constants.dart';
+import 'progress_provider.dart';
 
 class PomodoroProvider extends ChangeNotifier {
+  final ProgressProvider? _progressProvider;
+
+  PomodoroProvider([this._progressProvider]);
   PomodoroSettings _settings = const PomodoroSettings();
   TimerStatus _status = TimerStatus.initial;
   SessionType _currentSessionType = SessionType.work;
@@ -221,6 +225,13 @@ class PomodoroProvider extends ChangeNotifier {
     final today = DateTime.now();
     final dateKey = '${today.year}-${today.month}-${today.day}';
     
+    // If the ProgressProvider is available, update via it so the UI updates
+    // immediately; otherwise fallback to writing to SharedPreferences.
+    if (_progressProvider != null) {
+      await _progressProvider.recordSessionForDate(today, _settings.workDuration);
+      return;
+    }
+
     final existingMinutes = prefs.getInt('progress_minutes_$dateKey') ?? 0;
     final existingSessions = prefs.getInt('progress_sessions_$dateKey') ?? 0;
     

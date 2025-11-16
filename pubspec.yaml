@@ -100,7 +100,10 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 
-flutter_launcher_icons:
+flutter_icons:
   android: true
-  ios: false
-  image_path: assets/icons/app_icon.png
+  ios: true
+  remove_alpha_ios: true
+  image_path: assets/icons/logo.png
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: assets/icons/logo.png

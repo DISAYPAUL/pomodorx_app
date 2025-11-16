@@ -86,6 +86,39 @@ class ProgressProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Record a study session for a date. This updates in-memory progress and
+  /// persists the values so heatmap consumers can see the new session.
+  Future<void> recordSessionForDate(DateTime date, int minutes) async {
+    final prefs = await SharedPreferences.getInstance();
+    final dateKey = '${date.year}-${date.month}-${date.day}';
+
+    final existingMinutes = prefs.getInt('progress_minutes_$dateKey') ?? 0;
+    final existingSessions = prefs.getInt('progress_sessions_$dateKey') ?? 0;
+
+    final newMinutes = existingMinutes + minutes;
+    final newSessions = existingSessions + 1;
+
+    await prefs.setInt('progress_minutes_$dateKey', newMinutes);
+    await prefs.setInt('progress_sessions_$dateKey', newSessions);
+
+    // Update in-memory _progressMap
+    final existing = _progressMap[dateKey];
+    if (existing != null) {
+      _progressMap[dateKey] = existing.copyWith(
+        totalMinutes: newMinutes,
+        sessionsCompleted: newSessions,
+      );
+    } else {
+      _progressMap[dateKey] = StudyProgress(
+        date: DateTime(date.year, date.month, date.day),
+        totalMinutes: newMinutes,
+        sessionsCompleted: newSessions,
+      );
+    }
+
+    notifyListeners();
+  }
+
   StudyProgress? getProgressForDate(DateTime date) {
     final dateKey = '${date.year}-${date.month}-${date.day}';
     return _progressMap[dateKey];

@@ -58,6 +58,10 @@ class NotificationService {
       priority: Priority.high,
       playSound: true,
       ticker: 'ticker',
+      // Use the app launcher icon as the notification small icon and the
+      // launcher resource as a large icon for richer notifications.
+      icon: 'ic_notification',
+      largeIcon: DrawableResourceAndroidBitmap('ic_launcher'),
     );
 
     final iosDetails = DarwinNotificationDetails(presentSound: true);

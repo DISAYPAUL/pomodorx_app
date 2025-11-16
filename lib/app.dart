@@ -35,8 +35,10 @@ class PomodoRxApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => TopicProvider(storage, seedService)),
         ChangeNotifierProvider(create: (_) => QuizProvider(storage)),
         ChangeNotifierProvider(create: (_) => ReviewerProvider(storage, TtsService())),
-        ChangeNotifierProvider(create: (_) => PomodoroProvider()..loadSettings()),
         ChangeNotifierProvider(create: (_) => ProgressProvider()..loadProgress()),
+        ChangeNotifierProvider(
+          create: (context) => PomodoroProvider(context.read<ProgressProvider>())..loadSettings(),
+        ),
       ],
       child: Consumer<SettingsProvider>(
         builder: (context, settings, _) {
