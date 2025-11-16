@@ -6,9 +6,11 @@ import '../constants/app_constants.dart';
 class SettingsProvider extends ChangeNotifier {
   ThemeMode _themeMode = ThemeMode.light;
   bool _ttsEnabled = true;
+  bool _notificationsEnabled = true;
 
   ThemeMode get themeMode => _themeMode;
   bool get ttsEnabled => _ttsEnabled;
+  bool get notificationsEnabled => _notificationsEnabled;
 
   Future<void> load() async {
     final prefs = await SharedPreferences.getInstance();
@@ -21,6 +23,7 @@ class SettingsProvider extends ChangeNotifier {
       _themeMode = ThemeMode.light;
     }
     _ttsEnabled = prefs.getBool(AppConstants.ttsEnabledKey) ?? true;
+    _notificationsEnabled = prefs.getBool(AppConstants.notificationsEnabledKey) ?? true;
     notifyListeners();
   }
 
@@ -36,6 +39,13 @@ class SettingsProvider extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(AppConstants.ttsEnabledKey, enabled);
+  }
+
+  Future<void> setNotificationsEnabled(bool enabled) async {
+    _notificationsEnabled = enabled;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(AppConstants.notificationsEnabledKey, enabled);
   }
 
   String _serializeMode(ThemeMode mode) {

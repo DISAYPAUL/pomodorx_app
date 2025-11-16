@@ -5,6 +5,7 @@ import '../constants/design_tokens.dart';
 import '../providers/settings_provider.dart';
 import '../services/hive_service.dart';
 import '../services/import_export_service.dart';
+import '../services/notification_service.dart';
 import '../services/storage_service.dart';
 import '../widgets/app_bar.dart';
 import '../widgets/toast.dart';
@@ -119,6 +120,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   title: const Text('Enable Text-to-Speech'),
                   value: settings.ttsEnabled,
                   onChanged: settings.setTtsEnabled,
+                ),
+                SwitchListTile(
+                  title: const Text('Enable Notifications'),
+                  subtitle: const Text('Show local notifications when timer ends'),
+                  value: settings.notificationsEnabled,
+                  onChanged: (val) async {
+                    if (val) {
+                      await NotificationService().ensurePermissionsRequested();
+                    }
+                    settings.setNotificationsEnabled(val);
+                  },
                 ),
                 const Divider(),
                 Text('Backup', style: Theme.of(context).textTheme.titleLarge),

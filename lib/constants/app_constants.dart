@@ -12,6 +12,7 @@ class AppConstants {
   static const lastOpenedTopicKey = 'lastOpenedTopicId';
   static const themeModeKey = 'themeMode';
   static const ttsEnabledKey = 'ttsEnabled';
+  static const notificationsEnabledKey = 'notificationsEnabled';
 
   static const seedFiles = [
     'assets/data/anatomy_quiz.json',

@@ -3,8 +3,11 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../services/notification_service.dart';
+import '../services/tts_service.dart';
 
 import '../models/pomodoro_session.dart';
+import '../constants/app_constants.dart';
 
 class PomodoroProvider extends ChangeNotifier {
   PomodoroSettings _settings = const PomodoroSettings();
@@ -168,6 +171,45 @@ class PomodoroProvider extends ChangeNotifier {
     }
 
     notifyListeners();
+
+    // Fire notification / sound
+    try {
+      final notif = NotificationService();
+      final tts = TtsService();
+
+      final prefs = await SharedPreferences.getInstance();
+      final notificationsAllowed = prefs.getBool(AppConstants.notificationsEnabledKey) ?? true;
+      final ttsAllowed = prefs.getBool(AppConstants.ttsEnabledKey) ?? true;
+
+      if (_currentSessionType == SessionType.work) {
+        // Work finished -> notify about break starting
+        final nextIsLong = (_settings.workDuration == 45 && (_settings.autoStartBreaks || _settings.autoStartPomodoros)) ||
+            (_completedWorkSessions % _settings.sessionsUntilLongBreak == 0);
+        final breakLabel = nextIsLong ? 'Long break' : 'Short break';
+        if (notificationsAllowed) {
+          await notif.showNotification(
+          id: DateTime.now().millisecondsSinceEpoch.remainder(100000),
+          title: 'Work session finished',
+          body: 'Time for a $breakLabel',
+          );
+        }
+        if (ttsAllowed) {
+          await tts.speak('Work session finished. Time for a $breakLabel.');
+        }
+      } else {
+        // Break finished
+        if (notificationsAllowed) {
+          await notif.showNotification(
+          id: DateTime.now().millisecondsSinceEpoch.remainder(100000),
+          title: 'Break finished',
+          body: 'Back to work!',
+          );
+        }
+        if (ttsAllowed) {
+          await tts.speak('Break finished. Back to work.');
+        }
+      }
+    } catch (_) {}
 
     // Auto-start next session if enabled
     await Future.delayed(const Duration(seconds: 1));
