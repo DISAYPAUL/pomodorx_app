@@ -1,0 +1,55 @@
+{
+  "topic": {
+    "id": "topic-anatomy",
+    "name": "Human Anatomy",
+    "description": "Fundamentals of the musculoskeletal and organ systems.",
+    "icon": "assets/icons/anatomy.png",
+    "slug": "human-anatomy",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  "quizzes": [
+    {
+      "id": "quiz-anatomy-basics",
+      "title": "Anatomy Basics",
+      "durationMinutes": 10,
+      "createdAt": "2025-01-02T00:00:00.000Z",
+      "isOffline": true,
+      "questions": [
+        {
+          "id": "q-muscle",
+          "text": "Which muscle is primarily responsible for elbow flexion?",
+          "options": [
+            "Biceps brachii",
+            "Triceps brachii",
+            "Deltoid",
+            "Latissimus dorsi"
+          ],
+          "correctIndex": 0,
+          "explanation": "The biceps brachii flexes the forearm at the elbow joint.",
+          "type": "mcq"
+        },
+        {
+          "id": "q-heart",
+          "text": "How many chambers does the human heart contain?",
+          "options": ["Two", "Three", "Four", "Five"],
+          "correctIndex": 2,
+          "explanation": "The heart has two atria and two ventricles, totaling four chambers.",
+          "type": "mcq"
+        },
+        {
+          "id": "q-brain",
+          "text": "The cerebellum primarily coordinates which body function?",
+          "options": [
+            "Hormone secretion",
+            "Balance and coordination",
+            "Visual processing",
+            "Language comprehension"
+          ],
+          "correctIndex": 1,
+          "explanation": "The cerebellum integrates sensory input to fine-tune balance and movement.",
+          "type": "mcq"
+        }
+      ]
+    }
+  ]
+}

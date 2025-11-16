@@ -1,0 +1,45 @@
+{
+  "topic": {
+    "id": "topic-pharm",
+    "name": "Pharmacology",
+    "description": "Drug classifications, mechanisms, and safe administration.",
+    "icon": "assets/icons/pharm.png",
+    "slug": "pharmacology",
+    "createdAt": "2025-01-03T00:00:00.000Z"
+  },
+  "quizzes": [
+    {
+      "id": "quiz-pharm-safety",
+      "title": "Medication Safety",
+      "durationMinutes": 8,
+      "createdAt": "2025-01-04T00:00:00.000Z",
+      "isOffline": true,
+      "questions": [
+        {
+          "id": "q-insulin",
+          "text": "Which insulin has the fastest onset?",
+          "options": ["Regular", "NPH", "Lispro", "Glargine"],
+          "correctIndex": 2,
+          "explanation": "Lispro is a rapid-acting insulin analogue with onset under 15 minutes.",
+          "type": "mcq"
+        },
+        {
+          "id": "q-antidote",
+          "text": "Naloxone is the antidote for toxicity caused by which drug class?",
+          "options": ["Benzodiazepines", "Opioids", "Anticoagulants", "Beta blockers"],
+          "correctIndex": 1,
+          "explanation": "Naloxone rapidly displaces opioids from receptors to reverse respiratory depression.",
+          "type": "mcq"
+        },
+        {
+          "id": "q-pregnancy",
+          "text": "Which pregnancy category represents the safest drugs for use in pregnancy?",
+          "options": ["Category X", "Category C", "Category D", "Category A"],
+          "correctIndex": 3,
+          "explanation": "Category A drugs show controlled studies with no risk to the fetus.",
+          "type": "mcq"
+        }
+      ]
+    }
+  ]
+}
