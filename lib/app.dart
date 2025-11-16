@@ -11,6 +11,7 @@ import 'providers/reviewer_provider.dart';
 import 'providers/settings_provider.dart';
 import 'providers/topic_provider.dart';
 import 'routes.dart';
+import 'services/ui_service.dart';
 import 'services/hive_service.dart';
 import 'services/seed_service.dart';
 import 'services/storage_service.dart';
@@ -40,9 +41,10 @@ class PomodoRxApp extends StatelessWidget {
           create: (context) => PomodoroProvider(context.read<ProgressProvider>())..loadSettings(),
         ),
       ],
-      child: Consumer<SettingsProvider>(
+          child: Consumer<SettingsProvider>(
         builder: (context, settings, _) {
           return MaterialApp(
+              scaffoldMessengerKey: UIService.scaffoldMessengerKey,
             debugShowCheckedModeBanner: false,
             title: AppConstants.appName,
             themeMode: settings.themeMode,

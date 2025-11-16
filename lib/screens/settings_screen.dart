@@ -132,6 +132,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     settings.setNotificationsEnabled(val);
                   },
                 ),
+                if (Theme.of(context).platform == TargetPlatform.android) ...[
+                  const SizedBox(height: 8),
+                  TextButton(
+                    onPressed: () => NotificationService().openNotificationChannelSettings(),
+                    child: const Text('Open notification channel settings'),
+                  ),
+                ],
                 const Divider(),
                 Text('Backup', style: Theme.of(context).textTheme.titleLarge),
                 const SizedBox(height: 8),

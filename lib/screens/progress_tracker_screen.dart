@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/foundation.dart';
 
 import '../constants/design_tokens.dart';
 import '../providers/progress_provider.dart';
@@ -93,6 +94,17 @@ class ProgressTrackerScreen extends StatelessWidget {
                 
                 // GitHub-style heatmap
                 _buildHeatmap(context, provider),
+                const SizedBox(height: 8),
+                if (kDebugMode) ...[
+                  ElevatedButton(
+                    onPressed: () async {
+                      // Quick way to add a test session for today (debug only)
+                      await provider.recordSessionForDate(DateTime.now(), 25);
+                    },
+                    child: const Text('Add test session (debug)'),
+                  ),
+                  SizedBox(height: spacing.s3),
+                ],
                 
                 SizedBox(height: spacing.s4),
                 
@@ -213,7 +225,12 @@ class ProgressTrackerScreen extends StatelessWidget {
 
   Widget _buildHeatmap(BuildContext context, ProgressProvider provider) {
     final now = DateTime.now();
-    final startDate = now.subtract(const Duration(days: 119)); // ~4 months
+    const int weeks = 17; // show ~4 months
+
+    // Align startDate to the start of the week (Monday) so columns map to
+    // complete weeks and we don't miss days.
+    final endOfWeek = DateTime(now.year, now.month, now.day).subtract(Duration(days: now.weekday - DateTime.monday));
+    final startDate = endOfWeek.subtract(Duration(days: (weeks - 1) * 7));
     
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
@@ -224,12 +241,10 @@ class ProgressTrackerScreen extends StatelessWidget {
           Row(
             children: [
               const SizedBox(width: 30),
-              ...List.generate(17, (weekIndex) {
-                return Container(
-                  width: 50,
-                  child: const SizedBox(),
-                );
-              }),
+              // Month labels above each week column
+              ..._buildMonthLabels(startDate, weeks),
+              // Space for the heatmap columns above — month labels are aligned
+              // with each week column, so there's no extra placeholder needed.
             ],
           ),
           
@@ -241,8 +256,10 @@ class ProgressTrackerScreen extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  _buildDayLabel('Mon', context),
-                  _buildDayLabel('', context),
+                    // Week columns — reserve width for the week columns.
+                    ...List.generate(weeks, (weekIndex) {
+                      return const SizedBox(width: 14); // spacing to match heatmap col
+                    }),
                   _buildDayLabel('Wed', context),
                   _buildDayLabel('', context),
                   _buildDayLabel('Fri', context),
@@ -252,7 +269,7 @@ class ProgressTrackerScreen extends StatelessWidget {
               ),
               
               // Heatmap cells
-              ...List.generate(17, (weekIndex) {
+              ...List.generate(weeks, (weekIndex) {
                 return Column(
                   children: List.generate(7, (dayIndex) {
                     final date = startDate.add(Duration(days: weekIndex * 7 + dayIndex));
@@ -356,3 +373,34 @@ class ProgressTrackerScreen extends StatelessWidget {
     );
   }
 }
+
+  // Build month labels above weeks — we show the month name at the column
+  // where the month first appears (similar to GitHub heatmap).
+  List<Widget> _buildMonthLabels(DateTime startDate, int weeks) {
+    final labels = <Widget>[];
+
+    labels.add(const SizedBox(width: 30));
+
+    String? lastMonth;
+    for (int w = 0; w < weeks; w++) {
+      final weekStart = startDate.add(Duration(days: w * 7));
+      final monthName = DateFormat('MMM').format(weekStart);
+
+      if (lastMonth == null || weekStart.month != startDate.add(Duration(days: (w - 1) * 7)).month) {
+        labels.add(Container(
+          width: 14,
+          alignment: Alignment.centerLeft,
+          child: Text(
+            monthName,
+            style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w600),
+          ),
+        ));
+      } else {
+        labels.add(Container(width: 14));
+      }
+
+      lastMonth = monthName;
+    }
+
+    return labels;
+  }

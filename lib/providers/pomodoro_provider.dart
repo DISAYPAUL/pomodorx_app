@@ -3,6 +3,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter/foundation.dart';
+import '../services/ui_service.dart';
+import 'package:permission_handler/permission_handler.dart';
 import '../services/notification_service.dart';
 import '../services/tts_service.dart';
 
@@ -178,12 +181,15 @@ class PomodoroProvider extends ChangeNotifier {
 
     // Fire notification / sound
     try {
-      final notif = NotificationService();
       final tts = TtsService();
 
       final prefs = await SharedPreferences.getInstance();
       final notificationsAllowed = prefs.getBool(AppConstants.notificationsEnabledKey) ?? true;
       final ttsAllowed = prefs.getBool(AppConstants.ttsEnabledKey) ?? true;
+
+      if (kDebugMode) {
+        debugPrint('Session complete: notificationsAllowed=$notificationsAllowed, ttsAllowed=$ttsAllowed');
+      }
 
       if (_currentSessionType == SessionType.work) {
         // Work finished -> notify about break starting
@@ -191,10 +197,9 @@ class PomodoroProvider extends ChangeNotifier {
             (_completedWorkSessions % _settings.sessionsUntilLongBreak == 0);
         final breakLabel = nextIsLong ? 'Long break' : 'Short break';
         if (notificationsAllowed) {
-          await notif.showNotification(
-          id: DateTime.now().millisecondsSinceEpoch.remainder(100000),
-          title: 'Work session finished',
-          body: 'Time for a $breakLabel',
+          await _showTimerNotification(
+            title: 'Work session finished',
+            body: 'Time for a $breakLabel',
           );
         }
         if (ttsAllowed) {
@@ -203,10 +208,9 @@ class PomodoroProvider extends ChangeNotifier {
       } else {
         // Break finished
         if (notificationsAllowed) {
-          await notif.showNotification(
-          id: DateTime.now().millisecondsSinceEpoch.remainder(100000),
-          title: 'Break finished',
-          body: 'Back to work!',
+          await _showTimerNotification(
+            title: 'Break finished',
+            body: 'Back to work!',
           );
         }
         if (ttsAllowed) {
@@ -229,6 +233,9 @@ class PomodoroProvider extends ChangeNotifier {
     // immediately; otherwise fallback to writing to SharedPreferences.
     if (_progressProvider != null) {
       await _progressProvider.recordSessionForDate(today, _settings.workDuration);
+      // Reload to be safe — this ensures the provider state matches persisted
+      // keys in case the provider had not yet finished initial load.
+      await _progressProvider.loadProgress();
       return;
     }
 
@@ -328,5 +335,36 @@ class PomodoroProvider extends ChangeNotifier {
   void dispose() {
     _timer?.cancel();
     super.dispose();
+  }
+
+  Future<void> _showTimerNotification({required String title, required String body}) async {
+    if (kDebugMode) debugPrint('🔔 _showTimerNotification called: $title - $body');
+    final notif = NotificationService();
+    try {
+      if (kDebugMode) debugPrint('📱 Ensuring permissions requested...');
+      await notif.ensurePermissionsRequested();
+      
+      final osAllowed = await notif.areNotificationsAllowed();
+      if (kDebugMode) debugPrint('🔐 OS-level notification permission: $osAllowed');
+      
+      if (!osAllowed) {
+        if (kDebugMode) debugPrint('⚠️ Notifications blocked at OS level, showing SnackBar');
+        UIService.showSnackBar(
+          'Notifications are disabled. Please enable notifications in your settings.',
+          actionLabel: 'Open settings',
+          onAction: () => openAppSettings(),
+        );
+      }
+      
+      if (kDebugMode) debugPrint('📤 Calling showNotification...');
+      await notif.showNotification(
+        id: DateTime.now().millisecondsSinceEpoch.remainder(100000),
+        title: title,
+        body: body,
+      );
+      if (kDebugMode) debugPrint('✅ showNotification completed');
+    } catch (e, s) {
+      if (kDebugMode) debugPrint('❌ Error showing timer notification: $e\n$s');
+    }
   }
 }
