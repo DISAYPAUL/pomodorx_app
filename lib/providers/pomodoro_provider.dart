@@ -188,8 +188,13 @@ class PomodoroProvider extends ChangeNotifier {
 
   void _moveToNextSession() {
     if (_currentSessionType == SessionType.work) {
-      // After work session, decide on break type
-      if (_completedWorkSessions % _settings.sessionsUntilLongBreak == 0) {
+      // After work session, decide on break type.
+      // If user picked a longer work duration (45 minutes) and auto-start sessions
+      // is enabled, prefer starting a long break immediately (15 min) to match
+      // extended focus sessions.
+      if (_settings.workDuration == 45 && (_settings.autoStartBreaks || _settings.autoStartPomodoros)) {
+        _currentSessionType = SessionType.longBreak;
+      } else if (_completedWorkSessions % _settings.sessionsUntilLongBreak == 0) {
         _currentSessionType = SessionType.longBreak;
       } else {
         _currentSessionType = SessionType.shortBreak;

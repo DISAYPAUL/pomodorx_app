@@ -303,6 +303,15 @@ class _PomodoroTimerScreenState extends State<PomodoroTimerScreen> {
                             );
                           }).toList(),
                         ),
+                          SizedBox(height: spacing.s2),
+                          if (provider.settings.workDuration == 45 &&
+                              (provider.settings.autoStartBreaks || provider.settings.autoStartPomodoros))
+                            Text(
+                              '45-min sessions use a long break when auto-start is enabled',
+                              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                    color: Colors.grey[600],
+                                  ),
+                            ),
                       ],
                     ),
                   ),
