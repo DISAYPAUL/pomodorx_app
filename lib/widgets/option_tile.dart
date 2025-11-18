@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 
 import '../constants/design_tokens.dart';
 
+enum OptionFeedback { neutral, correct, incorrect }
+
 class OptionTile extends StatelessWidget {
   const OptionTile({
     super.key,
     required this.label,
-    required this.selected,
+    required this.feedback,
     required this.disabled,
     required this.onTap,
   });
 
   final String label;
-  final bool selected;
+  final OptionFeedback feedback;
   final bool disabled;
   final VoidCallback onTap;
 
@@ -22,8 +24,22 @@ class OptionTile extends StatelessWidget {
     final radius = DesignTokens.radius;
     final shadows = DesignTokens.shadows;
     final colors = DesignTokens.colors;
-    final background = selected ? colors.primary : colors.card;
-    final textColor = selected ? colors.background : colors.textDefault;
+    Color background;
+    Color textColor;
+    switch (feedback) {
+      case OptionFeedback.correct:
+        background = colors.success.withOpacity(0.15);
+        textColor = colors.success;
+        break;
+      case OptionFeedback.incorrect:
+        background = colors.danger.withOpacity(0.15);
+        textColor = colors.danger;
+        break;
+      case OptionFeedback.neutral:
+        background = colors.card;
+        textColor = colors.textDefault;
+        break;
+    }
     return Opacity(
       opacity: disabled ? 0.6 : 1,
       child: InkWell(
@@ -35,7 +51,23 @@ class OptionTile extends StatelessWidget {
           decoration: BoxDecoration(
             color: background,
             borderRadius: BorderRadius.circular(radius.rMd),
-            boxShadow: selected ? shadows.md : shadows.sm,
+            boxShadow: feedback == OptionFeedback.neutral
+                ? shadows.sm
+                : feedback == OptionFeedback.incorrect
+                    ? [
+                        BoxShadow(
+                          color: colors.danger.withOpacity(0.15),
+                          offset: const Offset(0, 2),
+                          blurRadius: 8,
+                        ),
+                      ]
+                    : [
+                        BoxShadow(
+                          color: colors.success.withOpacity(0.2),
+                          offset: const Offset(0, 2),
+                          blurRadius: 8,
+                        ),
+                      ],
           ),
           child: Text(
             label,

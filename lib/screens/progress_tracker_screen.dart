@@ -4,7 +4,9 @@ import 'package:provider/provider.dart';
 import 'package:flutter/foundation.dart';
 
 import '../constants/design_tokens.dart';
+import '../models/quiz_analytics.dart';
 import '../providers/progress_provider.dart';
+import '../providers/quiz_provider.dart';
 
 class ProgressTrackerScreen extends StatelessWidget {
   const ProgressTrackerScreen({super.key});
@@ -76,6 +78,8 @@ class ProgressTrackerScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(height: spacing.s3),
+                _buildQuizProgressCard(context),
                 SizedBox(height: spacing.s5),
                 
                 // Heatmap section
@@ -216,6 +220,178 @@ class ProgressTrackerScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 color: Colors.grey,
               ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildQuizProgressCard(BuildContext context) {
+    final spacing = DesignTokens.spacing;
+    final colors = DesignTokens.colors;
+    final quizProvider = context.read<QuizProvider>();
+
+    return FutureBuilder<GlobalAnalytics?>(
+      future: quizProvider.buildGlobalAnalytics(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Card(
+            child: Padding(
+              padding: EdgeInsets.all(spacing.s3),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  ),
+                  SizedBox(width: spacing.s2),
+                  const Expanded(
+                    child: Text('Loading quiz progress...'),
+                  ),
+                ],
+              ),
+            ),
+          );
+        }
+
+        final analytics = snapshot.data;
+        if (analytics == null || !analytics.hasData) {
+          return Card(
+            child: Padding(
+              padding: EdgeInsets.all(spacing.s3),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.quiz, color: colors.primary),
+                      SizedBox(width: spacing.s2),
+                      Text(
+                        'Quiz Progress',
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: spacing.s2),
+                  Text(
+                    'Complete a quiz to unlock accuracy and mastery insights.',
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(color: colors.textMuted),
+                  ),
+                ],
+              ),
+            ),
+          );
+        }
+
+        final avgPercent = (analytics.averagePercent * 100).clamp(0, 100);
+        final bestPercent = (analytics.bestPercent * 100).clamp(0, 100);
+        final lastAttempt = analytics.lastAttempt;
+
+        return Card(
+          child: Padding(
+            padding: EdgeInsets.all(spacing.s3),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(Icons.quiz, color: colors.primary),
+                    SizedBox(width: spacing.s2),
+                    Text(
+                      'Quiz Progress',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                  ],
+                ),
+                SizedBox(height: spacing.s3),
+                Wrap(
+                  spacing: spacing.s3,
+                  runSpacing: spacing.s2,
+                  children: [
+                    _buildQuizStatChip(
+                      context,
+                      label: 'Attempts',
+                      value: '${analytics.totalAttempts}',
+                    ),
+                    _buildQuizStatChip(
+                      context,
+                      label: 'Avg Score',
+                      value: '${avgPercent.toStringAsFixed(0)}%',
+                    ),
+                    _buildQuizStatChip(
+                      context,
+                      label: 'Best Score',
+                      value: '${bestPercent.toStringAsFixed(0)}%',
+                    ),
+                    _buildQuizStatChip(
+                      context,
+                      label: 'Last Attempt',
+                      value: lastAttempt != null
+                          ? DateFormat('MMM d • h:mm a').format(lastAttempt)
+                          : '—',
+                    ),
+                  ],
+                ),
+                SizedBox(height: spacing.s3),
+                LinearProgressIndicator(
+                  value: (avgPercent / 100).clamp(0.0, 1.0),
+                  backgroundColor: colors.card,
+                  color: colors.accent,
+                  minHeight: 6,
+                ),
+                SizedBox(height: spacing.s1),
+                Text(
+                  'Average accuracy ${avgPercent.toStringAsFixed(1)}%',
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodySmall
+                      ?.copyWith(color: colors.textMuted),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildQuizStatChip(
+    BuildContext context, {
+    required String label,
+    required String value,
+  }) {
+    final spacing = DesignTokens.spacing;
+    final colors = DesignTokens.colors;
+
+    return ConstrainedBox(
+      constraints: const BoxConstraints(minWidth: 140),
+      child: Container(
+        padding: EdgeInsets.all(spacing.s2),
+        decoration: BoxDecoration(
+          color: colors.card,
+          borderRadius: BorderRadius.circular(DesignTokens.radius.rSm),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              value,
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+            ),
+            SizedBox(height: spacing.s1 / 2),
+            Text(
+              label,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall
+                  ?.copyWith(color: colors.textMuted),
             ),
           ],
         ),

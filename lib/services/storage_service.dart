@@ -27,6 +27,14 @@ class StorageService {
     await _hiveService.quizzesBox.put(quiz.id, quiz);
   }
 
+  Future<List<Quiz>> getAllQuizzes() async {
+    return _hiveService.quizzesBox.values.toList();
+  }
+
+  Quiz? getQuizById(String quizId) {
+    return _hiveService.quizzesBox.get(quizId);
+  }
+
   Future<void> saveQuizzes(List<Quiz> quizzes) async {
     final box = _hiveService.quizzesBox;
     await box.putAll({for (final quiz in quizzes) quiz.id: quiz});
@@ -40,6 +48,10 @@ class StorageService {
     return _hiveService.progressBox.values
         .where((progress) => progress.quizId == quizId)
         .toList();
+  }
+
+  Future<List<UserProgress>> getAllProgress() async {
+    return _hiveService.progressBox.values.toList();
   }
 
   Future<void> cacheReviewer(ReviewerCache reviewer) async {

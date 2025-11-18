@@ -21,6 +21,21 @@ class Quiz {
   final DateTime createdAt;
   final bool isOffline;
 
+  String get difficultyLabel {
+    final parts = title.split(' - ');
+    if (parts.length < 2) return 'Custom';
+    return parts.last.trim();
+  }
+
+  String get difficultySlug {
+    final label = difficultyLabel.toLowerCase();
+    if (label.contains('rn')) return 'rnworthy';
+    if (label.contains('easy')) return 'easy';
+    if (label.contains('medium')) return 'medium';
+    if (label.contains('hard')) return 'hard';
+    return label.replaceAll(' ', '-');
+  }
+
   factory Quiz.fromJson(Map<String, dynamic> json, String topicId) {
     final quizId = json['id'] as String;
     return Quiz(

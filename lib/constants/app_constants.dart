@@ -17,5 +17,16 @@ class AppConstants {
   static const seedFiles = [
     'assets/data/anatomy_quiz.json',
     'assets/data/pharmacology_quiz.json',
+    'assets/data/nursing_quizzes.json',
   ];
+
+  static const nursingTopicIds = {
+    'topic-pharmacology',
+    'topic-pharm',
+    'topic-med-surg',
+    'topic-pediatrics',
+    'topic-maternal',
+    'topic-mental',
+    'topic-fundamentals',
+  };
 }

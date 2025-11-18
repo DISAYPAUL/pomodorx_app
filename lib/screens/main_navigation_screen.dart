@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'pomodoro_timer_screen.dart';
 import 'progress_tracker_screen.dart';
-import 'topics_screen.dart';
 import 'task_calendar_screen.dart';
 import 'ai_quiz_generator_screen.dart';
+import 'quiz_dashboard_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -19,7 +19,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   final List<Widget> _screens = [
     const PomodoroTimerScreen(),
     const ProgressTrackerScreen(),
-    const TopicsScreen(),
+    const QuizDashboardScreen(),
     const TaskCalendarScreen(),
     const AIQuizGeneratorScreen(),
   ];

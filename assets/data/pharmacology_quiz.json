@@ -1,42 +1,1318 @@
 {
   "topic": {
-    "id": "topic-pharm",
-    "name": "Pharmacology",
-    "description": "Drug classifications, mechanisms, and safe administration.",
+    "id": "topic-medication-safety",
+    "name": "Medication Safety Drills",
+    "description": "Rapid-fire pharmacology prompts that reinforce safe administration.",
     "icon": "assets/icons/pharm.png",
-    "slug": "pharmacology",
-    "createdAt": "2025-01-03T00:00:00.000Z"
+    "slug": "medication-safety",
+    "createdAt": "2025-01-10T00:00:00.000Z"
   },
   "quizzes": [
     {
-      "id": "quiz-pharm-safety",
-      "title": "Medication Safety",
-      "durationMinutes": 8,
-      "createdAt": "2025-01-04T00:00:00.000Z",
+      "id": "quiz-topic-medication-safety-master",
+      "title": "Medication Safety Drills Mastery Bank",
+      "durationMinutes": 20,
+      "createdAt": "2025-01-10T00:00:00.000Z",
       "isOffline": true,
       "questions": [
         {
-          "id": "q-insulin",
-          "text": "Which insulin has the fastest onset?",
-          "options": ["Regular", "NPH", "Lispro", "Glargine"],
+          "id": "ace-inhibitors-easy",
+          "text": "Which medication or class reduce blood pressure by blocking angiotensin II formation and commonly trigger a nagging dry cough?",
+          "options": [
+            "Spironolactone",
+            "Vancomycin",
+            "ACE inhibitors",
+            "Calcium channel blockers"
+          ],
           "correctIndex": 2,
-          "explanation": "Lispro is a rapid-acting insulin analogue with onset under 15 minutes.",
+          "explanation": "ACE inhibitors reduce blood pressure by blocking angiotensin II formation and commonly trigger a nagging dry cough.",
           "type": "mcq"
         },
         {
-          "id": "q-antidote",
-          "text": "Naloxone is the antidote for toxicity caused by which drug class?",
-          "options": ["Benzodiazepines", "Opioids", "Anticoagulants", "Beta blockers"],
+          "id": "ace-inhibitors-hard",
+          "text": "Which medication is linked to are linked to rising potassium and creatinine, so labs must be trended?",
+          "options": [
+            "Metformin",
+            "Insulin lispro",
+            "ACE inhibitors",
+            "Heparin"
+          ],
+          "correctIndex": 2,
+          "explanation": "ACE inhibitors is linked to are linked to rising potassium and creatinine, so labs must be trended.",
+          "type": "mcq"
+        },
+        {
+          "id": "ace-inhibitors-medium",
+          "text": "Which medication requires the nurse to require the nurse to monitor closely for first-dose hypotension when the client stands?",
+          "options": [
+            "ARBs",
+            "ACE inhibitors",
+            "Digoxin",
+            "Insulin lispro"
+          ],
           "correctIndex": 1,
-          "explanation": "Naloxone rapidly displaces opioids from receptors to reverse respiratory depression.",
+          "explanation": "ACE inhibitors therapy requires nurses to require the nurse to monitor closely for first-dose hypotension when the client stands.",
           "type": "mcq"
         },
         {
-          "id": "q-pregnancy",
-          "text": "Which pregnancy category represents the safest drugs for use in pregnancy?",
-          "options": ["Category X", "Category C", "Category D", "Category A"],
+          "id": "ace-inhibitors-rnworthy",
+          "text": "Which medication teaching plan includes teaching stresses avoiding potassium-based salt substitutes and reporting facial swelling immediately?",
+          "options": [
+            "Heparin",
+            "Lithium",
+            "ACE inhibitors",
+            "ARBs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on ACE inhibitors must remember to teaching stresses avoiding potassium-based salt substitutes and reporting facial swelling immediately.",
+          "type": "mcq"
+        },
+        {
+          "id": "arbs-easy",
+          "text": "Which medication or class block angiotensin II receptors to lower blood pressure without provoking cough?",
+          "options": [
+            "Opioids",
+            "Calcium channel blockers",
+            "Beta blockers",
+            "ARBs"
+          ],
           "correctIndex": 3,
-          "explanation": "Category A drugs show controlled studies with no risk to the fetus.",
+          "explanation": "ARBs block angiotensin II receptors to lower blood pressure without provoking cough.",
+          "type": "mcq"
+        },
+        {
+          "id": "arbs-hard",
+          "text": "Which medication is linked to carry hyperkalemia risk in clients with renal impairment?",
+          "options": [
+            "MAOIs",
+            "Benzodiazepines",
+            "Direct oral anticoagulants",
+            "ARBs"
+          ],
+          "correctIndex": 3,
+          "explanation": "ARBs is linked to carry hyperkalemia risk in clients with renal impairment.",
+          "type": "mcq"
+        },
+        {
+          "id": "arbs-medium",
+          "text": "Which medication requires the nurse to require periodic assessment of blood pressure and renal perfusion when paired with diuretics?",
+          "options": [
+            "Loop diuretics",
+            "Beta blockers",
+            "Benzodiazepines",
+            "ARBs"
+          ],
+          "correctIndex": 3,
+          "explanation": "ARBs therapy requires nurses to require periodic assessment of blood pressure and renal perfusion when paired with diuretics.",
+          "type": "mcq"
+        },
+        {
+          "id": "arbs-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes limiting NSAID overuse that blunts the antihypertensive effect?",
+          "options": [
+            "Warfarin",
+            "ARBs",
+            "Insulin glargine",
+            "Vancomycin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on ARBs must remember to teaching includes limiting NSAID overuse that blunts the antihypertensive effect.",
+          "type": "mcq"
+        },
+        {
+          "id": "benzodiazepines-easy",
+          "text": "Which medication or class produce rapid anxiolysis by enhancing GABA?",
+          "options": [
+            "Naloxone",
+            "Benzodiazepines",
+            "Loop diuretics",
+            "Insulin glargine"
+          ],
+          "correctIndex": 1,
+          "explanation": "Benzodiazepines produce rapid anxiolysis by enhancing GABA.",
+          "type": "mcq"
+        },
+        {
+          "id": "benzodiazepines-hard",
+          "text": "Which medication is linked to can create dependence and need gradual tapering after long-term use?",
+          "options": [
+            "Methimazole",
+            "Benzodiazepines",
+            "Insulin lispro",
+            "Opioids"
+          ],
+          "correctIndex": 1,
+          "explanation": "Benzodiazepines is linked to can create dependence and need gradual tapering after long-term use.",
+          "type": "mcq"
+        },
+        {
+          "id": "benzodiazepines-medium",
+          "text": "Which medication requires the nurse to require fall precautions due to sedation and ataxia?",
+          "options": [
+            "Benzodiazepines",
+            "ACE inhibitors",
+            "Vancomycin",
+            "Direct oral anticoagulants"
+          ],
+          "correctIndex": 0,
+          "explanation": "Benzodiazepines therapy requires nurses to require fall precautions due to sedation and ataxia.",
+          "type": "mcq"
+        },
+        {
+          "id": "benzodiazepines-rnworthy",
+          "text": "Which medication teaching plan includes clients avoid concurrent alcohol or opioids that magnify respiratory depression?",
+          "options": [
+            "Metformin",
+            "Insulin lispro",
+            "ACE inhibitors",
+            "Benzodiazepines"
+          ],
+          "correctIndex": 3,
+          "explanation": "Clients on Benzodiazepines must remember to clients avoid concurrent alcohol or opioids that magnify respiratory depression.",
+          "type": "mcq"
+        },
+        {
+          "id": "beta-blockers-easy",
+          "text": "Which medication or class slow heart rate and reduce contractility to lower myocardial oxygen demand?",
+          "options": [
+            "Thiazide diuretics",
+            "Naloxone",
+            "Metformin",
+            "Beta blockers"
+          ],
+          "correctIndex": 3,
+          "explanation": "Beta blockers slow heart rate and reduce contractility to lower myocardial oxygen demand.",
+          "type": "mcq"
+        },
+        {
+          "id": "beta-blockers-hard",
+          "text": "Which medication is linked to can mask early signs of hypoglycemia in insulin-dependent clients?",
+          "options": [
+            "SSRIs",
+            "Levothyroxine",
+            "Insulin lispro",
+            "Beta blockers"
+          ],
+          "correctIndex": 3,
+          "explanation": "Beta blockers is linked to can mask early signs of hypoglycemia in insulin-dependent clients.",
+          "type": "mcq"
+        },
+        {
+          "id": "beta-blockers-medium",
+          "text": "Which medication requires the nurse to require nurses to hold the dose for marked bradycardia or symptomatic hypotension?",
+          "options": [
+            "Beta blockers",
+            "Spironolactone",
+            "Insulin glargine",
+            "Benzodiazepines"
+          ],
+          "correctIndex": 0,
+          "explanation": "Beta blockers therapy requires nurses to require nurses to hold the dose for marked bradycardia or symptomatic hypotension.",
+          "type": "mcq"
+        },
+        {
+          "id": "beta-blockers-rnworthy",
+          "text": "Which medication teaching plan includes counseling includes tapering rather than abruptly stopping therapy?",
+          "options": [
+            "Thiazide diuretics",
+            "Digoxin",
+            "Beta blockers",
+            "Spironolactone"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Beta blockers must remember to counseling includes tapering rather than abruptly stopping therapy.",
+          "type": "mcq"
+        },
+        {
+          "id": "ccb-dihydropyridine-easy",
+          "text": "Which medication or class promote arterial dilation to treat hypertension and chronic angina?",
+          "options": [
+            "Levothyroxine",
+            "Sulfonylureas",
+            "Calcium channel blockers",
+            "Lithium"
+          ],
+          "correctIndex": 2,
+          "explanation": "Calcium channel blockers promote arterial dilation to treat hypertension and chronic angina.",
+          "type": "mcq"
+        },
+        {
+          "id": "ccb-dihydropyridine-hard",
+          "text": "Which medication is linked to can prolong PR interval when combined with beta blockers?",
+          "options": [
+            "Thiazide diuretics",
+            "Calcium channel blockers",
+            "Warfarin",
+            "Naloxone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Calcium channel blockers is linked to can prolong PR interval when combined with beta blockers.",
+          "type": "mcq"
+        },
+        {
+          "id": "ccb-dihydropyridine-medium",
+          "text": "Which medication requires the nurse to require monitoring for peripheral edema and orthostatic hypotension?",
+          "options": [
+            "Insulin lispro",
+            "Calcium channel blockers",
+            "Sulfonylureas",
+            "Opioids"
+          ],
+          "correctIndex": 1,
+          "explanation": "Calcium channel blockers therapy requires nurses to require monitoring for peripheral edema and orthostatic hypotension.",
+          "type": "mcq"
+        },
+        {
+          "id": "ccb-dihydropyridine-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes slow position changes and daily weights if swelling appears?",
+          "options": [
+            "Naloxone",
+            "Metformin",
+            "Calcium channel blockers",
+            "Digoxin"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Calcium channel blockers must remember to teaching includes slow position changes and daily weights if swelling appears.",
+          "type": "mcq"
+        },
+        {
+          "id": "digoxin-easy",
+          "text": "Which medication or class increases contractility while slowing AV conduction in heart failure?",
+          "options": [
+            "SSRIs",
+            "Digoxin",
+            "Levothyroxine",
+            "Beta blockers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Digoxin increases contractility while slowing AV conduction in heart failure.",
+          "type": "mcq"
+        },
+        {
+          "id": "digoxin-hard",
+          "text": "Which medication is linked to becomes toxic faster with hypokalemia or renal impairment?",
+          "options": [
+            "Warfarin",
+            "Insulin lispro",
+            "Digoxin",
+            "Statins"
+          ],
+          "correctIndex": 2,
+          "explanation": "Digoxin is linked to becomes toxic faster with hypokalemia or renal impairment.",
+          "type": "mcq"
+        },
+        {
+          "id": "digoxin-medium",
+          "text": "Which medication requires the nurse to requires counting the apical pulse for a full minute before dosing?",
+          "options": [
+            "Digoxin",
+            "Direct oral anticoagulants",
+            "ARBs",
+            "SSRIs"
+          ],
+          "correctIndex": 0,
+          "explanation": "Digoxin therapy requires nurses to requires counting the apical pulse for a full minute before dosing.",
+          "type": "mcq"
+        },
+        {
+          "id": "digoxin-rnworthy",
+          "text": "Which medication teaching plan includes teaching highlights reporting anorexia, nausea, or visual halos immediately?",
+          "options": [
+            "Digoxin",
+            "Lithium",
+            "Metformin",
+            "Naloxone"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clients on Digoxin must remember to teaching highlights reporting anorexia, nausea, or visual halos immediately.",
+          "type": "mcq"
+        },
+        {
+          "id": "doac-easy",
+          "text": "Which medication or class directly inhibit factor Xa without routine lab draws?",
+          "options": [
+            "Direct oral anticoagulants",
+            "Sulfonylureas",
+            "Heparin",
+            "MAOIs"
+          ],
+          "correctIndex": 0,
+          "explanation": "Direct oral anticoagulants directly inhibit factor Xa without routine lab draws.",
+          "type": "mcq"
+        },
+        {
+          "id": "doac-hard",
+          "text": "Which medication is linked to have limited reversal options, so bleeding risk counseling is essential?",
+          "options": [
+            "Beta blockers",
+            "Direct oral anticoagulants",
+            "Loop diuretics",
+            "ARBs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Direct oral anticoagulants is linked to have limited reversal options, so bleeding risk counseling is essential.",
+          "type": "mcq"
+        },
+        {
+          "id": "doac-medium",
+          "text": "Which medication requires the nurse to require renal function checks before dosing?",
+          "options": [
+            "Direct oral anticoagulants",
+            "ARBs",
+            "Opioids",
+            "Lithium"
+          ],
+          "correctIndex": 0,
+          "explanation": "Direct oral anticoagulants therapy requires nurses to require renal function checks before dosing.",
+          "type": "mcq"
+        },
+        {
+          "id": "doac-rnworthy",
+          "text": "Which medication teaching plan includes clients are instructed to take doses consistently and not double missed tablets?",
+          "options": [
+            "Direct oral anticoagulants",
+            "Levothyroxine",
+            "Thiazide diuretics",
+            "Statins"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clients on Direct oral anticoagulants must remember to clients are instructed to take doses consistently and not double missed tablets.",
+          "type": "mcq"
+        },
+        {
+          "id": "heparin-easy",
+          "text": "Which medication or class potentiates antithrombin III for rapid anticoagulation?",
+          "options": [
+            "Statins",
+            "Methimazole",
+            "Heparin",
+            "Sulfonylureas"
+          ],
+          "correctIndex": 2,
+          "explanation": "Heparin potentiates antithrombin III for rapid anticoagulation.",
+          "type": "mcq"
+        },
+        {
+          "id": "heparin-hard",
+          "text": "Which medication is linked to can precipitate heparin-induced thrombocytopenia requiring platelet surveillance?",
+          "options": [
+            "Calcium channel blockers",
+            "Insulin glargine",
+            "Heparin",
+            "Opioids"
+          ],
+          "correctIndex": 2,
+          "explanation": "Heparin is linked to can precipitate heparin-induced thrombocytopenia requiring platelet surveillance.",
+          "type": "mcq"
+        },
+        {
+          "id": "heparin-medium",
+          "text": "Which medication requires the nurse to requires monitoring aPTT and adjusting infusions per protocol?",
+          "options": [
+            "Heparin",
+            "Statins",
+            "Warfarin",
+            "Digoxin"
+          ],
+          "correctIndex": 0,
+          "explanation": "Heparin therapy requires nurses to requires monitoring aPTT and adjusting infusions per protocol.",
+          "type": "mcq"
+        },
+        {
+          "id": "heparin-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes reporting new bruising or bleeding gums right away?",
+          "options": [
+            "Digoxin",
+            "Calcium channel blockers",
+            "SSRIs",
+            "Heparin"
+          ],
+          "correctIndex": 3,
+          "explanation": "Clients on Heparin must remember to teaching includes reporting new bruising or bleeding gums right away.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-glargine-easy",
+          "text": "Which medication or class provides 24-hour basal insulin coverage without pronounced peaks?",
+          "options": [
+            "Warfarin",
+            "Beta blockers",
+            "Calcium channel blockers",
+            "Insulin glargine"
+          ],
+          "correctIndex": 3,
+          "explanation": "Insulin glargine provides 24-hour basal insulin coverage without pronounced peaks.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-glargine-hard",
+          "text": "Which medication is linked to is titrated based on fasting glucose patterns rather than meal counts?",
+          "options": [
+            "Insulin glargine",
+            "Digoxin",
+            "MAOIs",
+            "Lithium"
+          ],
+          "correctIndex": 0,
+          "explanation": "Insulin glargine is linked to is titrated based on fasting glucose patterns rather than meal counts.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-glargine-medium",
+          "text": "Which medication requires the nurse to requires using a dedicated syringe and never mixing with other insulins?",
+          "options": [
+            "Metformin",
+            "Insulin glargine",
+            "Insulin lispro",
+            "Beta blockers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Insulin glargine therapy requires nurses to requires using a dedicated syringe and never mixing with other insulins.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-glargine-rnworthy",
+          "text": "Which medication teaching plan includes teaching stresses injecting at the same time daily even when skipping meals?",
+          "options": [
+            "Levothyroxine",
+            "Insulin glargine",
+            "Naloxone",
+            "Direct oral anticoagulants"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on Insulin glargine must remember to teaching stresses injecting at the same time daily even when skipping meals.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-lispro-easy",
+          "text": "Which medication or class is rapid acting and should be given within 15 minutes of meals?",
+          "options": [
+            "Lithium",
+            "ACE inhibitors",
+            "Insulin lispro",
+            "Sulfonylureas"
+          ],
+          "correctIndex": 2,
+          "explanation": "Insulin lispro is rapid acting and should be given within 15 minutes of meals.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-lispro-hard",
+          "text": "Which medication is linked to is dosed based on carbohydrate ratios to blunt postprandial spikes?",
+          "options": [
+            "Loop diuretics",
+            "Thiazide diuretics",
+            "Beta blockers",
+            "Insulin lispro"
+          ],
+          "correctIndex": 3,
+          "explanation": "Insulin lispro is linked to is dosed based on carbohydrate ratios to blunt postprandial spikes.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-lispro-medium",
+          "text": "Which medication requires the nurse to requires nurses to ensure a meal tray is present before administration?",
+          "options": [
+            "Insulin lispro",
+            "Metformin",
+            "Methimazole",
+            "SSRIs"
+          ],
+          "correctIndex": 0,
+          "explanation": "Insulin lispro therapy requires nurses to requires nurses to ensure a meal tray is present before administration.",
+          "type": "mcq"
+        },
+        {
+          "id": "insulin-lispro-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes carrying fast carbohydrates to correct sudden hypoglycemia?",
+          "options": [
+            "ACE inhibitors",
+            "Statins",
+            "Insulin lispro",
+            "ARBs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Insulin lispro must remember to teaching includes carrying fast carbohydrates to correct sudden hypoglycemia.",
+          "type": "mcq"
+        },
+        {
+          "id": "levothyroxine-easy",
+          "text": "Which medication or class replaces thyroid hormone in hypothyroidism?",
+          "options": [
+            "Insulin lispro",
+            "Levothyroxine",
+            "Beta blockers",
+            "Digoxin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Levothyroxine replaces thyroid hormone in hypothyroidism.",
+          "type": "mcq"
+        },
+        {
+          "id": "levothyroxine-hard",
+          "text": "Which medication is linked to requires TSH monitoring every 6–8 weeks to fine-tune the dose?",
+          "options": [
+            "Benzodiazepines",
+            "Opioids",
+            "Vancomycin",
+            "Levothyroxine"
+          ],
+          "correctIndex": 3,
+          "explanation": "Levothyroxine is linked to requires TSH monitoring every 6–8 weeks to fine-tune the dose.",
+          "type": "mcq"
+        },
+        {
+          "id": "levothyroxine-medium",
+          "text": "Which medication requires the nurse to must be taken each morning on an empty stomach for consistent absorption?",
+          "options": [
+            "Insulin lispro",
+            "Naloxone",
+            "Levothyroxine",
+            "Opioids"
+          ],
+          "correctIndex": 2,
+          "explanation": "Levothyroxine therapy requires nurses to must be taken each morning on an empty stomach for consistent absorption.",
+          "type": "mcq"
+        },
+        {
+          "id": "levothyroxine-rnworthy",
+          "text": "Which medication teaching plan includes patients separate doses from calcium or iron supplements by several hours?",
+          "options": [
+            "Benzodiazepines",
+            "Levothyroxine",
+            "Lithium",
+            "Digoxin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on Levothyroxine must remember to patients separate doses from calcium or iron supplements by several hours.",
+          "type": "mcq"
+        },
+        {
+          "id": "lithium-easy",
+          "text": "Which medication or class stabilizes mood by modulating neurotransmission?",
+          "options": [
+            "Opioids",
+            "Warfarin",
+            "Lithium",
+            "Digoxin"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lithium stabilizes mood by modulating neurotransmission.",
+          "type": "mcq"
+        },
+        {
+          "id": "lithium-hard",
+          "text": "Which medication is linked to has a narrow therapeutic window of roughly 0.6–1.2 mEq/L?",
+          "options": [
+            "Opioids",
+            "Heparin",
+            "Lithium",
+            "Insulin glargine"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lithium is linked to has a narrow therapeutic window of roughly 0.6–1.2 mEq/L.",
+          "type": "mcq"
+        },
+        {
+          "id": "lithium-medium",
+          "text": "Which medication requires the nurse to requires monitoring sodium and hydration to avoid toxicity?",
+          "options": [
+            "Metformin",
+            "Lithium",
+            "Heparin",
+            "Beta blockers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lithium therapy requires nurses to requires monitoring sodium and hydration to avoid toxicity.",
+          "type": "mcq"
+        },
+        {
+          "id": "lithium-rnworthy",
+          "text": "Which medication teaching plan includes clients keep salt intake consistent and report tremors or diarrhea immediately?",
+          "options": [
+            "Benzodiazepines",
+            "Lithium",
+            "Spironolactone",
+            "Digoxin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on Lithium must remember to clients keep salt intake consistent and report tremors or diarrhea immediately.",
+          "type": "mcq"
+        },
+        {
+          "id": "loop-diuretics-easy",
+          "text": "Which medication or class rapidly offload fluid to relieve pulmonary edema and heart failure symptoms?",
+          "options": [
+            "Insulin lispro",
+            "Loop diuretics",
+            "Levothyroxine",
+            "ARBs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Loop diuretics rapidly offload fluid to relieve pulmonary edema and heart failure symptoms.",
+          "type": "mcq"
+        },
+        {
+          "id": "loop-diuretics-hard",
+          "text": "Which medication is linked to at high doses may cause ototoxicity, especially with other ototoxic drugs?",
+          "options": [
+            "Direct oral anticoagulants",
+            "Loop diuretics",
+            "Thiazide diuretics",
+            "Insulin glargine"
+          ],
+          "correctIndex": 1,
+          "explanation": "Loop diuretics is linked to at high doses may cause ototoxicity, especially with other ototoxic drugs.",
+          "type": "mcq"
+        },
+        {
+          "id": "loop-diuretics-medium",
+          "text": "Which medication requires the nurse to require verifying potassium levels and supplementing losses?",
+          "options": [
+            "Sulfonylureas",
+            "Loop diuretics",
+            "Direct oral anticoagulants",
+            "Warfarin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Loop diuretics therapy requires nurses to require verifying potassium levels and supplementing losses.",
+          "type": "mcq"
+        },
+        {
+          "id": "loop-diuretics-rnworthy",
+          "text": "Which medication teaching plan includes patient teaching includes taking in the morning and reporting ringing in the ears?",
+          "options": [
+            "Naloxone",
+            "Heparin",
+            "Loop diuretics",
+            "Lithium"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Loop diuretics must remember to patient teaching includes taking in the morning and reporting ringing in the ears.",
+          "type": "mcq"
+        },
+        {
+          "id": "maoi-easy",
+          "text": "Which medication or class prevent monoamine breakdown but can cause hypertensive crisis?",
+          "options": [
+            "Opioids",
+            "Benzodiazepines",
+            "MAOIs",
+            "Statins"
+          ],
+          "correctIndex": 2,
+          "explanation": "MAOIs prevent monoamine breakdown but can cause hypertensive crisis.",
+          "type": "mcq"
+        },
+        {
+          "id": "maoi-hard",
+          "text": "Which medication is linked to demand tyramine restriction to prevent severe hypertension?",
+          "options": [
+            "SSRIs",
+            "Direct oral anticoagulants",
+            "Levothyroxine",
+            "MAOIs"
+          ],
+          "correctIndex": 3,
+          "explanation": "MAOIs is linked to demand tyramine restriction to prevent severe hypertension.",
+          "type": "mcq"
+        },
+        {
+          "id": "maoi-medium",
+          "text": "Which medication requires the nurse to require nurses to review for drug–drug interactions before new prescriptions?",
+          "options": [
+            "MAOIs",
+            "Insulin lispro",
+            "Spironolactone",
+            "Direct oral anticoagulants"
+          ],
+          "correctIndex": 0,
+          "explanation": "MAOIs therapy requires nurses to require nurses to review for drug–drug interactions before new prescriptions.",
+          "type": "mcq"
+        },
+        {
+          "id": "maoi-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes carrying a dietary list that excludes aged cheeses and cured meats?",
+          "options": [
+            "ACE inhibitors",
+            "MAOIs",
+            "Spironolactone",
+            "SSRIs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on MAOIs must remember to teaching includes carrying a dietary list that excludes aged cheeses and cured meats.",
+          "type": "mcq"
+        },
+        {
+          "id": "metformin-easy",
+          "text": "Which medication or class lowers hepatic glucose output without causing weight gain?",
+          "options": [
+            "Thiazide diuretics",
+            "Insulin glargine",
+            "Direct oral anticoagulants",
+            "Metformin"
+          ],
+          "correctIndex": 3,
+          "explanation": "Metformin lowers hepatic glucose output without causing weight gain.",
+          "type": "mcq"
+        },
+        {
+          "id": "metformin-hard",
+          "text": "Which medication is linked to rarely causes lactic acidosis, especially with renal or hepatic impairment?",
+          "options": [
+            "Direct oral anticoagulants",
+            "Levothyroxine",
+            "Thiazide diuretics",
+            "Metformin"
+          ],
+          "correctIndex": 3,
+          "explanation": "Metformin is linked to rarely causes lactic acidosis, especially with renal or hepatic impairment.",
+          "type": "mcq"
+        },
+        {
+          "id": "metformin-medium",
+          "text": "Which medication requires the nurse to must be held before contrast imaging to protect kidneys?",
+          "options": [
+            "Metformin",
+            "Beta blockers",
+            "Heparin",
+            "Benzodiazepines"
+          ],
+          "correctIndex": 0,
+          "explanation": "Metformin therapy requires nurses to must be held before contrast imaging to protect kidneys.",
+          "type": "mcq"
+        },
+        {
+          "id": "metformin-rnworthy",
+          "text": "Which medication teaching plan includes clients learn to take it with meals to minimize GI upset?",
+          "options": [
+            "Vancomycin",
+            "Sulfonylureas",
+            "Metformin",
+            "Lithium"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Metformin must remember to clients learn to take it with meals to minimize GI upset.",
+          "type": "mcq"
+        },
+        {
+          "id": "methimazole-easy",
+          "text": "Which medication or class suppresses thyroid hormone synthesis for hyperthyroidism?",
+          "options": [
+            "SSRIs",
+            "Metformin",
+            "Methimazole",
+            "Spironolactone"
+          ],
+          "correctIndex": 2,
+          "explanation": "Methimazole suppresses thyroid hormone synthesis for hyperthyroidism.",
+          "type": "mcq"
+        },
+        {
+          "id": "methimazole-hard",
+          "text": "Which medication is linked to may injure the liver, prompting periodic liver function tests?",
+          "options": [
+            "Benzodiazepines",
+            "Levothyroxine",
+            "Metformin",
+            "Methimazole"
+          ],
+          "correctIndex": 3,
+          "explanation": "Methimazole is linked to may injure the liver, prompting periodic liver function tests.",
+          "type": "mcq"
+        },
+        {
+          "id": "methimazole-medium",
+          "text": "Which medication requires the nurse to requires clients to report fever or sore throat due to agranulocytosis risk?",
+          "options": [
+            "Methimazole",
+            "ACE inhibitors",
+            "Insulin glargine",
+            "Heparin"
+          ],
+          "correctIndex": 0,
+          "explanation": "Methimazole therapy requires nurses to requires clients to report fever or sore throat due to agranulocytosis risk.",
+          "type": "mcq"
+        },
+        {
+          "id": "methimazole-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes contraception planning before therapy and adherence to dosing schedule?",
+          "options": [
+            "Statins",
+            "Levothyroxine",
+            "Methimazole",
+            "Lithium"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Methimazole must remember to teaching includes contraception planning before therapy and adherence to dosing schedule.",
+          "type": "mcq"
+        },
+        {
+          "id": "naloxone-easy",
+          "text": "Which medication or class rapidly reverses opioid-induced respiratory depression?",
+          "options": [
+            "Statins",
+            "Opioids",
+            "Naloxone",
+            "Warfarin"
+          ],
+          "correctIndex": 2,
+          "explanation": "Naloxone rapidly reverses opioid-induced respiratory depression.",
+          "type": "mcq"
+        },
+        {
+          "id": "naloxone-hard",
+          "text": "Which medication is linked to can precipitate acute withdrawal with hypertension and pain?",
+          "options": [
+            "Naloxone",
+            "Insulin lispro",
+            "Digoxin",
+            "MAOIs"
+          ],
+          "correctIndex": 0,
+          "explanation": "Naloxone is linked to can precipitate acute withdrawal with hypertension and pain.",
+          "type": "mcq"
+        },
+        {
+          "id": "naloxone-medium",
+          "text": "Which medication requires the nurse to may need repeat dosing when long-acting opioids are involved?",
+          "options": [
+            "Levothyroxine",
+            "Direct oral anticoagulants",
+            "Naloxone",
+            "Heparin"
+          ],
+          "correctIndex": 2,
+          "explanation": "Naloxone therapy requires nurses to may need repeat dosing when long-acting opioids are involved.",
+          "type": "mcq"
+        },
+        {
+          "id": "naloxone-rnworthy",
+          "text": "Which medication teaching plan includes caregivers keep devices accessible and call emergency services after use?",
+          "options": [
+            "Benzodiazepines",
+            "Metformin",
+            "Naloxone",
+            "Statins"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Naloxone must remember to caregivers keep devices accessible and call emergency services after use.",
+          "type": "mcq"
+        },
+        {
+          "id": "opioids-easy",
+          "text": "Which medication or class bind mu receptors for potent analgesia in severe pain?",
+          "options": [
+            "Warfarin",
+            "Digoxin",
+            "Opioids",
+            "Heparin"
+          ],
+          "correctIndex": 2,
+          "explanation": "Opioids bind mu receptors for potent analgesia in severe pain.",
+          "type": "mcq"
+        },
+        {
+          "id": "opioids-hard",
+          "text": "Which medication is linked to release histamine causing hypotension if pushed rapidly IV?",
+          "options": [
+            "Digoxin",
+            "Insulin glargine",
+            "Opioids",
+            "ARBs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Opioids is linked to release histamine causing hypotension if pushed rapidly IV.",
+          "type": "mcq"
+        },
+        {
+          "id": "opioids-medium",
+          "text": "Which medication requires the nurse to require monitoring respiratory rate and sedation level before repeat dosing?",
+          "options": [
+            "Opioids",
+            "Metformin",
+            "Sulfonylureas",
+            "Calcium channel blockers"
+          ],
+          "correctIndex": 0,
+          "explanation": "Opioids therapy requires nurses to require monitoring respiratory rate and sedation level before repeat dosing.",
+          "type": "mcq"
+        },
+        {
+          "id": "opioids-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes using stool softeners and avoiding driving while titrating doses?",
+          "options": [
+            "Sulfonylureas",
+            "Calcium channel blockers",
+            "Opioids",
+            "Benzodiazepines"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clients on Opioids must remember to teaching includes using stool softeners and avoiding driving while titrating doses.",
+          "type": "mcq"
+        },
+        {
+          "id": "spironolactone-easy",
+          "text": "Which medication or class spares potassium while antagonizing aldosterone in the distal nephron?",
+          "options": [
+            "Spironolactone",
+            "ACE inhibitors",
+            "Opioids",
+            "ARBs"
+          ],
+          "correctIndex": 0,
+          "explanation": "Spironolactone spares potassium while antagonizing aldosterone in the distal nephron.",
+          "type": "mcq"
+        },
+        {
+          "id": "spironolactone-hard",
+          "text": "Which medication is linked to is contraindicated in severe renal failure because potassium accumulates quickly?",
+          "options": [
+            "Spironolactone",
+            "Heparin",
+            "MAOIs",
+            "Opioids"
+          ],
+          "correctIndex": 0,
+          "explanation": "Spironolactone is linked to is contraindicated in severe renal failure because potassium accumulates quickly.",
+          "type": "mcq"
+        },
+        {
+          "id": "spironolactone-medium",
+          "text": "Which medication requires the nurse to requires monitoring for hyperkalemia when combined with ACE inhibitors or ARBs?",
+          "options": [
+            "SSRIs",
+            "Spironolactone",
+            "Lithium",
+            "Calcium channel blockers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Spironolactone therapy requires nurses to requires monitoring for hyperkalemia when combined with ACE inhibitors or ARBs.",
+          "type": "mcq"
+        },
+        {
+          "id": "spironolactone-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes avoiding salt substitutes and reporting endocrine changes such as gynecomastia?",
+          "options": [
+            "Heparin",
+            "Metformin",
+            "ARBs",
+            "Spironolactone"
+          ],
+          "correctIndex": 3,
+          "explanation": "Clients on Spironolactone must remember to teaching includes avoiding salt substitutes and reporting endocrine changes such as gynecomastia.",
+          "type": "mcq"
+        },
+        {
+          "id": "ssri-easy",
+          "text": "Which medication or class increase synaptic serotonin to treat depression and anxiety?",
+          "options": [
+            "SSRIs",
+            "Opioids",
+            "Benzodiazepines",
+            "Methimazole"
+          ],
+          "correctIndex": 0,
+          "explanation": "SSRIs increase synaptic serotonin to treat depression and anxiety.",
+          "type": "mcq"
+        },
+        {
+          "id": "ssri-hard",
+          "text": "Which medication is linked to take several weeks to reach full effect, so adherence coaching is essential?",
+          "options": [
+            "Levothyroxine",
+            "Naloxone",
+            "Statins",
+            "SSRIs"
+          ],
+          "correctIndex": 3,
+          "explanation": "SSRIs is linked to take several weeks to reach full effect, so adherence coaching is essential.",
+          "type": "mcq"
+        },
+        {
+          "id": "ssri-medium",
+          "text": "Which medication requires the nurse to require monitoring for serotonin syndrome when layered with other serotonergic agents?",
+          "options": [
+            "Heparin",
+            "SSRIs",
+            "Warfarin",
+            "Spironolactone"
+          ],
+          "correctIndex": 1,
+          "explanation": "SSRIs therapy requires nurses to require monitoring for serotonin syndrome when layered with other serotonergic agents.",
+          "type": "mcq"
+        },
+        {
+          "id": "ssri-rnworthy",
+          "text": "Which medication teaching plan includes teaching covers daily dosing even when symptoms improve and vigilance for sexual side effects?",
+          "options": [
+            "SSRIs",
+            "Lithium",
+            "Heparin",
+            "Naloxone"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clients on SSRIs must remember to teaching covers daily dosing even when symptoms improve and vigilance for sexual side effects.",
+          "type": "mcq"
+        },
+        {
+          "id": "statins-easy",
+          "text": "Which medication or class lower LDL by inhibiting HMG-CoA reductase?",
+          "options": [
+            "Statins",
+            "Beta blockers",
+            "Sulfonylureas",
+            "Spironolactone"
+          ],
+          "correctIndex": 0,
+          "explanation": "Statins lower LDL by inhibiting HMG-CoA reductase.",
+          "type": "mcq"
+        },
+        {
+          "id": "statins-hard",
+          "text": "Which medication is linked to carry rhabdomyolysis risk, especially with concurrent fibrates?",
+          "options": [
+            "Naloxone",
+            "Direct oral anticoagulants",
+            "Warfarin",
+            "Statins"
+          ],
+          "correctIndex": 3,
+          "explanation": "Statins is linked to carry rhabdomyolysis risk, especially with concurrent fibrates.",
+          "type": "mcq"
+        },
+        {
+          "id": "statins-medium",
+          "text": "Which medication requires the nurse to require baseline and periodic liver enzyme monitoring?",
+          "options": [
+            "Statins",
+            "Lithium",
+            "Benzodiazepines",
+            "Beta blockers"
+          ],
+          "correctIndex": 0,
+          "explanation": "Statins therapy requires nurses to require baseline and periodic liver enzyme monitoring.",
+          "type": "mcq"
+        },
+        {
+          "id": "statins-rnworthy",
+          "text": "Which medication teaching plan includes clients take the dose at night and report unexplained muscle pain?",
+          "options": [
+            "Benzodiazepines",
+            "Statins",
+            "Vancomycin",
+            "Heparin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on Statins must remember to clients take the dose at night and report unexplained muscle pain.",
+          "type": "mcq"
+        },
+        {
+          "id": "sulfonylurea-easy",
+          "text": "Which medication or class stimulate pancreatic insulin secretion to lower glucose?",
+          "options": [
+            "Vancomycin",
+            "ACE inhibitors",
+            "ARBs",
+            "Sulfonylureas"
+          ],
+          "correctIndex": 3,
+          "explanation": "Sulfonylureas stimulate pancreatic insulin secretion to lower glucose.",
+          "type": "mcq"
+        },
+        {
+          "id": "sulfonylurea-hard",
+          "text": "Which medication is linked to lose effectiveness as beta-cell reserve declines?",
+          "options": [
+            "Statins",
+            "Calcium channel blockers",
+            "Sulfonylureas",
+            "Benzodiazepines"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sulfonylureas is linked to lose effectiveness as beta-cell reserve declines.",
+          "type": "mcq"
+        },
+        {
+          "id": "sulfonylurea-medium",
+          "text": "Which medication requires the nurse to require screening for sulfa allergies and monitoring for hypoglycemia?",
+          "options": [
+            "Spironolactone",
+            "Calcium channel blockers",
+            "Sulfonylureas",
+            "Thiazide diuretics"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sulfonylureas therapy requires nurses to require screening for sulfa allergies and monitoring for hypoglycemia.",
+          "type": "mcq"
+        },
+        {
+          "id": "sulfonylurea-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes avoiding alcohol that provokes disulfiram-like reactions?",
+          "options": [
+            "Sulfonylureas",
+            "Loop diuretics",
+            "Spironolactone",
+            "Metformin"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clients on Sulfonylureas must remember to teaching includes avoiding alcohol that provokes disulfiram-like reactions.",
+          "type": "mcq"
+        },
+        {
+          "id": "thiazide-diuretics-easy",
+          "text": "Which medication or class treat mild hypertension by reducing sodium reabsorption in the distal tubule?",
+          "options": [
+            "Statins",
+            "ACE inhibitors",
+            "Thiazide diuretics",
+            "MAOIs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Thiazide diuretics treat mild hypertension by reducing sodium reabsorption in the distal tubule.",
+          "type": "mcq"
+        },
+        {
+          "id": "thiazide-diuretics-hard",
+          "text": "Which medication is linked to can elevate calcium and uric acid, worsening gout?",
+          "options": [
+            "Direct oral anticoagulants",
+            "Thiazide diuretics",
+            "Loop diuretics",
+            "Sulfonylureas"
+          ],
+          "correctIndex": 1,
+          "explanation": "Thiazide diuretics is linked to can elevate calcium and uric acid, worsening gout.",
+          "type": "mcq"
+        },
+        {
+          "id": "thiazide-diuretics-medium",
+          "text": "Which medication requires the nurse to require assessing for dehydration, dizziness, and orthostasis?",
+          "options": [
+            "Insulin glargine",
+            "Thiazide diuretics",
+            "Insulin lispro",
+            "Heparin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Thiazide diuretics therapy requires nurses to require assessing for dehydration, dizziness, and orthostasis.",
+          "type": "mcq"
+        },
+        {
+          "id": "thiazide-diuretics-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes emphasizing foods rich in potassium to offset mild losses?",
+          "options": [
+            "Warfarin",
+            "Thiazide diuretics",
+            "Beta blockers",
+            "Spironolactone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on Thiazide diuretics must remember to teaching includes emphasizing foods rich in potassium to offset mild losses.",
+          "type": "mcq"
+        },
+        {
+          "id": "vancomycin-easy",
+          "text": "Which medication or class treats serious gram-positive infections including MRSA?",
+          "options": [
+            "Statins",
+            "Warfarin",
+            "Loop diuretics",
+            "Vancomycin"
+          ],
+          "correctIndex": 3,
+          "explanation": "Vancomycin treats serious gram-positive infections including MRSA.",
+          "type": "mcq"
+        },
+        {
+          "id": "vancomycin-hard",
+          "text": "Which medication is linked to infusing too quickly causes red man syndrome from histamine release?",
+          "options": [
+            "Sulfonylureas",
+            "Vancomycin",
+            "Heparin",
+            "Insulin lispro"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vancomycin is linked to infusing too quickly causes red man syndrome from histamine release.",
+          "type": "mcq"
+        },
+        {
+          "id": "vancomycin-medium",
+          "text": "Which medication requires the nurse to requires trough levels before the fourth dose to avoid toxicity?",
+          "options": [
+            "Vancomycin",
+            "Heparin",
+            "Sulfonylureas",
+            "Lithium"
+          ],
+          "correctIndex": 0,
+          "explanation": "Vancomycin therapy requires nurses to requires trough levels before the fourth dose to avoid toxicity.",
+          "type": "mcq"
+        },
+        {
+          "id": "vancomycin-rnworthy",
+          "text": "Which medication teaching plan includes teaching includes reporting hearing changes or balance issues promptly?",
+          "options": [
+            "Lithium",
+            "Vancomycin",
+            "Loop diuretics",
+            "Thiazide diuretics"
+          ],
+          "correctIndex": 1,
+          "explanation": "Clients on Vancomycin must remember to teaching includes reporting hearing changes or balance issues promptly.",
+          "type": "mcq"
+        },
+        {
+          "id": "warfarin-easy",
+          "text": "Which medication or class blocks vitamin K-dependent clotting factors to prevent thrombosis?",
+          "options": [
+            "Warfarin",
+            "Opioids",
+            "Vancomycin",
+            "Direct oral anticoagulants"
+          ],
+          "correctIndex": 0,
+          "explanation": "Warfarin blocks vitamin K-dependent clotting factors to prevent thrombosis.",
+          "type": "mcq"
+        },
+        {
+          "id": "warfarin-hard",
+          "text": "Which medication is linked to interacts with many antibiotics that raise INR to dangerous levels?",
+          "options": [
+            "Sulfonylureas",
+            "Warfarin",
+            "Insulin glargine",
+            "Calcium channel blockers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Warfarin is linked to interacts with many antibiotics that raise INR to dangerous levels.",
+          "type": "mcq"
+        },
+        {
+          "id": "warfarin-medium",
+          "text": "Which medication requires the nurse to requires reviewing INR results prior to each administration?",
+          "options": [
+            "Insulin lispro",
+            "Insulin glargine",
+            "Warfarin",
+            "Direct oral anticoagulants"
+          ],
+          "correctIndex": 2,
+          "explanation": "Warfarin therapy requires nurses to requires reviewing INR results prior to each administration.",
+          "type": "mcq"
+        },
+        {
+          "id": "warfarin-rnworthy",
+          "text": "Which medication teaching plan includes teaching stresses consistent vitamin K intake and wearing medical identification?",
+          "options": [
+            "Beta blockers",
+            "Lithium",
+            "Spironolactone",
+            "Warfarin"
+          ],
+          "correctIndex": 3,
+          "explanation": "Clients on Warfarin must remember to teaching stresses consistent vitamin K intake and wearing medical identification.",
           "type": "mcq"
         }
       ]

@@ -22,6 +22,8 @@ class QuestionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final spacing = DesignTokens.spacing;
     final colors = DesignTokens.colors;
+    final hasSelection = selectedIndex != null;
+    final isCorrect = hasSelection && selectedIndex == question.correctIndex;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -38,13 +40,53 @@ class QuestionWidget extends StatelessWidget {
             padding: EdgeInsets.only(bottom: spacing.s2),
             child: OptionTile(
               label: entry.value,
-              selected: selectedIndex == entry.key,
+              feedback: _optionFeedback(entry.key),
               disabled: readOnly,
               onTap: () => onOptionSelected(entry.key),
             ),
           ),
         ),
-        if (readOnly && question.explanation != null) ...[
+        if (!readOnly && hasSelection) ...[
+          SizedBox(height: spacing.s2),
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.all(spacing.s2),
+            decoration: BoxDecoration(
+              color: (isCorrect ? colors.success : colors.danger).withOpacity(0.1),
+              borderRadius: BorderRadius.circular(DesignTokens.radius.rMd),
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  isCorrect ? Icons.check_circle : Icons.error_outline,
+                  color: isCorrect ? colors.success : colors.danger,
+                ),
+                SizedBox(width: spacing.s1),
+                Expanded(
+                  child: Text(
+                    isCorrect ? 'Correct' : 'Incorrect',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: isCorrect ? colors.success : colors.danger,
+                          fontWeight: FontWeight.w600,
+                        ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          if (!isCorrect)
+            Padding(
+              padding: EdgeInsets.only(top: spacing.s1),
+              child: Text(
+                question.explanation ?? 'Review the rationale in your notes and try again.',
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyMedium
+                    ?.copyWith(color: colors.textMuted),
+              ),
+            ),
+        ]
+        else if (readOnly && question.explanation != null) ...[
           SizedBox(height: spacing.s2),
           Text(
             'Explanation:',
@@ -60,5 +102,25 @@ class QuestionWidget extends StatelessWidget {
         ],
       ],
     );
+  }
+
+  OptionFeedback _optionFeedback(int optionIndex) {
+    if (readOnly) {
+      if (question.correctIndex == optionIndex) {
+        return OptionFeedback.correct;
+      }
+      if (selectedIndex == optionIndex && selectedIndex != question.correctIndex) {
+        return OptionFeedback.incorrect;
+      }
+      return OptionFeedback.neutral;
+    }
+    if (selectedIndex == null) return OptionFeedback.neutral;
+    if (optionIndex == question.correctIndex) {
+      return OptionFeedback.correct;
+    }
+    if (optionIndex == selectedIndex) {
+      return OptionFeedback.incorrect;
+    }
+    return OptionFeedback.neutral;
   }
 }
