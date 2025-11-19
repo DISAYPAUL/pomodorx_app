@@ -5,6 +5,7 @@ class Question {
     required this.id,
     required this.quizId,
     required this.text,
+    this.variants,
     required this.options,
     required this.correctIndex,
     this.explanation,
@@ -14,6 +15,7 @@ class Question {
   final String id;
   final String quizId;
   final String text;
+  final List<String>? variants;
   final List<String> options;
   final int correctIndex;
   final String? explanation;
@@ -24,6 +26,7 @@ class Question {
       id: json['id'] as String,
       quizId: quizId,
       text: json['text'] as String,
+      variants: (json['variants'] as List<dynamic>?)?.cast<String>(),
       options: (json['options'] as List<dynamic>).cast<String>(),
       correctIndex: json['correctIndex'] as int,
       explanation: json['explanation'] as String?,
@@ -32,14 +35,15 @@ class Question {
   }
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'quizId': quizId,
-        'text': text,
-        'options': options,
-        'correctIndex': correctIndex,
-        'explanation': explanation,
-        'type': type,
-      };
+    'id': id,
+    'quizId': quizId,
+    'text': text,
+    'variants': variants,
+    'options': options,
+    'correctIndex': correctIndex,
+    'explanation': explanation,
+    'type': type,
+  };
 }
 
 class QuestionAdapter extends TypeAdapter<Question> {
@@ -51,6 +55,8 @@ class QuestionAdapter extends TypeAdapter<Question> {
     final id = reader.readString();
     final quizId = reader.readString();
     final text = reader.readString();
+    final hasVariants = reader.readBool();
+    final variants = hasVariants ? reader.readList().cast<String>() : null;
     final options = reader.readList().cast<String>();
     final correctIndex = reader.readInt();
     final explanation = reader.readBool() ? reader.readString() : null;
@@ -59,6 +65,7 @@ class QuestionAdapter extends TypeAdapter<Question> {
       id: id,
       quizId: quizId,
       text: text,
+      variants: variants,
       options: options,
       correctIndex: correctIndex,
       explanation: explanation,
@@ -71,6 +78,12 @@ class QuestionAdapter extends TypeAdapter<Question> {
     writer.writeString(obj.id);
     writer.writeString(obj.quizId);
     writer.writeString(obj.text);
+    if (obj.variants != null) {
+      writer.writeBool(true);
+      writer.writeList(obj.variants!);
+    } else {
+      writer.writeBool(false);
+    }
     writer.writeList(obj.options);
     writer.writeInt(obj.correctIndex);
     if (obj.explanation != null) {

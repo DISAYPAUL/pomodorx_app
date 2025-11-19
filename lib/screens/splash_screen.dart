@@ -16,7 +16,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _bootstrap();
+    // Defer bootstrap until after first frame to avoid provider notifications
+    // during the initial widget build phase which can cause "setState() or
+    // markNeedsBuild() called during build" exceptions.
+    WidgetsBinding.instance.addPostFrameCallback((_) => _bootstrap());
   }
 
   Future<void> _bootstrap() async {
@@ -28,8 +31,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: CenteredLoader(message: 'Loading PomodoRx...'),
-    );
+    return const Scaffold(body: CenteredLoader(message: 'Loading PomodoRx...'));
   }
 }

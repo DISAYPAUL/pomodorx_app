@@ -1,12 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter/foundation.dart';
 
 import '../constants/design_tokens.dart';
 import '../models/quiz_analytics.dart';
 import '../providers/progress_provider.dart';
 import '../providers/quiz_provider.dart';
+
+const double _heatmapCellSize = 12.0;
+const double _heatmapCellSpacing = 2.0;
+const double _heatmapColumnWidth = _heatmapCellSize + (_heatmapCellSpacing * 2);
+const double _dayLabelWidth = 48.0;
+const List<String> _weekdayLabels = [
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri',
+  'Sat',
+  'Sun',
+];
 
 class ProgressTrackerScreen extends StatelessWidget {
   const ProgressTrackerScreen({super.key});
@@ -14,11 +27,9 @@ class ProgressTrackerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final spacing = DesignTokens.spacing;
-    
+
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Study Progress'),
-      ),
+      appBar: AppBar(title: const Text('Study Progress')),
       body: Consumer<ProgressProvider>(
         builder: (context, provider, _) {
           if (provider.isLoading) {
@@ -81,7 +92,7 @@ class ProgressTrackerScreen extends StatelessWidget {
                 SizedBox(height: spacing.s3),
                 _buildQuizProgressCard(context),
                 SizedBox(height: spacing.s5),
-                
+
                 // Heatmap section
                 Text(
                   'Activity Heatmap',
@@ -90,64 +101,48 @@ class ProgressTrackerScreen extends StatelessWidget {
                 SizedBox(height: spacing.s2),
                 Text(
                   'Your study activity over the past weeks',
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.grey,
-                  ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(color: Colors.grey),
                 ),
                 SizedBox(height: spacing.s3),
-                
+
                 // GitHub-style heatmap
                 _buildHeatmap(context, provider),
                 const SizedBox(height: 8),
-                if (kDebugMode) ...[
-                  ElevatedButton(
-                    onPressed: () async {
-                      // Quick way to add a test session for today (debug only)
-                      await provider.recordSessionForDate(DateTime.now(), 25);
-                    },
-                    child: const Text('Add test session (debug)'),
-                  ),
-                  SizedBox(height: spacing.s3),
-                ],
-                
+
                 SizedBox(height: spacing.s4),
-                
+
                 // Legend
                 _buildLegend(context, provider),
-                
+
                 SizedBox(height: spacing.s5),
-                
+
                 // Recent activity
                 Text(
                   'Recent Activity',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
                 SizedBox(height: spacing.s3),
-                
+
                 if (provider.progressList.isEmpty) ...[
                   Center(
                     child: Padding(
                       padding: EdgeInsets.all(spacing.s5),
                       child: Column(
                         children: [
-                          Icon(
-                            Icons.event_busy,
-                            size: 64,
-                            color: Colors.grey,
-                          ),
+                          Icon(Icons.event_busy, size: 64, color: Colors.grey),
                           SizedBox(height: spacing.s3),
                           Text(
                             'No study sessions yet',
-                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              color: Colors.grey,
-                            ),
+                            style: Theme.of(context).textTheme.titleMedium
+                                ?.copyWith(color: Colors.grey),
                           ),
                           SizedBox(height: spacing.s2),
                           Text(
                             'Complete a Pomodoro session to start tracking!',
-                            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                              color: Colors.grey,
-                            ),
+                            style: Theme.of(context).textTheme.bodyMedium
+                                ?.copyWith(color: Colors.grey),
                             textAlign: TextAlign.center,
                           ),
                         ],
@@ -175,14 +170,11 @@ class ProgressTrackerScreen extends StatelessWidget {
                         subtitle: Text(
                           '${progress.totalMinutes} minutes studied',
                         ),
-                        trailing: Icon(
-                          Icons.check_circle,
-                          color: Colors.green,
-                        ),
+                        trailing: Icon(Icons.check_circle, color: Colors.green),
                       ),
                     );
                   }),
-                ]
+                ],
               ],
             ),
           );
@@ -199,7 +191,7 @@ class ProgressTrackerScreen extends StatelessWidget {
     Color color,
   ) {
     final spacing = DesignTokens.spacing;
-    
+
     return Card(
       child: Padding(
         padding: EdgeInsets.all(spacing.s3),
@@ -210,16 +202,16 @@ class ProgressTrackerScreen extends StatelessWidget {
             SizedBox(height: spacing.s2),
             Text(
               value,
-              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+              style: Theme.of(
+                context,
+              ).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: spacing.s1),
             Text(
               label,
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Colors.grey,
-              ),
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall?.copyWith(color: Colors.grey),
             ),
           ],
         ),
@@ -247,9 +239,7 @@ class ProgressTrackerScreen extends StatelessWidget {
                     child: CircularProgressIndicator(strokeWidth: 2),
                   ),
                   SizedBox(width: spacing.s2),
-                  const Expanded(
-                    child: Text('Loading quiz progress...'),
-                  ),
+                  const Expanded(child: Text('Loading quiz progress...')),
                 ],
               ),
             ),
@@ -277,10 +267,9 @@ class ProgressTrackerScreen extends StatelessWidget {
                   SizedBox(height: spacing.s2),
                   Text(
                     'Complete a quiz to unlock accuracy and mastery insights.',
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium
-                        ?.copyWith(color: colors.textMuted),
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodyMedium?.copyWith(color: colors.textMuted),
                   ),
                 ],
               ),
@@ -347,10 +336,9 @@ class ProgressTrackerScreen extends StatelessWidget {
                 SizedBox(height: spacing.s1),
                 Text(
                   'Average accuracy ${avgPercent.toStringAsFixed(1)}%',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodySmall
-                      ?.copyWith(color: colors.textMuted),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(color: colors.textMuted),
                 ),
               ],
             ),
@@ -381,17 +369,16 @@ class ProgressTrackerScreen extends StatelessWidget {
           children: [
             Text(
               value,
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+              style: Theme.of(
+                context,
+              ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: spacing.s1 / 2),
             Text(
               label,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodySmall
-                  ?.copyWith(color: colors.textMuted),
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall?.copyWith(color: colors.textMuted),
             ),
           ],
         ),
@@ -400,72 +387,52 @@ class ProgressTrackerScreen extends StatelessWidget {
   }
 
   Widget _buildHeatmap(BuildContext context, ProgressProvider provider) {
-    final now = DateTime.now();
-    const int weeks = 17; // show ~4 months
+    const int weeks = 17;
+    final today = DateTime.now();
+    final currentDay = DateTime(today.year, today.month, today.day);
+    final startOfWeek = currentDay.subtract(
+      Duration(days: currentDay.weekday - DateTime.monday),
+    );
+    final startDate = startOfWeek.subtract(Duration(days: (weeks - 1) * 7));
+    final weekStarts = List.generate(
+      weeks,
+      (index) => startDate.add(Duration(days: index * 7)),
+    );
 
-    // Align startDate to the start of the week (Monday) so columns map to
-    // complete weeks and we don't miss days.
-    final endOfWeek = DateTime(now.year, now.month, now.day).subtract(Duration(days: now.weekday - DateTime.monday));
-    final startDate = endOfWeek.subtract(Duration(days: (weeks - 1) * 7));
-    
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      child: Column(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Weekday labels
-          Row(
-            children: [
-              const SizedBox(width: 30),
-              // Month labels above each week column
-              ..._buildMonthLabels(startDate, weeks),
-              // Space for the heatmap columns above — month labels are aligned
-              // with each week column, so there's no extra placeholder needed.
-            ],
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: _weekdayLabels
+                .map((label) => _buildDayLabel(label, context))
+                .toList(),
           ),
-          
-          // Heatmap grid
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Day labels
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                    // Week columns — reserve width for the week columns.
-                    ...List.generate(weeks, (weekIndex) {
-                      return const SizedBox(width: 14); // spacing to match heatmap col
-                    }),
-                  _buildDayLabel('Wed', context),
-                  _buildDayLabel('', context),
-                  _buildDayLabel('Fri', context),
-                  _buildDayLabel('', context),
-                  _buildDayLabel('Sun', context),
-                ],
+          ...List.generate(weeks, (weekIndex) {
+            final weekStart = weekStarts[weekIndex];
+            return SizedBox(
+              width: _heatmapColumnWidth,
+              child: Column(
+                children: List.generate(7, (dayIndex) {
+                  final date = weekStart.add(Duration(days: dayIndex));
+                  if (date.isAfter(currentDay)) {
+                    return _buildEmptyCell();
+                  }
+                  final progress = provider.getProgressForDate(date);
+                  final level = provider.getIntensityLevel(progress);
+                  return _buildHeatmapCell(
+                    context,
+                    provider,
+                    date,
+                    progress,
+                    level,
+                  );
+                }),
               ),
-              
-              // Heatmap cells
-              ...List.generate(weeks, (weekIndex) {
-                return Column(
-                  children: List.generate(7, (dayIndex) {
-                    final date = startDate.add(Duration(days: weekIndex * 7 + dayIndex));
-                    if (date.isAfter(now)) {
-                      return _buildEmptyCell();
-                    }
-                    final progress = provider.getProgressForDate(date);
-                    final level = provider.getIntensityLevel(progress);
-                    return _buildHeatmapCell(
-                      context,
-                      provider,
-                      date,
-                      progress,
-                      level,
-                    );
-                  }),
-                );
-              }),
-            ],
-          ),
+            );
+          }),
         ],
       ),
     );
@@ -473,24 +440,23 @@ class ProgressTrackerScreen extends StatelessWidget {
 
   Widget _buildDayLabel(String label, BuildContext context) {
     return SizedBox(
-      width: 30,
-      height: 14,
+      width: _dayLabelWidth,
+      height: _heatmapColumnWidth,
       child: Text(
         label,
-        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-          fontSize: 10,
-          color: Colors.grey,
-        ),
+        style: Theme.of(
+          context,
+        ).textTheme.bodySmall?.copyWith(fontSize: 11, color: Colors.grey),
         textAlign: TextAlign.right,
       ),
     );
   }
 
   Widget _buildEmptyCell() {
-    return Container(
-      width: 12,
-      height: 12,
-      margin: const EdgeInsets.all(1),
+    return SizedBox(
+      width: _heatmapColumnWidth,
+      height: _heatmapColumnWidth,
+      child: Container(margin: const EdgeInsets.all(_heatmapCellSpacing)),
     );
   }
 
@@ -505,13 +471,15 @@ class ProgressTrackerScreen extends StatelessWidget {
       message: progress != null
           ? '${DateFormat('MMM d, y').format(date)}\n${progress.totalMinutes} min, ${progress.sessionsCompleted} sessions'
           : '${DateFormat('MMM d, y').format(date)}\nNo activity',
-      child: Container(
-        width: 12,
-        height: 12,
-        margin: const EdgeInsets.all(1),
-        decoration: BoxDecoration(
-          color: provider.getIntensityColor(level, context),
-          borderRadius: BorderRadius.circular(2),
+      child: SizedBox(
+        width: _heatmapColumnWidth,
+        height: _heatmapColumnWidth,
+        child: Container(
+          margin: const EdgeInsets.all(_heatmapCellSpacing),
+          decoration: BoxDecoration(
+            color: provider.getIntensityColor(level, context),
+            borderRadius: BorderRadius.circular(2),
+          ),
         ),
       ),
     );
@@ -522,9 +490,9 @@ class ProgressTrackerScreen extends StatelessWidget {
       children: [
         Text(
           'Less',
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.grey,
-          ),
+          style: Theme.of(
+            context,
+          ).textTheme.bodySmall?.copyWith(color: Colors.grey),
         ),
         const SizedBox(width: 8),
         ...List.generate(5, (index) {
@@ -541,42 +509,11 @@ class ProgressTrackerScreen extends StatelessWidget {
         const SizedBox(width: 8),
         Text(
           'More',
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.grey,
-          ),
+          style: Theme.of(
+            context,
+          ).textTheme.bodySmall?.copyWith(color: Colors.grey),
         ),
       ],
     );
   }
 }
-
-  // Build month labels above weeks — we show the month name at the column
-  // where the month first appears (similar to GitHub heatmap).
-  List<Widget> _buildMonthLabels(DateTime startDate, int weeks) {
-    final labels = <Widget>[];
-
-    labels.add(const SizedBox(width: 30));
-
-    String? lastMonth;
-    for (int w = 0; w < weeks; w++) {
-      final weekStart = startDate.add(Duration(days: w * 7));
-      final monthName = DateFormat('MMM').format(weekStart);
-
-      if (lastMonth == null || weekStart.month != startDate.add(Duration(days: (w - 1) * 7)).month) {
-        labels.add(Container(
-          width: 14,
-          alignment: Alignment.centerLeft,
-          child: Text(
-            monthName,
-            style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w600),
-          ),
-        ));
-      } else {
-        labels.add(Container(width: 14));
-      }
-
-      lastMonth = monthName;
-    }
-
-    return labels;
-  }

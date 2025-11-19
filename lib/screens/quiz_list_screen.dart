@@ -65,6 +65,38 @@ class _QuizListScreenState extends State<QuizListScreen> {
     return ((value / 5).round() * 5).round();
   }
 
+  List<Question> _combineAllDifficultyQuestions(List<Quiz> quizzes) {
+    if (quizzes.isEmpty) return [];
+    const slugPriority = ['easy', 'medium', 'hard', 'rnworthy'];
+    int priorityFor(Quiz quiz) {
+      final index = slugPriority.indexOf(quiz.difficultySlug);
+      return index == -1 ? slugPriority.length : index;
+    }
+
+    final ordered = [...quizzes]
+      ..sort(
+        (a, b) {
+          final cmp = priorityFor(a).compareTo(priorityFor(b));
+          if (cmp != 0) return cmp;
+          return a.title.compareTo(b.title);
+        },
+      );
+
+    final combined = <Question>[];
+    for (final quiz in ordered) {
+      for (final question in quiz.questions) {
+        if (combined.length >= _allDifficultyMaxQuestions) {
+          break;
+        }
+        combined.add(question);
+      }
+      if (combined.length >= _allDifficultyMaxQuestions) {
+        break;
+      }
+    }
+    return combined;
+  }
+
   void _ensureSelections(Map<String, Quiz> difficultyMap) {
     if (_selectedDifficulty == null && difficultyMap.isNotEmpty) {
       if (difficultyMap.containsKey('easy')) {
@@ -176,10 +208,8 @@ class _QuizListScreenState extends State<QuizListScreen> {
                 : null;
 
             final List<Question>? aggregatedQuestions = _includeAllDifficulties
-                ? difficultyMap.values
-                    .expand((quiz) => quiz.questions)
-                    .toList()
-                : null;
+              ? _combineAllDifficultyQuestions(provider.quizzes)
+              : null;
             final usingAggregated =
                 aggregatedQuestions != null && aggregatedQuestions.isNotEmpty;
 
@@ -187,14 +217,15 @@ class _QuizListScreenState extends State<QuizListScreen> {
               ? aggregatedQuestions.length
               : (selectedQuiz?.questions.length ?? 0);
             final int sliderMax = usingAggregated
-              ? _allDifficultyMaxQuestions
-              : (availableQuestions > 100 ? 100 : availableQuestions);
-            final int computedMin = usingAggregated
-              ? 5
-              : (availableQuestions < 5 ? availableQuestions : 5);
-            final int minSelectable = sliderMax == 0
-              ? 0
-              : computedMin.clamp(1, sliderMax);
+              ? (availableQuestions > _allDifficultyMaxQuestions
+                ? _allDifficultyMaxQuestions
+                : availableQuestions)
+              : (availableQuestions > _allDifficultyMaxQuestions
+                ? _allDifficultyMaxQuestions
+                : availableQuestions);
+            final int minSelectable = availableQuestions < 5
+              ? availableQuestions
+              : 5;
 
             if (availableQuestions > 0) {
               final int defaultCount = usingAggregated
@@ -204,7 +235,8 @@ class _QuizListScreenState extends State<QuizListScreen> {
               _selectedQuestionCountDouble ??=
                   _selectedQuestionCount!.toDouble();
               final int clamped =
-                _selectedQuestionCount!.clamp(minSelectable, sliderMax);
+                  _selectedQuestionCount!
+                      .clamp(minSelectable == 0 ? 1 : minSelectable, sliderMax);
               if (clamped != _selectedQuestionCount) {
                 _selectedQuestionCount = clamped;
                 _selectedQuestionCountDouble = clamped.toDouble();
@@ -212,13 +244,16 @@ class _QuizListScreenState extends State<QuizListScreen> {
             }
 
             int? sliderDivisions;
-            if (sliderMax > minSelectable) {
+            if (sliderMax > minSelectable && minSelectable > 0) {
               final diff = sliderMax - minSelectable;
               sliderDivisions = diff >= 5 ? (diff ~/ 5) : diff;
               if (sliderDivisions < 1) {
                 sliderDivisions = 1;
               }
             }
+
+            final displayMin = minSelectable == 0 ? 1 : minSelectable;
+            final displayMax = sliderMax == 0 ? displayMin : sliderMax;
 
             return CustomScrollView(
               slivers: [
@@ -250,7 +285,7 @@ class _QuizListScreenState extends State<QuizListScreen> {
                       ),
                       SizedBox(height: spacing.s4),
                       Text(
-                        'Question count (${minSelectable.clamp(1, sliderMax)}–$sliderMax)',
+                        'Question count ($displayMin–$displayMax)',
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       SizedBox(height: spacing.s2),
@@ -259,21 +294,11 @@ class _QuizListScreenState extends State<QuizListScreen> {
                           Checkbox(
                             value: _includeAllDifficulties,
                             onChanged: (val) {
-                              final aggregatedLength = difficultyMap.values
-                                  .expand((quiz) => quiz.questions)
-                                  .length;
                               setState(() {
                                 _includeAllDifficulties = val ?? false;
-                                if (_includeAllDifficulties &&
-                                    aggregatedLength > 0) {
-                                  _selectedQuestionCount =
-                                      _allDifficultyMaxQuestions;
-                                  _selectedQuestionCountDouble =
-                                      _allDifficultyMaxQuestions.toDouble();
-                                } else {
-                                  _selectedQuestionCount = null;
-                                  _selectedQuestionCountDouble = null;
-                                }
+                                // Reset selections when toggling to force recalculation
+                                _selectedQuestionCount = null;
+                                _selectedQuestionCountDouble = null;
                               });
                             },
                           ),
@@ -309,7 +334,7 @@ class _QuizListScreenState extends State<QuizListScreen> {
                         ),
                       if (usingAggregated)
                         Text(
-                          'Aggregated bank includes $availableQuestions questions; slider caps at $sliderMax for mixed sets.',
+                          'Aggregated bank includes $availableQuestions questions across all difficulties.',
                         )
                       else if (selectedQuiz != null)
                         Text(

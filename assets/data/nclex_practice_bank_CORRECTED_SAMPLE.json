@@ -1,0 +1,373 @@
+{
+  "topic": {
+    "id": "topic-nclex",
+    "name": "NCLEX Practice",
+    "description": "Comprehensive NCLEX-RN practice questions covering all major client needs categories.",
+    "detailedDescription": "Authentic NCLEX-RN style practice questions designed following the NCLEX test plan. This comprehensive question bank covers all Client Needs categories with accurate answer mappings and detailed rationales. Each question has been carefully crafted to match real NCLEX exam standards.",
+    "icon": "assets/icons/logo.png",
+    "slug": "nclex-practice",
+    "createdAt": "2025-11-19T12:00:00.000000Z"
+  },
+  "quizzes": [
+    {
+      "id": "quiz-nclex-easy",
+      "title": "NCLEX Practice - Easy",
+      "difficultySlug": "easy",
+      "durationMinutes": 30,
+      "createdAt": "2025-11-19T12:00:00.000000Z",
+      "isOffline": true,
+      "questions": [
+        {
+          "id": "NCLEX-EASY-001",
+          "text": "A nurse is assigned to care for four clients. Which client should the nurse assess first?",
+          "options": [
+            "A client with diabetes who has a blood glucose of 95 mg/dL",
+            "A client with pneumonia who has an oxygen saturation of 92% on room air",
+            "A client post-operative day 1 with a temperature of 101.2°F (38.4°C)",
+            "A client with chest pain rating 8/10 and diaphoresis"
+          ],
+          "correctIndex": 3,
+          "explanation": "The client with chest pain and diaphoresis is exhibiting signs of possible myocardial infarction, which is life-threatening and requires immediate assessment. The other clients are stable or have expected post-operative findings.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-002",
+          "text": "A nurse is preparing to delegate tasks to unlicensed assistive personnel (UAP). Which task can be safely delegated?",
+          "options": [
+            "Feeding a stable client who can swallow without difficulty",
+            "Administering oral medications to a client",
+            "Performing initial assessment on a newly admitted client",
+            "Teaching a client about insulin injection technique"
+          ],
+          "correctIndex": 0,
+          "explanation": "Feeding a stable client with no swallowing difficulties is within the scope of practice for UAP. Medication administration, assessments, and teaching require professional nursing judgment and cannot be delegated to UAP.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-003",
+          "text": "A client tells the nurse they do not want to undergo a scheduled surgical procedure. What is the nurse's best initial action?",
+          "options": [
+            "Document the client's wishes in the medical record",
+            "Notify the surgeon immediately about the client's decision",
+            "Ask the client to explain their concerns and reasoning",
+            "Encourage the client to reconsider because the surgery is necessary"
+          ],
+          "correctIndex": 2,
+          "explanation": "The nurse should first explore the client's concerns through therapeutic communication to understand their perspective. This allows the nurse to provide support and ensure the client is making an informed decision before notifying the surgeon.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-004",
+          "text": "A nurse discovers that a medication error has occurred. What is the priority nursing action?",
+          "options": [
+            "Complete an incident report",
+            "Notify the nursing supervisor",
+            "Assess the client for adverse effects",
+            "Document the error in the client's chart"
+          ],
+          "correctIndex": 2,
+          "explanation": "Patient safety is the priority. The nurse must first assess the client for any adverse effects from the medication error. After ensuring the client is safe, the nurse should notify the provider, complete documentation, and file an incident report.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-005",
+          "text": "A nurse is caring for a client who is on contact precautions for a multidrug-resistant infection. Which personal protective equipment (PPE) should the nurse use?",
+          "options": [
+            "Gloves only",
+            "Gloves and gown",
+            "Gloves, gown, and N95 respirator",
+            "Gloves, gown, mask, and eye protection"
+          ],
+          "correctIndex": 1,
+          "explanation": "Contact precautions require gloves and gown to prevent transmission of organisms through direct contact or contact with contaminated surfaces. N95 respirators are required for airborne precautions, not contact precautions.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-006",
+          "text": "A client with tuberculosis (TB) is being admitted to the hospital. What type of isolation precautions should be implemented?",
+          "options": [
+            "Standard precautions only",
+            "Droplet precautions",
+            "Airborne precautions",
+            "Contact precautions"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tuberculosis is transmitted via airborne particles (< 5 microns) and requires airborne precautions, including a negative pressure room and N95 respirator use by healthcare workers entering the room.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-007",
+          "text": "A nurse is preparing to administer a blood transfusion. What is the maximum time the blood product can be infused?",
+          "options": [
+            "1 hour",
+            "2 hours",
+            "4 hours",
+            "6 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Blood products must be infused within 4 hours to prevent bacterial growth and ensure product integrity. The transfusion should be completed within this timeframe from when it is removed from refrigerated storage.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-008",
+          "text": "A client is receiving continuous intravenous heparin therapy. Which laboratory value is most important for the nurse to monitor?",
+          "options": [
+            "Platelet count",
+            "Activated partial thromboplastin time (aPTT)",
+            "Prothrombin time (PT)",
+            "International normalized ratio (INR)"
+          ],
+          "correctIndex": 1,
+          "explanation": "aPTT is used to monitor the effectiveness and safety of heparin therapy. The therapeutic range is typically 1.5 to 2.5 times the control value. PT and INR are used to monitor warfarin (Coumadin) therapy, not heparin.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-009",
+          "text": "A nurse is caring for a client at risk for falls. Which intervention is most effective in preventing falls?",
+          "options": [
+            "Keeping the bed in the lowest position with all four side rails up",
+            "Using a bed alarm and placing the call bell within reach",
+            "Applying bilateral wrist restraints",
+            "Keeping the client in bed at all times"
+          ],
+          "correctIndex": 1,
+          "explanation": "A bed alarm alerts staff when the client attempts to get up, and having the call bell within reach allows the client to request assistance. All four side rails up is considered a restraint. Physical restraints should be a last resort, and mobility should be encouraged when safe with appropriate assistance.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-010",
+          "text": "A nurse is caring for a client with a seizure disorder. What is the priority action during an active seizure?",
+          "options": [
+            "Insert a padded tongue blade to prevent tongue biting",
+            "Restrain the client to prevent injury",
+            "Position the client on their side to maintain airway patency",
+            "Administer oxygen at 10 L/min via non-rebreather mask"
+          ],
+          "correctIndex": 2,
+          "explanation": "Positioning the client on their side helps maintain airway patency and allows secretions to drain from the mouth, preventing aspiration. Never insert anything into the mouth during a seizure or physically restrain a seizing client, as this can cause injury.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-011",
+          "text": "A nurse is providing teaching to a pregnant client in the first trimester. Which statement by the client indicates correct understanding?",
+          "options": [
+            "I should avoid taking any folic acid supplements during pregnancy",
+            "I need to take 400-800 micrograms of folic acid daily",
+            "I can continue drinking alcohol in moderation during pregnancy",
+            "I should eat for two people now that I'm pregnant"
+          ],
+          "correctIndex": 1,
+          "explanation": "Folic acid supplementation (400-800 mcg daily) in early pregnancy and throughout the first trimester is essential for preventing neural tube defects. All alcohol should be avoided during pregnancy, and caloric intake only needs minimal increase in the first trimester (approximately 340 additional calories per day in second trimester).",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-012",
+          "text": "A nurse is teaching a group of older adults about fall prevention in the home. Which recommendation should be included?",
+          "options": [
+            "Wear loose-fitting slippers at home for comfort",
+            "Install grab bars in bathrooms and near stairways",
+            "Use decorative throw rugs throughout the house",
+            "Keep the home dimly lit at night to save energy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Grab bars provide support and stability in high-risk areas like bathrooms and stairs. Other fall prevention measures include wearing proper-fitting footwear with non-slip soles, removing throw rugs, and ensuring adequate lighting throughout the home.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-013",
+          "text": "A nurse is assessing a 2-month-old infant during a well-child visit. Which developmental milestone should the nurse expect the infant to demonstrate?",
+          "options": [
+            "Sitting without support for short periods",
+            "Following objects with eyes through a 180-degree arc",
+            "Saying first words like 'mama' or 'dada'",
+            "Grasping small objects with a pincer grasp"
+          ],
+          "correctIndex": 1,
+          "explanation": "By 2 months of age, infants should be able to track objects visually through a 180-degree range. Sitting without support typically occurs around 6-7 months, first words around 10-12 months, and pincer grasp around 9-10 months.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-014",
+          "text": "A nurse is providing dietary teaching to a client newly diagnosed with hypertension. Which food should the client be taught to avoid?",
+          "options": [
+            "Fresh fruits and vegetables",
+            "Processed deli meats and canned soups",
+            "Grilled lean chicken breast",
+            "Brown rice and whole grain bread"
+          ],
+          "correctIndex": 1,
+          "explanation": "Processed meats and canned soups are very high in sodium, which can increase blood pressure. Clients with hypertension should follow a low-sodium diet (DASH diet) including fresh fruits, vegetables, lean proteins, and whole grains while avoiding processed and canned foods.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-015",
+          "text": "A nurse is teaching a female client about breast self-examination. At what time in the menstrual cycle should the examination be performed?",
+          "options": [
+            "During menstruation when breasts are most sensitive",
+            "One week before menstruation is expected to begin",
+            "5-7 days after menstruation begins",
+            "At any random time during the month"
+          ],
+          "correctIndex": 2,
+          "explanation": "Breast self-examination should be performed 5-7 days after menstruation begins when breast tissue is least tender and lumpy from hormonal changes, making it easier to detect abnormalities. Post-menopausal women should choose and remember the same day each month.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-016",
+          "text": "A nurse is caring for a client who is prescribed digoxin 0.25 mg PO daily. Which assessment finding would cause the nurse to hold the medication?",
+          "options": [
+            "Heart rate of 58 beats per minute",
+            "Blood pressure of 128/82 mmHg",
+            "Respiratory rate of 18 breaths per minute",
+            "Temperature of 98.6°F (37°C)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Digoxin is a cardiac glycoside that decreases heart rate. The medication should be held if the heart rate is less than 60 beats per minute in adults. The nurse should notify the healthcare provider before administering the medication.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-017",
+          "text": "A nurse is preparing to administer an intramuscular injection to an adult client. Which needle size is most appropriate?",
+          "options": [
+            "25 gauge, 5/8 inch",
+            "22 gauge, 1 inch",
+            "22 gauge, 1.5 inches",
+            "18 gauge, 1 inch"
+          ],
+          "correctIndex": 2,
+          "explanation": "For an intramuscular injection in an average-sized adult, a 22-23 gauge, 1-1.5 inch needle is appropriate to reach muscle tissue. Shorter needles are used for subcutaneous injections, and smaller gauge numbers (larger needles) are typically used for viscous medications or blood products.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-018",
+          "text": "A client with type 1 diabetes mellitus asks the nurse why blood glucose monitoring is important. What is the best response by the nurse?",
+          "options": [
+            "It helps determine if you need to take your insulin",
+            "It replaces the need for hemoglobin A1C testing",
+            "It helps you adjust your insulin dose based on your current blood glucose level",
+            "It is only necessary when you feel symptoms of low blood sugar"
+          ],
+          "correctIndex": 2,
+          "explanation": "Regular blood glucose monitoring allows clients with diabetes to adjust insulin doses based on current blood glucose levels, activity, and food intake to maintain optimal glycemic control. It complements but does not replace A1C testing, and should be done regularly, not just when symptomatic.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-019",
+          "text": "A nurse is caring for a client receiving oxygen at 2 L/min via nasal cannula. Which statement by the client indicates understanding of oxygen safety?",
+          "options": [
+            "I can smoke cigarettes as long as I step outside",
+            "I should keep the oxygen at least 5 feet away from any heat source",
+            "I can use petroleum-based products on my lips to prevent dryness",
+            "I need to turn off the oxygen when I eat my meals"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oxygen supports combustion and must be kept at least 5 feet away from heat sources, open flames, and smoking materials. Water-based lubricants should be used instead of petroleum-based products. Oxygen should not be discontinued during meals unless specifically ordered.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-020",
+          "text": "A nurse is assessing a client who is receiving a blood transfusion. Which finding indicates a possible transfusion reaction?",
+          "options": [
+            "Temperature of 98.6°F (37°C)",
+            "Blood pressure of 120/80 mmHg",
+            "Development of hives and itching",
+            "Urine output of 50 mL/hour"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hives and itching indicate an allergic transfusion reaction. The transfusion should be stopped immediately, the IV line kept open with normal saline, and the healthcare provider notified. Other signs of transfusion reactions include fever, chills, back pain, dyspnea, and hypotension.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-021",
+          "text": "A nurse is caring for a postoperative client who has a patient-controlled analgesia (PCA) pump. Which action by the nurse is most important?",
+          "options": [
+            "Instruct family members to press the button when the client is sleeping",
+            "Teach the client to press the button before pain becomes severe",
+            "Administer a bolus dose every hour regardless of client request",
+            "Disconnect the PCA pump during physical therapy sessions"
+          ],
+          "correctIndex": 1,
+          "explanation": "The client should be taught to use the PCA before pain becomes severe for better pain control. Only the client should press the button to prevent overdose. The PCA has lockout intervals to prevent overdose, and it should not be disconnected without provider orders.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-022",
+          "text": "A nurse is caring for a client with pneumonia who has a productive cough. What is the priority nursing intervention?",
+          "options": [
+            "Administer an antitussive medication to suppress the cough",
+            "Encourage the client to cough and deep breathe every 2 hours",
+            "Keep the client on strict bed rest to conserve energy",
+            "Limit fluid intake to prevent increased mucus production"
+          ],
+          "correctIndex": 1,
+          "explanation": "Encouraging coughing and deep breathing helps mobilize and expectorate secretions, which is important in treating pneumonia. Antitussives that suppress productive coughs are contraindicated. Adequate fluid intake (not restriction) helps thin secretions, and mobility should be encouraged as tolerated.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-023",
+          "text": "A nurse is teaching a client who has a new prescription for warfarin. Which statement by the client requires further teaching?",
+          "options": [
+            "I will use an electric razor when shaving",
+            "I will eat lots of green leafy vegetables for vitamins",
+            "I will wear a medical alert bracelet",
+            "I will report any signs of unusual bleeding to my doctor"
+          ],
+          "correctIndex": 1,
+          "explanation": "Green leafy vegetables are high in vitamin K, which can decrease the effectiveness of warfarin. Clients should maintain consistent (not increased or decreased) vitamin K intake. Using an electric razor, wearing medical alert identification, and reporting bleeding are all appropriate.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-024",
+          "text": "A nurse is preparing to insert an indwelling urinary catheter. Which action should the nurse take first?",
+          "options": [
+            "Open the catheterization kit using sterile technique",
+            "Inflate the balloon with sterile water to test it",
+            "Perform hand hygiene and apply clean gloves",
+            "Position the client in dorsal recumbent position"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hand hygiene is the first and most important step in any procedure to prevent infection. After hand hygiene and applying clean gloves, the nurse would then position the client, perform perineal care, remove clean gloves, perform hand hygiene again, and then open the sterile catheterization kit.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-025",
+          "text": "A client is prescribed furosemide 40 mg PO daily. Which assessment finding indicates the medication is having the desired effect?",
+          "options": [
+            "Blood pressure decreases from 160/90 to 130/80 mmHg",
+            "Heart rate increases from 70 to 85 beats per minute",
+            "Respiratory rate decreases from 24 to 16 breaths per minute",
+            "Weight increases by 2 pounds in 24 hours"
+          ],
+          "correctIndex": 0,
+          "explanation": "Furosemide is a loop diuretic used to treat fluid overload and hypertension. A decrease in blood pressure indicates the medication is effective. The nurse should also expect decreased weight (not increased), decreased edema, and possibly decreased respiratory rate if fluid was affecting breathing. Important to monitor potassium levels as loop diuretics cause potassium loss.",
+          "type": "mcq",
+          "variants": []
+        }
+      ]
+    }
+  ]
+}

@@ -48,8 +48,9 @@ class QuizPlayArgs {
 }
 
 class ResultsArgs {
-  ResultsArgs({this.quizId});
+  ResultsArgs({this.quizId, this.topicId});
   final String? quizId;
+  final String? topicId;
 }
 
 class AppRouter {
@@ -86,7 +87,8 @@ class AppRouter {
       case AppRoutes.results:
         final args = settings.arguments as ResultsArgs?;
         return MaterialPageRoute(
-          builder: (_) => ResultsScreen(quizId: args?.quizId),
+          builder: (_) =>
+              ResultsScreen(quizId: args?.quizId, topicId: args?.topicId),
         );
       case AppRoutes.settings:
         return MaterialPageRoute(builder: (_) => const SettingsScreen());

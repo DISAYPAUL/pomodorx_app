@@ -18,6 +18,7 @@ class AppConstants {
     'assets/data/anatomy_quiz.json',
     'assets/data/pharmacology_quiz.json',
     'assets/data/nursing_quizzes.json',
+    'assets/data/nclex_practice_bank.json',
   ];
 
   static const nursingTopicIds = {

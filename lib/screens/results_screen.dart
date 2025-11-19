@@ -5,13 +5,15 @@ import '../constants/design_tokens.dart';
 import '../models/progress.dart';
 import '../models/quiz_analytics.dart';
 import '../providers/quiz_provider.dart';
+import '../routes.dart';
 import '../widgets/app_bar.dart';
 import '../widgets/loader.dart';
 
 class ResultsScreen extends StatefulWidget {
-  const ResultsScreen({super.key, this.quizId});
+  const ResultsScreen({super.key, this.quizId, this.topicId});
 
   final String? quizId;
+  final String? topicId;
 
   @override
   State<ResultsScreen> createState() => _ResultsScreenState();
@@ -37,35 +39,38 @@ class _ResultsScreenState extends State<ResultsScreen> {
     final spacing = DesignTokens.spacing;
     return Scaffold(
       appBar: const PomodoRxAppBar(title: 'Results', showBack: true),
-      body: Padding(
-        padding: EdgeInsets.all(spacing.s4),
-        child: FutureBuilder<QuizAnalytics?>(
-          future: _analyticsFuture,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const CenteredLoader();
-            }
-            final analytics = snapshot.data;
-            if (analytics == null || analytics.history.isEmpty) {
-              return const Center(
-                child: Text('No results yet. Complete a quiz first.'),
-              );
-            }
-            return Column(
-              children: [
-                _ScoreSummaryCard(analytics: analytics),
-                SizedBox(height: spacing.s3),
-                _QuickStatsRow(analytics: analytics),
-                SizedBox(height: spacing.s3),
-                _FocusAreasCard(insights: analytics.focusAreas),
-                SizedBox(height: spacing.s3),
-                Expanded(
-                  child: _AttemptHistoryList(history: analytics.history),
-                ),
-              ],
+      body: FutureBuilder<QuizAnalytics?>(
+        future: _analyticsFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const CenteredLoader();
+          }
+          final analytics = snapshot.data;
+          if (analytics == null || analytics.history.isEmpty) {
+            return const Center(
+              child: Text('No results yet. Complete a quiz first.'),
             );
-          },
-        ),
+          }
+          return ListView(
+            padding: EdgeInsets.all(spacing.s4),
+            children: [
+              _ScoreSummaryCard(analytics: analytics),
+              SizedBox(height: spacing.s3),
+              _QuickStatsRow(analytics: analytics),
+              SizedBox(height: spacing.s3),
+              _FocusAreasCard(insights: analytics.focusAreas),
+              SizedBox(height: spacing.s3),
+              Text(
+                'Attempt history',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              SizedBox(height: spacing.s1),
+              _AttemptHistoryList(history: analytics.history),
+              SizedBox(height: spacing.s4),
+              _NavigationActions(topicId: widget.topicId),
+            ],
+          );
+        },
       ),
     );
   }
@@ -104,7 +109,8 @@ class _ScoreSummaryCard extends StatelessWidget {
                 ),
                 _SummaryStat(
                   label: 'Average',
-                  value: '${(analytics.averagePercent * 100).toStringAsFixed(0)}%',
+                  value:
+                      '${(analytics.averagePercent * 100).toStringAsFixed(0)}%',
                 ),
                 _SummaryStat(
                   label: 'Attempts',
@@ -149,8 +155,14 @@ class _QuickStatsRow extends StatelessWidget {
     final colors = DesignTokens.colors;
     final textTheme = Theme.of(context).textTheme;
     final stats = [
-      _QuickStat(label: 'Questions practiced', value: '${analytics.uniqueQuestions}'),
-      _QuickStat(label: 'Answers logged', value: '${analytics.totalItemsAnswered}'),
+      _QuickStat(
+        label: 'Questions practiced',
+        value: '${analytics.uniqueQuestions}',
+      ),
+      _QuickStat(
+        label: 'Answers logged',
+        value: '${analytics.totalItemsAnswered}',
+      ),
       _QuickStat(label: 'Focus items', value: '${analytics.focusAreas.length}'),
     ];
     return Wrap(
@@ -244,10 +256,7 @@ class _FocusTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: Text(
-                insight.questionText,
-                style: textTheme.titleSmall,
-              ),
+              child: Text(insight.questionText, style: textTheme.titleSmall),
             ),
             SizedBox(width: spacing.s1),
             Text(
@@ -264,10 +273,7 @@ class _FocusTile extends StatelessWidget {
         if (insight.explanation != null)
           Padding(
             padding: EdgeInsets.only(top: spacing.s1),
-            child: Text(
-              insight.explanation!,
-              style: textTheme.bodySmall,
-            ),
+            child: Text(insight.explanation!, style: textTheme.bodySmall),
           ),
       ],
     );
@@ -288,11 +294,15 @@ class _AttemptHistoryList extends StatelessWidget {
     final spacing = DesignTokens.spacing;
     final radius = DesignTokens.radius;
     return ListView.separated(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: history.length,
-      separatorBuilder: (_, __) => SizedBox(height: spacing.s2),
+      separatorBuilder: (context, _) => SizedBox(height: spacing.s2),
       itemBuilder: (context, index) {
         final attempt = history[index];
-        final pct = ((attempt.score / attempt.maxScore) * 100).toStringAsFixed(0);
+        final pct = ((attempt.score / attempt.maxScore) * 100).toStringAsFixed(
+          0,
+        );
         final attemptedLabel = _formatDateTime(attempt.attemptedAt.toLocal());
         return ListTile(
           tileColor: DesignTokens.colors.card,
@@ -310,8 +320,67 @@ class _AttemptHistoryList extends StatelessWidget {
   }
 
   String _formatDateTime(DateTime dateTime) {
-    final date = '${dateTime.year}-${dateTime.month.toString().padLeft(2, '0')}-${dateTime.day.toString().padLeft(2, '0')}';
-    final time = '${dateTime.hour.toString().padLeft(2, '0')}:${dateTime.minute.toString().padLeft(2, '0')}';
+    final date =
+        '${dateTime.year}-${dateTime.month.toString().padLeft(2, '0')}-${dateTime.day.toString().padLeft(2, '0')}';
+    final time =
+        '${dateTime.hour.toString().padLeft(2, '0')}:${dateTime.minute.toString().padLeft(2, '0')}';
     return '$date $time';
+  }
+}
+
+class _NavigationActions extends StatelessWidget {
+  const _NavigationActions({required this.topicId});
+
+  final String? topicId;
+
+  @override
+  Widget build(BuildContext context) {
+    final spacing = DesignTokens.spacing;
+    final textTheme = Theme.of(context).textTheme;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Keep practicing', style: textTheme.titleMedium),
+        SizedBox(height: spacing.s1),
+        Text(
+          'Jump back to dashboard, all topics, or reopen the difficulty & question picker for this topic.',
+          style: textTheme.bodySmall,
+        ),
+        SizedBox(height: spacing.s2),
+        Wrap(
+          spacing: spacing.s2,
+          runSpacing: spacing.s2,
+          children: [
+            ElevatedButton.icon(
+              icon: const Icon(Icons.dashboard),
+              label: const Text('Return to Dashboard'),
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.home);
+              },
+            ),
+            OutlinedButton.icon(
+              icon: const Icon(Icons.menu_book),
+              label: const Text('Back to topics'),
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.topics);
+              },
+            ),
+            OutlinedButton.icon(
+              icon: const Icon(Icons.tune),
+              label: const Text('Change difficulty & count'),
+              onPressed: topicId == null
+                  ? null
+                  : () {
+                      Navigator.pushNamed(
+                        context,
+                        AppRoutes.quizList,
+                        arguments: QuizListArgs(topicId!),
+                      );
+                    },
+            ),
+          ],
+        ),
+      ],
+    );
   }
 }

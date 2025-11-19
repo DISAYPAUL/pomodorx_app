@@ -5,6 +5,8 @@ import '../constants/design_tokens.dart';
 import '../providers/pomodoro_provider.dart';
 import '../providers/topic_provider.dart';
 import '../routes.dart';
+import '../services/seed_service.dart';
+import '../services/storage_service.dart';
 import '../widgets/app_bar.dart';
 import '../widgets/card_topic.dart';
 import '../widgets/loader.dart';
@@ -183,6 +185,42 @@ class HomeScreen extends StatelessWidget {
                 );
               },
             ),
+            SizedBox(height: spacing.s4),
+            // Debug: Force Reload Data Button
+            Center(
+              child: ElevatedButton.icon(
+                onPressed: () async {
+                  final storage = context.read<StorageService>();
+                  final seedService = SeedService(storage);
+                  
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Reloading data from JSON files...')),
+                  );
+                  
+                  await seedService.forceReseed();
+                  
+                  // Refresh the topic provider
+                  if (context.mounted) {
+                    await context.read<TopicProvider>().bootstrap();
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('✅ Data reloaded successfully!'),
+                        backgroundColor: Colors.green,
+                      ),
+                    );
+                  }
+                },
+                icon: const Icon(Icons.refresh),
+                label: const Text('Reload NCLEX Questions'),
+                style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: spacing.s4,
+                    vertical: spacing.s3,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: spacing.s4),
           ],
         ),
       ),

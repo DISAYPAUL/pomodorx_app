@@ -62,7 +62,34 @@ class QuizProvider extends ChangeNotifier {
   }
 
   void startQuiz(Quiz quiz) {
-    _activeQuiz = quiz;
+    // When starting a quiz, pick a random variant for each question so repeated
+    // attempts of the same quiz/topic/difficulty will show different stems.
+    final seed = DateTime.now().microsecondsSinceEpoch;
+    final rng = Random(seed);
+    final transformed = quiz.questions.map((q) {
+      if (q.variants != null && q.variants!.isNotEmpty) {
+        final idx = rng.nextInt(q.variants!.length);
+        return Question(
+          id: q.id,
+          quizId: q.quizId,
+          text: q.variants![idx],
+          options: q.options,
+          correctIndex: q.correctIndex,
+          explanation: q.explanation,
+          type: q.type,
+        );
+      }
+      return q;
+    }).toList();
+    _activeQuiz = Quiz(
+      id: quiz.id,
+      topicId: quiz.topicId,
+      title: quiz.title,
+      durationMinutes: quiz.durationMinutes,
+      questions: transformed,
+      createdAt: quiz.createdAt,
+      isOffline: quiz.isOffline,
+    );
     _currentIndex = 0;
     _answers.clear();
     notifyListeners();
@@ -96,6 +123,9 @@ class QuizProvider extends ChangeNotifier {
   Future<UserProgress?> submitQuiz() async {
     final quiz = _activeQuiz;
     if (quiz == null) return null;
+    if (_storage.getQuizById(quiz.id) == null) {
+      await _storage.saveQuiz(quiz);
+    }
     int score = 0;
     final answers = <ProgressAnswer>[];
     for (final question in quiz.questions) {
@@ -151,23 +181,26 @@ class QuizProvider extends ChangeNotifier {
       }
     }
 
-    final insights = aggregates.entries
-        .map((entry) => _buildInsight(entry.key, entry.value))
-        .whereType<QuestionInsight>()
-        .toList()
-      ..sort((a, b) => a.accuracy.compareTo(b.accuracy));
+    final insights =
+        aggregates.entries
+            .map((entry) => _buildInsight(entry.key, entry.value))
+            .whereType<QuestionInsight>()
+            .toList()
+          ..sort((a, b) => a.accuracy.compareTo(b.accuracy));
 
-    final lowAccuracy =
-      insights.where((insight) => insight.accuracy < 0.8).take(3).toList();
-    final focusAreas = lowAccuracy.length >= 3
-      ? lowAccuracy
-      : (lowAccuracy +
-          insights
-            .where((insight) => !lowAccuracy.contains(insight))
-            .take(3 - lowAccuracy.length)
-            .toList())
+    final lowAccuracy = insights
+        .where((insight) => insight.accuracy < 0.8)
         .take(3)
         .toList();
+    final focusAreas = lowAccuracy.length >= 3
+        ? lowAccuracy
+        : (lowAccuracy +
+                  insights
+                      .where((insight) => !lowAccuracy.contains(insight))
+                      .take(3 - lowAccuracy.length)
+                      .toList())
+              .take(3)
+              .toList();
     final scoreFractions = history
         .map((item) => item.maxScore == 0 ? 0.0 : item.score / item.maxScore)
         .toList();
@@ -211,8 +244,9 @@ class QuizProvider extends ChangeNotifier {
     for (final progress in allProgress) {
       final quiz = quizById[progress.quizId];
       if (quiz == null) continue;
-      final percent =
-          progress.maxScore == 0 ? 0.0 : progress.score / progress.maxScore;
+      final percent = progress.maxScore == 0
+          ? 0.0
+          : progress.score / progress.maxScore;
       overallPercentSum += percent;
       if (percent > bestPercent) {
         bestPercent = percent;
@@ -246,10 +280,11 @@ class QuizProvider extends ChangeNotifier {
 
     if (topicAggregates.isEmpty) return null;
 
-    final topicStats = topicAggregates.values
-        .map((aggregate) => aggregate.toTopicPerformance())
-        .toList()
-      ..sort((a, b) => b.totalAttempts.compareTo(a.totalAttempts));
+    final topicStats =
+        topicAggregates.values
+            .map((aggregate) => aggregate.toTopicPerformance())
+            .toList()
+          ..sort((a, b) => b.totalAttempts.compareTo(a.totalAttempts));
 
     final averagePercent = overallPercentSum / allProgress.length;
 
@@ -315,10 +350,11 @@ class _TopicAggregate {
   }
 
   TopicPerformance toTopicPerformance() {
-    final stats = difficulties.values
-        .map((diff) => diff.toDifficultyPerformance())
-        .toList()
-      ..sort((a, b) => b.attempts.compareTo(a.attempts));
+    final stats =
+        difficulties.values
+            .map((diff) => diff.toDifficultyPerformance())
+            .toList()
+          ..sort((a, b) => b.attempts.compareTo(a.attempts));
     final average = totalAttempts == 0 ? 0.0 : percentSum / totalAttempts;
     return TopicPerformance(
       topicId: topicId,

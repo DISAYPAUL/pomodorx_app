@@ -3,6 +3,7 @@
     "id": "topic-anatomy",
     "name": "Human Anatomy",
     "description": "Fundamentals of the musculoskeletal and organ systems.",
+    "detailedDescription": "Master the essential structures and functions of the human body. This comprehensive anatomy course covers all major body systems including musculoskeletal, cardiovascular, respiratory, nervous, digestive, endocrine, urinary, and reproductive systems. Learn to identify anatomical landmarks, understand structural relationships, and apply anatomical knowledge to clinical scenarios. Perfect for nursing students and healthcare professionals preparing for board examinations or seeking to strengthen their foundational knowledge of human anatomy.",
     "icon": "assets/icons/anatomy.png",
     "slug": "human-anatomy",
     "createdAt": "2025-01-10T00:00:00.000Z"
@@ -17,7 +18,7 @@
       "questions": [
         {
           "id": "acl-easy",
-          "text": "Which structure primarily prevents anterior translation of the tibia on the femur?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure primarily prevents anterior translation of the tibia on the femur?",
           "options": [
             "Subscapularis",
             "Gastrocnemius",
@@ -26,11 +27,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Anterior cruciate ligament primarily prevents anterior translation of the tibia on the femur, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure primarily prevents anterior translation of the tibia on the femur?"
+          ]
         },
         {
           "id": "acl-hard",
-          "text": "Which structure features originates in the posterior lateral femoral notch and inserts on the anterior tibial plateau?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure features originates in the posterior lateral femoral notch and inserts on the anterior tibial plateau?",
           "options": [
             "Soleus",
             "Biceps brachii",
@@ -39,11 +43,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Anterior cruciate ligament features originates in the posterior lateral femoral notch and inserts on the anterior tibial plateau.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure features originates in the posterior lateral femoral notch and inserts on the anterior tibial plateau?"
+          ]
         },
         {
           "id": "acl-medium",
-          "text": "Which structure is closely associated with tightens during knee extension and internal rotation?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with tightens during knee extension and internal rotation?",
           "options": [
             "Rectus abdominis",
             "Anterior cruciate ligament",
@@ -52,7 +59,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Anterior cruciate ligament is associated with tightens during knee extension and internal rotation.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with tightens during knee extension and internal rotation?"
+          ]
         },
         {
           "id": "acl-rnworthy",
@@ -65,11 +75,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Anterior cruciate ligament is implicated when noncontact pivoting injury with immediate swelling suggests damage to this ligament.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as noncontact pivoting injury with immediate swelling suggests damage to this ligament most likely involves which structure?"
+          ]
         },
         {
           "id": "biceps-brachii-easy",
-          "text": "Which structure primarily produces elbow flexion when the forearm is supinated and assists with resisted supination?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure primarily produces elbow flexion when the forearm is supinated and assists with resisted supination?",
           "options": [
             "Piriformis",
             "Gastrocnemius",
@@ -78,11 +91,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Biceps brachii primarily produces elbow flexion when the forearm is supinated and assists with resisted supination, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure primarily produces elbow flexion when the forearm is supinated and assists with resisted supination?"
+          ]
         },
         {
           "id": "biceps-brachii-hard",
-          "text": "Which structure features originates from the coracoid process and supraglenoid tubercle before inserting on the radial tuberosity?",
+          "text": "While mentoring a junior nurse, you review which structure features originates from the coracoid process and supraglenoid tubercle before inserting on the radial tuberosity?",
           "options": [
             "Biceps brachii",
             "Triceps brachii",
@@ -91,11 +107,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Biceps brachii features originates from the coracoid process and supraglenoid tubercle before inserting on the radial tuberosity.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features originates from the coracoid process and supraglenoid tubercle before inserting on the radial tuberosity?"
+          ]
         },
         {
           "id": "biceps-brachii-medium",
-          "text": "Which structure is closely associated with relies on the musculocutaneous nerve within the anterior compartment of the arm?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with relies on the musculocutaneous nerve within the anterior compartment of the arm?",
           "options": [
             "Transverse abdominis",
             "Biceps brachii",
@@ -104,7 +123,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Biceps brachii is associated with relies on the musculocutaneous nerve within the anterior compartment of the arm.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with relies on the musculocutaneous nerve within the anterior compartment of the arm?"
+          ]
         },
         {
           "id": "biceps-brachii-rnworthy",
@@ -117,11 +139,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Biceps brachii is implicated when rupture causes a sudden “Popeye” bulge and weak supination after lifting an unexpected load.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as rupture causes a sudden “Popeye” bulge and weak supination after lifting an unexpected load most likely involves which structure?"
+          ]
         },
         {
           "id": "deltoid-easy",
-          "text": "Which structure primarily abducts the shoulder once the supraspinatus initiates motion beyond 15 degrees?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure primarily abducts the shoulder once the supraspinatus initiates motion beyond 15 degrees?",
           "options": [
             "Deltoid",
             "Gluteus maximus",
@@ -130,11 +155,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Deltoid primarily abducts the shoulder once the supraspinatus initiates motion beyond 15 degrees, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure primarily abducts the shoulder once the supraspinatus initiates motion beyond 15 degrees?"
+          ]
         },
         {
           "id": "deltoid-hard",
-          "text": "Which structure features has anterior, middle, and posterior fibers arising from clavicle, acromion, and scapular spine?",
+          "text": "While mentoring a junior nurse, you review which structure features has anterior, middle, and posterior fibers arising from clavicle, acromion, and scapular spine?",
           "options": [
             "Gluteus maximus",
             "Piriformis",
@@ -143,11 +171,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Deltoid features has anterior, middle, and posterior fibers arising from clavicle, acromion, and scapular spine.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features has anterior, middle, and posterior fibers arising from clavicle, acromion, and scapular spine?"
+          ]
         },
         {
           "id": "deltoid-medium",
-          "text": "Which structure is closely associated with is innervated by the axillary nerve that wraps the surgical neck of the humerus?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with is innervated by the axillary nerve that wraps the surgical neck of the humerus?",
           "options": [
             "Pectoralis major",
             "Piriformis",
@@ -156,7 +187,10 @@
           ],
           "correctIndex": 3,
           "explanation": "Deltoid is associated with is innervated by the axillary nerve that wraps the surgical neck of the humerus.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with is innervated by the axillary nerve that wraps the surgical neck of the humerus?"
+          ]
         },
         {
           "id": "deltoid-rnworthy",
@@ -169,11 +203,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Deltoid is implicated when loss of shoulder contour and abduction weakness after dislocation suggests injury here.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as loss of shoulder contour and abduction weakness after dislocation suggests injury here most likely involves which structure?"
+          ]
         },
         {
           "id": "diaphragm-easy",
-          "text": "Which structure primarily is the primary muscle of inspiration lowering intrathoracic pressure?",
+          "text": "A sports-medicine scenario on the NCLEX blueprint expects the nurse to identify which structure primarily is the primary muscle of inspiration lowering intrathoracic pressure?",
           "options": [
             "Pectoralis major",
             "Biceps brachii",
@@ -182,11 +219,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Diaphragm primarily is the primary muscle of inspiration lowering intrathoracic pressure, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "A sports-medicine scenario on the NCLEX blueprint expects the nurse to identify which structure primarily is the primary muscle of inspiration lowering intrathoracic pressure?"
+          ]
         },
         {
           "id": "diaphragm-hard",
-          "text": "Which structure features contains the caval, esophageal, and aortic openings in its central tendon?",
+          "text": "During an orthopedic assessment lab, the nurse reviews which structure features contains the caval, esophageal, and aortic openings in its central tendon?",
           "options": [
             "Subscapularis",
             "Diaphragm",
@@ -195,11 +235,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Diaphragm features contains the caval, esophageal, and aortic openings in its central tendon.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an orthopedic assessment lab, the nurse reviews which structure features contains the caval, esophageal, and aortic openings in its central tendon?"
+          ]
         },
         {
           "id": "diaphragm-medium",
-          "text": "Which structure is closely associated with receives phrenic nerve fibers from C3 to C5?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with receives phrenic nerve fibers from C3 to C5?",
           "options": [
             "Infraspinatus",
             "Iliopsoas",
@@ -208,7 +251,10 @@
           ],
           "correctIndex": 3,
           "explanation": "Diaphragm is associated with receives phrenic nerve fibers from C3 to C5.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with receives phrenic nerve fibers from C3 to C5?"
+          ]
         },
         {
           "id": "diaphragm-rnworthy",
@@ -221,11 +267,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Diaphragm is implicated when hiccups and dyspnea after cervical trauma point to this muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as hiccups and dyspnea after cervical trauma point to this muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "gastrocnemius-easy",
-          "text": "Which structure primarily plantarflexes the ankle during push-off and crosses the knee joint?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily plantarflexes the ankle during push-off and crosses the knee joint?",
           "options": [
             "Subscapularis",
             "Gastrocnemius",
@@ -234,11 +283,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Gastrocnemius primarily plantarflexes the ankle during push-off and crosses the knee joint, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily plantarflexes the ankle during push-off and crosses the knee joint?"
+          ]
         },
         {
           "id": "gastrocnemius-hard",
-          "text": "Which structure features originates above the femoral condyles and contributes to the calcaneal tendon?",
+          "text": "During an orthopedic assessment lab, the nurse reviews which structure features originates above the femoral condyles and contributes to the calcaneal tendon?",
           "options": [
             "Sartorius",
             "Iliopsoas",
@@ -247,11 +299,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Gastrocnemius features originates above the femoral condyles and contributes to the calcaneal tendon.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an orthopedic assessment lab, the nurse reviews which structure features originates above the femoral condyles and contributes to the calcaneal tendon?"
+          ]
         },
         {
           "id": "gastrocnemius-medium",
-          "text": "Which structure is closely associated with is innervated by the tibial nerve in the posterior compartment?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with is innervated by the tibial nerve in the posterior compartment?",
           "options": [
             "Hamstring group",
             "Quadriceps femoris",
@@ -260,7 +315,10 @@
           ],
           "correctIndex": 2,
           "explanation": "Gastrocnemius is associated with is innervated by the tibial nerve in the posterior compartment.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with is innervated by the tibial nerve in the posterior compartment?"
+          ]
         },
         {
           "id": "gastrocnemius-rnworthy",
@@ -273,11 +331,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Gastrocnemius is implicated when tennis leg with an audible pop indicates strain of this muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as tennis leg with an audible pop indicates strain of this muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "gluteus-maximus-easy",
-          "text": "Which structure primarily powerfully extends the hip when rising from a squat?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure primarily powerfully extends the hip when rising from a squat?",
           "options": [
             "Gluteus maximus",
             "Tibialis anterior",
@@ -286,11 +347,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Gluteus maximus primarily powerfully extends the hip when rising from a squat, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure primarily powerfully extends the hip when rising from a squat?"
+          ]
         },
         {
           "id": "gluteus-maximus-hard",
-          "text": "Which structure features spans from ilium, sacrum, and coccyx to the IT band and gluteal tuberosity?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure features spans from ilium, sacrum, and coccyx to the IT band and gluteal tuberosity?",
           "options": [
             "Gluteus maximus",
             "Deltoid",
@@ -299,11 +363,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Gluteus maximus features spans from ilium, sacrum, and coccyx to the IT band and gluteal tuberosity.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure features spans from ilium, sacrum, and coccyx to the IT band and gluteal tuberosity?"
+          ]
         },
         {
           "id": "gluteus-maximus-medium",
-          "text": "Which structure is closely associated with is innervated by the inferior gluteal nerve?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is innervated by the inferior gluteal nerve?",
           "options": [
             "Anterior cruciate ligament",
             "Gluteus maximus",
@@ -312,7 +379,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Gluteus maximus is associated with is innervated by the inferior gluteal nerve.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is innervated by the inferior gluteal nerve?"
+          ]
         },
         {
           "id": "gluteus-maximus-rnworthy",
@@ -325,11 +395,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Gluteus maximus is implicated when difficulty climbing stairs after posterior hip surgery reflects weakness here.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as difficulty climbing stairs after posterior hip surgery reflects weakness here most likely involves which structure?"
+          ]
         },
         {
           "id": "gluteus-medius-easy",
-          "text": "Which structure primarily abducts the hip and stabilizes the pelvis during single-leg stance?",
+          "text": "While mentoring a junior nurse, you review which structure primarily abducts the hip and stabilizes the pelvis during single-leg stance?",
           "options": [
             "Gluteus medius",
             "Infraspinatus",
@@ -338,11 +411,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Gluteus medius primarily abducts the hip and stabilizes the pelvis during single-leg stance, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily abducts the hip and stabilizes the pelvis during single-leg stance?"
+          ]
         },
         {
           "id": "gluteus-medius-hard",
-          "text": "Which structure features originates between anterior and posterior gluteal lines inserting on the greater trochanter?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure features originates between anterior and posterior gluteal lines inserting on the greater trochanter?",
           "options": [
             "Triceps brachii",
             "Serratus anterior",
@@ -351,11 +427,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Gluteus medius features originates between anterior and posterior gluteal lines inserting on the greater trochanter.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure features originates between anterior and posterior gluteal lines inserting on the greater trochanter?"
+          ]
         },
         {
           "id": "gluteus-medius-medium",
-          "text": "Which structure is closely associated with is supplied by the superior gluteal nerve?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is supplied by the superior gluteal nerve?",
           "options": [
             "Gluteus medius",
             "Serratus anterior",
@@ -364,7 +443,10 @@
           ],
           "correctIndex": 0,
           "explanation": "Gluteus medius is associated with is supplied by the superior gluteal nerve.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is supplied by the superior gluteal nerve?"
+          ]
         },
         {
           "id": "gluteus-medius-rnworthy",
@@ -377,11 +459,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Gluteus medius is implicated when a Trendelenburg gait indicates failure of this muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as a Trendelenburg gait indicates failure of this muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "hamstrings-easy",
-          "text": "Which structure primarily flexes the knee and extends the hip during running?",
+          "text": "While mentoring a junior nurse, you review which structure primarily flexes the knee and extends the hip during running?",
           "options": [
             "Transverse abdominis",
             "Hamstring group",
@@ -390,11 +475,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Hamstring group primarily flexes the knee and extends the hip during running, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily flexes the knee and extends the hip during running?"
+          ]
         },
         {
           "id": "hamstrings-hard",
-          "text": "Which structure features has a biceps femoris short head innervated by the common fibular branch?",
+          "text": "During an orthopedic assessment lab, the nurse reviews which structure features has a biceps femoris short head innervated by the common fibular branch?",
           "options": [
             "Medial meniscus",
             "Gluteus maximus",
@@ -403,11 +491,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Hamstring group features has a biceps femoris short head innervated by the common fibular branch.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an orthopedic assessment lab, the nurse reviews which structure features has a biceps femoris short head innervated by the common fibular branch?"
+          ]
         },
         {
           "id": "hamstrings-medium",
-          "text": "Which structure is closely associated with originates from the ischial tuberosity with tibial division sciatic innervation?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with originates from the ischial tuberosity with tibial division sciatic innervation?",
           "options": [
             "Serratus anterior",
             "Gluteus medius",
@@ -416,7 +507,10 @@
           ],
           "correctIndex": 3,
           "explanation": "Hamstring group is associated with originates from the ischial tuberosity with tibial division sciatic innervation.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with originates from the ischial tuberosity with tibial division sciatic innervation?"
+          ]
         },
         {
           "id": "hamstrings-rnworthy",
@@ -429,11 +523,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Hamstring group is implicated when proximal avulsion with posterior thigh bruising implicates these muscles.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as proximal avulsion with posterior thigh bruising implicates these muscles most likely involves which structure?"
+          ]
         },
         {
           "id": "iliopsoas-easy",
-          "text": "Which structure primarily acts as the strongest hip flexor during marching or kicking?",
+          "text": "While mentoring a junior nurse, you review which structure primarily acts as the strongest hip flexor during marching or kicking?",
           "options": [
             "Infraspinatus",
             "Triceps brachii",
@@ -442,11 +539,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Iliopsoas primarily acts as the strongest hip flexor during marching or kicking, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily acts as the strongest hip flexor during marching or kicking?"
+          ]
         },
         {
           "id": "iliopsoas-hard",
-          "text": "Which structure features passes anterior to the hip joint inserting on the lesser trochanter?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure features passes anterior to the hip joint inserting on the lesser trochanter?",
           "options": [
             "Gluteus medius",
             "Pectoralis major",
@@ -455,11 +555,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Iliopsoas features passes anterior to the hip joint inserting on the lesser trochanter.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure features passes anterior to the hip joint inserting on the lesser trochanter?"
+          ]
         },
         {
           "id": "iliopsoas-medium",
-          "text": "Which structure is closely associated with combines psoas innervated by lumbar plexus with iliacus innervated by the femoral nerve?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with combines psoas innervated by lumbar plexus with iliacus innervated by the femoral nerve?",
           "options": [
             "Serratus anterior",
             "Iliopsoas",
@@ -468,7 +571,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Iliopsoas is associated with combines psoas innervated by lumbar plexus with iliacus innervated by the femoral nerve.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with combines psoas innervated by lumbar plexus with iliacus innervated by the femoral nerve?"
+          ]
         },
         {
           "id": "iliopsoas-rnworthy",
@@ -481,11 +587,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Iliopsoas is implicated when pain with resisted hip flexion plus fever suggests an abscess involving this muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as pain with resisted hip flexion plus fever suggests an abscess involving this muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "infraspinatus-easy",
-          "text": "Which structure primarily externally rotates the shoulder during late-cocking motions?",
+          "text": "While mentoring a junior nurse, you review which structure primarily externally rotates the shoulder during late-cocking motions?",
           "options": [
             "Infraspinatus",
             "Gluteus maximus",
@@ -494,11 +603,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Infraspinatus primarily externally rotates the shoulder during late-cocking motions, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily externally rotates the shoulder during late-cocking motions?"
+          ]
         },
         {
           "id": "infraspinatus-hard",
-          "text": "Which structure features attaches from the infraspinous fossa to the middle facet of the greater tubercle?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure features attaches from the infraspinous fossa to the middle facet of the greater tubercle?",
           "options": [
             "Infraspinatus",
             "Iliopsoas",
@@ -507,11 +619,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Infraspinatus features attaches from the infraspinous fossa to the middle facet of the greater tubercle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure features attaches from the infraspinous fossa to the middle facet of the greater tubercle?"
+          ]
         },
         {
           "id": "infraspinatus-medium",
-          "text": "Which structure is closely associated with shares suprascapular nerve supply with the supraspinatus?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with shares suprascapular nerve supply with the supraspinatus?",
           "options": [
             "Gluteus medius",
             "Gastrocnemius",
@@ -520,7 +635,10 @@
           ],
           "correctIndex": 2,
           "explanation": "Infraspinatus is associated with shares suprascapular nerve supply with the supraspinatus.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with shares suprascapular nerve supply with the supraspinatus?"
+          ]
         },
         {
           "id": "infraspinatus-rnworthy",
@@ -533,11 +651,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Infraspinatus is implicated when posterior shoulder pain and weakness resisting external rotation implicate this muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as posterior shoulder pain and weakness resisting external rotation implicate this muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "latissimus-dorsi-easy",
-          "text": "Which structure primarily extends, adducts, and internally rotates the humerus during pulling motions?",
+          "text": "While mentoring a junior nurse, you review which structure primarily extends, adducts, and internally rotates the humerus during pulling motions?",
           "options": [
             "Subscapularis",
             "Anterior cruciate ligament",
@@ -546,11 +667,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Latissimus dorsi primarily extends, adducts, and internally rotates the humerus during pulling motions, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily extends, adducts, and internally rotates the humerus during pulling motions?"
+          ]
         },
         {
           "id": "latissimus-dorsi-hard",
-          "text": "Which structure features originates from thoracolumbar fascia and inserts into the floor of the intertubercular groove?",
+          "text": "While mentoring a junior nurse, you review which structure features originates from thoracolumbar fascia and inserts into the floor of the intertubercular groove?",
           "options": [
             "Soleus",
             "Deltoid",
@@ -559,11 +683,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Latissimus dorsi features originates from thoracolumbar fascia and inserts into the floor of the intertubercular groove.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features originates from thoracolumbar fascia and inserts into the floor of the intertubercular groove?"
+          ]
         },
         {
           "id": "latissimus-dorsi-medium",
-          "text": "Which structure is closely associated with is supplied by the thoracodorsal nerve from the posterior cord?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with is supplied by the thoracodorsal nerve from the posterior cord?",
           "options": [
             "Hamstring group",
             "Rectus abdominis",
@@ -572,7 +699,10 @@
           ],
           "correctIndex": 2,
           "explanation": "Latissimus dorsi is associated with is supplied by the thoracodorsal nerve from the posterior cord.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with is supplied by the thoracodorsal nerve from the posterior cord?"
+          ]
         },
         {
           "id": "latissimus-dorsi-rnworthy",
@@ -585,11 +715,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Latissimus dorsi is implicated when loss of power during swimming strokes suggests thoracodorsal nerve compromise.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as loss of power during swimming strokes suggests thoracodorsal nerve compromise most likely involves which structure?"
+          ]
         },
         {
           "id": "medial-meniscus-easy",
-          "text": "Which structure primarily deepens the tibial plateau to stabilize the medial femoral condyle?",
+          "text": "While mentoring a junior nurse, you review which structure primarily deepens the tibial plateau to stabilize the medial femoral condyle?",
           "options": [
             "Hamstring group",
             "Medial meniscus",
@@ -598,11 +731,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Medial meniscus primarily deepens the tibial plateau to stabilize the medial femoral condyle, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily deepens the tibial plateau to stabilize the medial femoral condyle?"
+          ]
         },
         {
           "id": "medial-meniscus-hard",
-          "text": "Which structure features receives perfusion only in its peripheral outer third?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure features receives perfusion only in its peripheral outer third?",
           "options": [
             "Infraspinatus",
             "Piriformis",
@@ -611,11 +747,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Medial meniscus features receives perfusion only in its peripheral outer third.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure features receives perfusion only in its peripheral outer third?"
+          ]
         },
         {
           "id": "medial-meniscus-medium",
-          "text": "Which structure is closely associated with is tethered to the joint capsule and medial collateral ligament, limiting mobility?",
+          "text": "A sports-medicine scenario on the NCLEX blueprint expects the nurse to identify which structure is closely associated with is tethered to the joint capsule and medial collateral ligament, limiting mobility?",
           "options": [
             "Piriformis",
             "Medial meniscus",
@@ -624,7 +763,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Medial meniscus is associated with is tethered to the joint capsule and medial collateral ligament, limiting mobility.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "A sports-medicine scenario on the NCLEX blueprint expects the nurse to identify which structure is closely associated with is tethered to the joint capsule and medial collateral ligament, limiting mobility?"
+          ]
         },
         {
           "id": "medial-meniscus-rnworthy",
@@ -637,11 +779,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Medial meniscus is implicated when twisting injury with locking and joint line tenderness implicates this structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as twisting injury with locking and joint line tenderness implicates this structure most likely involves which structure?"
+          ]
         },
         {
           "id": "pectoralis-major-easy",
-          "text": "Which structure primarily horizontally adducts and flexes the shoulder during push-ups?",
+          "text": "While mentoring a junior nurse, you review which structure primarily horizontally adducts and flexes the shoulder during push-ups?",
           "options": [
             "Tibialis anterior",
             "Anterior cruciate ligament",
@@ -650,11 +795,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Pectoralis major primarily horizontally adducts and flexes the shoulder during push-ups, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily horizontally adducts and flexes the shoulder during push-ups?"
+          ]
         },
         {
           "id": "pectoralis-major-hard",
-          "text": "Which structure features converges from the sternum and clavicle to insert on the lateral lip of the intertubercular sulcus?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure features converges from the sternum and clavicle to insert on the lateral lip of the intertubercular sulcus?",
           "options": [
             "Teres minor",
             "Pectoralis major",
@@ -663,11 +811,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Pectoralis major features converges from the sternum and clavicle to insert on the lateral lip of the intertubercular sulcus.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure features converges from the sternum and clavicle to insert on the lateral lip of the intertubercular sulcus?"
+          ]
         },
         {
           "id": "pectoralis-major-medium",
-          "text": "Which structure is closely associated with has clavicular fibers innervated by lateral pectoral nerve and sternal fibers by medial pectoral nerve?",
+          "text": "While mentoring a junior nurse, you review which structure is closely associated with has clavicular fibers innervated by lateral pectoral nerve and sternal fibers by medial pectoral nerve?",
           "options": [
             "Transverse abdominis",
             "Rectus abdominis",
@@ -676,7 +827,10 @@
           ],
           "correctIndex": 2,
           "explanation": "Pectoralis major is associated with has clavicular fibers innervated by lateral pectoral nerve and sternal fibers by medial pectoral nerve.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure is closely associated with has clavicular fibers innervated by lateral pectoral nerve and sternal fibers by medial pectoral nerve?"
+          ]
         },
         {
           "id": "pectoralis-major-rnworthy",
@@ -689,11 +843,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Pectoralis major is implicated when bench-press ruptures cause anterior chest ecchymosis from this muscle tearing.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as bench-press ruptures cause anterior chest ecchymosis from this muscle tearing most likely involves which structure?"
+          ]
         },
         {
           "id": "piriformis-easy",
-          "text": "Which structure primarily laterally rotates the hip when extended and abducts the hip when flexed?",
+          "text": "While mentoring a junior nurse, you review which structure primarily laterally rotates the hip when extended and abducts the hip when flexed?",
           "options": [
             "Piriformis",
             "Biceps brachii",
@@ -702,11 +859,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Piriformis primarily laterally rotates the hip when extended and abducts the hip when flexed, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily laterally rotates the hip when extended and abducts the hip when flexed?"
+          ]
         },
         {
           "id": "piriformis-hard",
-          "text": "Which structure features originates from the anterior sacrum to insert on the greater trochanter?",
+          "text": "While mentoring a junior nurse, you review which structure features originates from the anterior sacrum to insert on the greater trochanter?",
           "options": [
             "Diaphragm",
             "Piriformis",
@@ -715,11 +875,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Piriformis features originates from the anterior sacrum to insert on the greater trochanter.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features originates from the anterior sacrum to insert on the greater trochanter?"
+          ]
         },
         {
           "id": "piriformis-medium",
-          "text": "Which structure is closely associated with shares the greater sciatic foramen with the sciatic nerve?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with shares the greater sciatic foramen with the sciatic nerve?",
           "options": [
             "Sartorius",
             "Subscapularis",
@@ -728,7 +891,10 @@
           ],
           "correctIndex": 2,
           "explanation": "Piriformis is associated with shares the greater sciatic foramen with the sciatic nerve.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with shares the greater sciatic foramen with the sciatic nerve?"
+          ]
         },
         {
           "id": "piriformis-rnworthy",
@@ -741,11 +907,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Piriformis is implicated when deep buttock pain radiating down the leg suggests this muscle compressing the sciatic nerve.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as deep buttock pain radiating down the leg suggests this muscle compressing the sciatic nerve most likely involves which structure?"
+          ]
         },
         {
           "id": "quadriceps-easy",
-          "text": "Which structure primarily extends the knee and controls stair descent?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure primarily extends the knee and controls stair descent?",
           "options": [
             "Quadriceps femoris",
             "Triceps brachii",
@@ -754,11 +923,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Quadriceps femoris primarily extends the knee and controls stair descent, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure primarily extends the knee and controls stair descent?"
+          ]
         },
         {
           "id": "quadriceps-hard",
-          "text": "Which structure features includes rectus femoris crossing the hip and inserting via the patellar tendon to the tibial tuberosity?",
+          "text": "While coaching a client through rehab mechanics, the clinician revisits which structure features includes rectus femoris crossing the hip and inserting via the patellar tendon to the tibial tuberosity?",
           "options": [
             "Quadriceps femoris",
             "Subscapularis",
@@ -767,11 +939,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Quadriceps femoris features includes rectus femoris crossing the hip and inserting via the patellar tendon to the tibial tuberosity.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While coaching a client through rehab mechanics, the clinician revisits which structure features includes rectus femoris crossing the hip and inserting via the patellar tendon to the tibial tuberosity?"
+          ]
         },
         {
           "id": "quadriceps-medium",
-          "text": "Which structure is closely associated with is innervated by the femoral nerve?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with is innervated by the femoral nerve?",
           "options": [
             "Quadriceps femoris",
             "Latissimus dorsi",
@@ -780,7 +955,10 @@
           ],
           "correctIndex": 0,
           "explanation": "Quadriceps femoris is associated with is innervated by the femoral nerve.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with is innervated by the femoral nerve?"
+          ]
         },
         {
           "id": "quadriceps-rnworthy",
@@ -793,11 +971,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Quadriceps femoris is implicated when loss of the patellar reflex after femoral neuropathy implicates this group.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as loss of the patellar reflex after femoral neuropathy implicates this group most likely involves which structure?"
+          ]
         },
         {
           "id": "rectus-abdominis-easy",
-          "text": "Which structure primarily flexes the trunk and stabilizes the pelvis during sit-ups?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily flexes the trunk and stabilizes the pelvis during sit-ups?",
           "options": [
             "Rectus abdominis",
             "Deltoid",
@@ -806,11 +987,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Rectus abdominis primarily flexes the trunk and stabilizes the pelvis during sit-ups, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily flexes the trunk and stabilizes the pelvis during sit-ups?"
+          ]
         },
         {
           "id": "rectus-abdominis-hard",
-          "text": "Which structure features features tendinous intersections that create the six-pack appearance?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure features features tendinous intersections that create the six-pack appearance?",
           "options": [
             "Piriformis",
             "Subscapularis",
@@ -819,11 +1003,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Rectus abdominis features features tendinous intersections that create the six-pack appearance.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure features features tendinous intersections that create the six-pack appearance?"
+          ]
         },
         {
           "id": "rectus-abdominis-medium",
-          "text": "Which structure is closely associated with is enclosed by the rectus sheath formed by lateral abdominal aponeuroses?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is enclosed by the rectus sheath formed by lateral abdominal aponeuroses?",
           "options": [
             "Hamstring group",
             "Medial meniscus",
@@ -832,7 +1019,10 @@
           ],
           "correctIndex": 3,
           "explanation": "Rectus abdominis is associated with is enclosed by the rectus sheath formed by lateral abdominal aponeuroses.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is enclosed by the rectus sheath formed by lateral abdominal aponeuroses?"
+          ]
         },
         {
           "id": "rectus-abdominis-rnworthy",
@@ -845,11 +1035,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Rectus abdominis is implicated when diastasis after pregnancy reflects stretching of this paired muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as diastasis after pregnancy reflects stretching of this paired muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "sartorius-easy",
-          "text": "Which structure primarily flexes, abducts, and externally rotates the hip to let you sit cross-legged?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure primarily flexes, abducts, and externally rotates the hip to let you sit cross-legged?",
           "options": [
             "Medial meniscus",
             "Biceps brachii",
@@ -858,11 +1051,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Sartorius primarily flexes, abducts, and externally rotates the hip to let you sit cross-legged, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure primarily flexes, abducts, and externally rotates the hip to let you sit cross-legged?"
+          ]
         },
         {
           "id": "sartorius-hard",
-          "text": "Which structure features runs from the ASIS to the pes anserinus on the medial tibia?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure features runs from the ASIS to the pes anserinus on the medial tibia?",
           "options": [
             "Supraspinatus",
             "Sartorius",
@@ -871,11 +1067,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Sartorius features runs from the ASIS to the pes anserinus on the medial tibia.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure features runs from the ASIS to the pes anserinus on the medial tibia?"
+          ]
         },
         {
           "id": "sartorius-medium",
-          "text": "Which structure is closely associated with forms the lateral border of the femoral triangle as it crosses the thigh?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with forms the lateral border of the femoral triangle as it crosses the thigh?",
           "options": [
             "Sartorius",
             "Medial meniscus",
@@ -884,7 +1083,10 @@
           ],
           "correctIndex": 0,
           "explanation": "Sartorius is associated with forms the lateral border of the femoral triangle as it crosses the thigh.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with forms the lateral border of the femoral triangle as it crosses the thigh?"
+          ]
         },
         {
           "id": "sartorius-rnworthy",
@@ -897,11 +1099,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Sartorius is implicated when pes anserine bursitis creates tenderness where this muscle inserts.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as pes anserine bursitis creates tenderness where this muscle inserts most likely involves which structure?"
+          ]
         },
         {
           "id": "serratus-anterior-easy",
-          "text": "Which structure primarily protracts and upwardly rotates the scapula for overhead reach?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure primarily protracts and upwardly rotates the scapula for overhead reach?",
           "options": [
             "Serratus anterior",
             "Rectus abdominis",
@@ -910,11 +1115,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Serratus anterior primarily protracts and upwardly rotates the scapula for overhead reach, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure primarily protracts and upwardly rotates the scapula for overhead reach?"
+          ]
         },
         {
           "id": "serratus-anterior-hard",
-          "text": "Which structure features attaches to the anterior medial border of the scapula through multiple slips?",
+          "text": "While mentoring a junior nurse, you review which structure features attaches to the anterior medial border of the scapula through multiple slips?",
           "options": [
             "Quadriceps femoris",
             "Deltoid",
@@ -923,11 +1131,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Serratus anterior features attaches to the anterior medial border of the scapula through multiple slips.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features attaches to the anterior medial border of the scapula through multiple slips?"
+          ]
         },
         {
           "id": "serratus-anterior-medium",
-          "text": "Which structure is closely associated with is innervated by the long thoracic nerve along the lateral thorax?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is innervated by the long thoracic nerve along the lateral thorax?",
           "options": [
             "Deltoid",
             "Serratus anterior",
@@ -936,7 +1147,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Serratus anterior is associated with is innervated by the long thoracic nerve along the lateral thorax.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with is innervated by the long thoracic nerve along the lateral thorax?"
+          ]
         },
         {
           "id": "serratus-anterior-rnworthy",
@@ -949,11 +1163,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Serratus anterior is implicated when medial scapular winging after axillary surgery indicates dysfunction here.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as medial scapular winging after axillary surgery indicates dysfunction here most likely involves which structure?"
+          ]
         },
         {
           "id": "soleus-easy",
-          "text": "Which structure primarily maintains upright posture via tonic plantarflexion?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure primarily maintains upright posture via tonic plantarflexion?",
           "options": [
             "Triceps brachii",
             "Supraspinatus",
@@ -962,11 +1179,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Soleus primarily maintains upright posture via tonic plantarflexion, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure primarily maintains upright posture via tonic plantarflexion?"
+          ]
         },
         {
           "id": "soleus-hard",
-          "text": "Which structure features originates from posterior tibia and fibula forming most of the Achilles tendon?",
+          "text": "During an orthopedic assessment lab, the nurse reviews which structure features originates from posterior tibia and fibula forming most of the Achilles tendon?",
           "options": [
             "Soleus",
             "Medial meniscus",
@@ -975,11 +1195,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Soleus features originates from posterior tibia and fibula forming most of the Achilles tendon.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an orthopedic assessment lab, the nurse reviews which structure features originates from posterior tibia and fibula forming most of the Achilles tendon?"
+          ]
         },
         {
           "id": "soleus-medium",
-          "text": "Which structure is closely associated with shares tibial nerve innervation deep to the gastrocnemius?",
+          "text": "While mentoring a junior nurse, you review which structure is closely associated with shares tibial nerve innervation deep to the gastrocnemius?",
           "options": [
             "Transverse abdominis",
             "Sartorius",
@@ -988,7 +1211,10 @@
           ],
           "correctIndex": 3,
           "explanation": "Soleus is associated with shares tibial nerve innervation deep to the gastrocnemius.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure is closely associated with shares tibial nerve innervation deep to the gastrocnemius?"
+          ]
         },
         {
           "id": "soleus-rnworthy",
@@ -1001,11 +1227,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Soleus is implicated when immobility reduces the calf pump of this muscle, predisposing to DVT.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as immobility reduces the calf pump of this muscle, predisposing to DVT most likely involves which structure?"
+          ]
         },
         {
           "id": "subscapularis-easy",
-          "text": "Which structure primarily provides internal rotation and anterior stability to the glenohumeral joint?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily provides internal rotation and anterior stability to the glenohumeral joint?",
           "options": [
             "Piriformis",
             "Infraspinatus",
@@ -1014,11 +1243,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Subscapularis primarily provides internal rotation and anterior stability to the glenohumeral joint, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily provides internal rotation and anterior stability to the glenohumeral joint?"
+          ]
         },
         {
           "id": "subscapularis-hard",
-          "text": "Which structure features originates on the subscapular fossa and inserts on the lesser tubercle?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure features originates on the subscapular fossa and inserts on the lesser tubercle?",
           "options": [
             "Piriformis",
             "Sartorius",
@@ -1027,11 +1259,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Subscapularis features originates on the subscapular fossa and inserts on the lesser tubercle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure features originates on the subscapular fossa and inserts on the lesser tubercle?"
+          ]
         },
         {
           "id": "subscapularis-medium",
-          "text": "Which structure is closely associated with receives upper and lower subscapular nerves from the posterior cord?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with receives upper and lower subscapular nerves from the posterior cord?",
           "options": [
             "Subscapularis",
             "Gastrocnemius",
@@ -1040,7 +1275,10 @@
           ],
           "correctIndex": 0,
           "explanation": "Subscapularis is associated with receives upper and lower subscapular nerves from the posterior cord.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure is closely associated with receives upper and lower subscapular nerves from the posterior cord?"
+          ]
         },
         {
           "id": "subscapularis-rnworthy",
@@ -1053,11 +1291,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Subscapularis is implicated when a positive lift-off test identifies tears of this anterior cuff muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as a positive lift-off test identifies tears of this anterior cuff muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "supraspinatus-easy",
-          "text": "Which structure primarily initiates the first 15 degrees of glenohumeral abduction?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily initiates the first 15 degrees of glenohumeral abduction?",
           "options": [
             "Sartorius",
             "Teres minor",
@@ -1066,11 +1307,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Supraspinatus primarily initiates the first 15 degrees of glenohumeral abduction, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily initiates the first 15 degrees of glenohumeral abduction?"
+          ]
         },
         {
           "id": "supraspinatus-hard",
-          "text": "Which structure features originates in the supraspinous fossa and inserts on the superior facet of the greater tubercle?",
+          "text": "While mentoring a junior nurse, you review which structure features originates in the supraspinous fossa and inserts on the superior facet of the greater tubercle?",
           "options": [
             "Supraspinatus",
             "Gastrocnemius",
@@ -1079,11 +1323,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Supraspinatus features originates in the supraspinous fossa and inserts on the superior facet of the greater tubercle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features originates in the supraspinous fossa and inserts on the superior facet of the greater tubercle?"
+          ]
         },
         {
           "id": "supraspinatus-medium",
-          "text": "Which structure is closely associated with passes beneath the acromion where poor mechanics cause impingement?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with passes beneath the acromion where poor mechanics cause impingement?",
           "options": [
             "Rectus abdominis",
             "Supraspinatus",
@@ -1092,7 +1339,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Supraspinatus is associated with passes beneath the acromion where poor mechanics cause impingement.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure is closely associated with passes beneath the acromion where poor mechanics cause impingement?"
+          ]
         },
         {
           "id": "supraspinatus-rnworthy",
@@ -1105,11 +1355,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Supraspinatus is implicated when night pain with empty-can testing often implicates this tendon.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as night pain with empty-can testing often implicates this tendon most likely involves which structure?"
+          ]
         },
         {
           "id": "teres-minor-easy",
-          "text": "Which structure primarily assists with external rotation and adduction of the humerus?",
+          "text": "While mentoring a junior nurse, you review which structure primarily assists with external rotation and adduction of the humerus?",
           "options": [
             "Latissimus dorsi",
             "Transverse abdominis",
@@ -1118,11 +1371,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Teres minor primarily assists with external rotation and adduction of the humerus, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily assists with external rotation and adduction of the humerus?"
+          ]
         },
         {
           "id": "teres-minor-hard",
-          "text": "Which structure features originates on the lateral scapular border and inserts on the inferior facet of the greater tubercle?",
+          "text": "While mentoring a junior nurse, you review which structure features originates on the lateral scapular border and inserts on the inferior facet of the greater tubercle?",
           "options": [
             "Deltoid",
             "Rectus abdominis",
@@ -1131,11 +1387,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Teres minor features originates on the lateral scapular border and inserts on the inferior facet of the greater tubercle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features originates on the lateral scapular border and inserts on the inferior facet of the greater tubercle?"
+          ]
         },
         {
           "id": "teres-minor-medium",
-          "text": "Which structure is closely associated with is innervated by the axillary nerve alongside the deltoid?",
+          "text": "A sports-medicine scenario on the NCLEX blueprint expects the nurse to identify which structure is closely associated with is innervated by the axillary nerve alongside the deltoid?",
           "options": [
             "Anterior cruciate ligament",
             "Gastrocnemius",
@@ -1144,7 +1403,10 @@
           ],
           "correctIndex": 2,
           "explanation": "Teres minor is associated with is innervated by the axillary nerve alongside the deltoid.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "A sports-medicine scenario on the NCLEX blueprint expects the nurse to identify which structure is closely associated with is innervated by the axillary nerve alongside the deltoid?"
+          ]
         },
         {
           "id": "teres-minor-rnworthy",
@@ -1157,11 +1419,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Teres minor is implicated when quadrilateral space syndrome can atrophy this small cuff muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as quadrilateral space syndrome can atrophy this small cuff muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "tibialis-anterior-easy",
-          "text": "Which structure primarily dorsiflexes and inverts the foot to clear the toes during gait?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily dorsiflexes and inverts the foot to clear the toes during gait?",
           "options": [
             "Tibialis anterior",
             "Quadriceps femoris",
@@ -1170,11 +1435,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Tibialis anterior primarily dorsiflexes and inverts the foot to clear the toes during gait, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure primarily dorsiflexes and inverts the foot to clear the toes during gait?"
+          ]
         },
         {
           "id": "tibialis-anterior-hard",
-          "text": "Which structure features originates on the lateral tibia and interosseous membrane inserting on the medial cuneiform?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure features originates on the lateral tibia and interosseous membrane inserting on the medial cuneiform?",
           "options": [
             "Gastrocnemius",
             "Serratus anterior",
@@ -1183,11 +1451,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Tibialis anterior features originates on the lateral tibia and interosseous membrane inserting on the medial cuneiform.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure features originates on the lateral tibia and interosseous membrane inserting on the medial cuneiform?"
+          ]
         },
         {
           "id": "tibialis-anterior-medium",
-          "text": "Which structure is closely associated with is innervated by the deep fibular nerve on the anterior leg?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with is innervated by the deep fibular nerve on the anterior leg?",
           "options": [
             "Sartorius",
             "Latissimus dorsi",
@@ -1196,7 +1467,10 @@
           ],
           "correctIndex": 2,
           "explanation": "Tibialis anterior is associated with is innervated by the deep fibular nerve on the anterior leg.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with is innervated by the deep fibular nerve on the anterior leg?"
+          ]
         },
         {
           "id": "tibialis-anterior-rnworthy",
@@ -1209,11 +1483,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Tibialis anterior is implicated when foot slap after fibular head injury indicates weakness of this muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as foot slap after fibular head injury indicates weakness of this muscle most likely involves which structure?"
+          ]
         },
         {
           "id": "transverse-abdominis-easy",
-          "text": "Which structure primarily compresses abdominal contents providing intrinsic core stability?",
+          "text": "In a high-fidelity simulation, the educator challenges the team with which structure primarily compresses abdominal contents providing intrinsic core stability?",
           "options": [
             "Transverse abdominis",
             "Teres minor",
@@ -1222,11 +1499,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Transverse abdominis primarily compresses abdominal contents providing intrinsic core stability, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a high-fidelity simulation, the educator challenges the team with which structure primarily compresses abdominal contents providing intrinsic core stability?"
+          ]
         },
         {
           "id": "transverse-abdominis-hard",
-          "text": "Which structure features runs horizontally from thoracolumbar fascia to the linea alba?",
+          "text": "While mentoring a junior nurse, you review which structure features runs horizontally from thoracolumbar fascia to the linea alba?",
           "options": [
             "Supraspinatus",
             "Infraspinatus",
@@ -1235,11 +1515,14 @@
           ],
           "correctIndex": 3,
           "explanation": "Transverse abdominis features runs horizontally from thoracolumbar fascia to the linea alba.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure features runs horizontally from thoracolumbar fascia to the linea alba?"
+          ]
         },
         {
           "id": "transverse-abdominis-medium",
-          "text": "Which structure is closely associated with receives segmental thoracoabdominal nerve innervation?",
+          "text": "In a mental-health safety huddle, the team discusses which structure is closely associated with receives segmental thoracoabdominal nerve innervation?",
           "options": [
             "Subscapularis",
             "Transverse abdominis",
@@ -1248,7 +1531,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Transverse abdominis is associated with receives segmental thoracoabdominal nerve innervation.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "In a mental-health safety huddle, the team discusses which structure is closely associated with receives segmental thoracoabdominal nerve innervation?"
+          ]
         },
         {
           "id": "transverse-abdominis-rnworthy",
@@ -1261,11 +1547,14 @@
           ],
           "correctIndex": 1,
           "explanation": "Transverse abdominis is implicated when pre-activating this muscle protects the lumbar spine during lifting.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as pre-activating this muscle protects the lumbar spine during lifting most likely involves which structure?"
+          ]
         },
         {
           "id": "triceps-brachii-easy",
-          "text": "Which structure primarily extends the elbow and controls eccentric lowering from overhead presses?",
+          "text": "While mentoring a junior nurse, you review which structure primarily extends the elbow and controls eccentric lowering from overhead presses?",
           "options": [
             "Triceps brachii",
             "Anterior cruciate ligament",
@@ -1274,11 +1563,14 @@
           ],
           "correctIndex": 0,
           "explanation": "Triceps brachii primarily extends the elbow and controls eccentric lowering from overhead presses, making it the correct structure.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "While mentoring a junior nurse, you review which structure primarily extends the elbow and controls eccentric lowering from overhead presses?"
+          ]
         },
         {
           "id": "triceps-brachii-hard",
-          "text": "Which structure features has a long head originating on the infraglenoid tubercle crossing shoulder and elbow?",
+          "text": "During an NCLEX-style clinical debrief, the nurse considers which structure features has a long head originating on the infraglenoid tubercle crossing shoulder and elbow?",
           "options": [
             "Piriformis",
             "Supraspinatus",
@@ -1287,11 +1579,14 @@
           ],
           "correctIndex": 2,
           "explanation": "Triceps brachii features has a long head originating on the infraglenoid tubercle crossing shoulder and elbow.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During an NCLEX-style clinical debrief, the nurse considers which structure features has a long head originating on the infraglenoid tubercle crossing shoulder and elbow?"
+          ]
         },
         {
           "id": "triceps-brachii-medium",
-          "text": "Which structure is closely associated with receives innervation from the radial nerve along the posterior humerus?",
+          "text": "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with receives innervation from the radial nerve along the posterior humerus?",
           "options": [
             "Medial meniscus",
             "Triceps brachii",
@@ -1300,7 +1595,10 @@
           ],
           "correctIndex": 1,
           "explanation": "Triceps brachii is associated with receives innervation from the radial nerve along the posterior humerus.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "During shift report on a busy med-surg unit, the charge nurse highlights which structure is closely associated with receives innervation from the radial nerve along the posterior humerus?"
+          ]
         },
         {
           "id": "triceps-brachii-rnworthy",
@@ -1313,7 +1611,858 @@
           ],
           "correctIndex": 3,
           "explanation": "Triceps brachii is implicated when weak elbow extension with wrist drop after a midshaft humeral fracture points to this muscle.",
-          "type": "mcq"
+          "type": "mcq",
+          "variants": [
+            "Injury described as weak elbow extension with wrist drop after a midshaft humeral fracture points to this muscle most likely involves which structure?"
+          ]
+        },
+        {
+          "id": "NCLEX-0002",
+          "text": "A nurse in a mental health treatment facility is managing the care of Ms. Silva, a 28-year-old recently started on clozapine, who is undergoing atypical antipsychotic with weekly monitoring. The client develops fever, confusion, and muscle rigidity.\n\nWhat assessment finding indicates a serious medication reaction?",
+          "options": [
+            "Client reports feeling drowsy in the afternoon",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Weight gain of 5 pounds over 2 months",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Mild hand tremor noted during medication administration"
+          ],
+          "correctIndex": 1,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0006",
+          "text": "The nurse enters the room of a 58-year-old with severe heart failure and declining cardiac index (Ms. Nguyen) in a cardiac ICU to administer dobutamine infusion. Pulmonary artery catheter shows elevated wedge pressure with low cardiac output.\n\nWhat intervention should the nurse anticipate?",
+          "options": [
+            "Lactate level elevated at 3.2 mmol/L",
+            "Cardiac index below 2.2 L/min/m² with elevated pulmonary capillary wedge pressure",
+            "Blood pressure 88/60 mm Hg",
+            "Initiate dobutamine to improve contractility and cardiac output",
+            "Avoid IV fluid boluses that would worsen pulmonary edema",
+            "Administer morphine for chest pain and anxiety"
+          ],
+          "correctIndex": 1,
+          "explanation": "Defines cardiogenic shock: inadequate cardiac output despite adequate preload.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0028",
+          "text": "The nurse is planning discharge teaching for a 68-year-old with left-sided heart failure (Ms. Silva) in a cardiac step-down unit regarding diuretic therapy and fluid restriction. The client complains of increasing shortness of breath when lying flat.\n\nWhich physiological mechanism explains the client's current symptoms?",
+          "options": [
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Auscultate the second intercostal space right sternal border",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Palpate the carotid arteries simultaneously"
+          ],
+          "correctIndex": 0,
+          "explanation": "Left ventricular failure causes blood to back up into the pulmonary veins, leading to dyspnea.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0052",
+          "text": "A 45-year-old with a hemorrhagic stroke (Ms. Nguyen) is being treated in a neuro step-down unit with hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhat finding indicates the client's ICP is worsening?",
+          "options": [
+            "Temperature of 99.2 F (37.3 C)",
+            "ICP waveform showing regular P1>P2 pattern",
+            "Urine output of 55 mL/hour",
+            "Widening pulse pressure with bradycardia",
+            "Client reports headache rated 4/10",
+            "A sudden decrease in level of consciousness"
+          ],
+          "correctIndex": 3,
+          "explanation": "Cushing response indicates rising ICP and brainstem compression.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0055",
+          "text": "While assessing a 55-year-old with mitral valve stenosis (Ms. Mbatha) in an outpatient cardiology clinic, the nurse notes the client is receiving monitoring for valve replacement. The nurse is performing a focused cardiac assessment.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Palpate the carotid arteries simultaneously",
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Right ventricular failure causing systemic congestion",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Auscultate the second intercostal space right sternal border"
+          ],
+          "correctIndex": 0,
+          "explanation": "Left ventricular failure causes blood to back up into the pulmonary veins, leading to dyspnea.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0090",
+          "text": "A nurse in a psychiatric outpatient clinic is managing the care of Mr. Rossi, a 34-year-old with schizophrenia taking haloperidol, who is undergoing typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich teaching point is most important for this medication?",
+          "options": [
+            "Weight gain of 5 pounds over 2 months",
+            "Mild hand tremor noted during medication administration",
+            "Client reports feeling drowsy in the afternoon",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Involuntary tongue protrusion and facial grimacing"
+          ],
+          "correctIndex": 3,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0104",
+          "text": "Electronic health records for Mr. Okoye, a 34-year-old with schizophrenia taking haloperidol in a psychiatric outpatient clinic, indicate active treatment with typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich adverse effect requires immediate intervention?",
+          "options": [
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Mild hand tremor noted during medication administration",
+            "Weight gain of 5 pounds over 2 months",
+            "Involuntary tongue protrusion and facial grimacing",
+            "Client reports feeling drowsy in the afternoon"
+          ],
+          "correctIndex": 0,
+          "explanation": "Agranulocytosis from clozapine requires immediate discontinuation to prevent sepsis.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0112",
+          "text": "Electronic health records for Mr. Carter, a 45-year-old with a hemorrhagic stroke in a neuro step-down unit, indicate active treatment with hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhat finding indicates the client's ICP is worsening?",
+          "options": [
+            "ICP waveform showing regular P1>P2 pattern",
+            "Urine output of 55 mL/hour",
+            "Temperature of 99.2 F (37.3 C)",
+            "A sudden decrease in level of consciousness",
+            "Decorticate posturing noted during stimulation",
+            "Client reports headache rated 4/10"
+          ],
+          "correctIndex": 3,
+          "explanation": "LOC decline is the earliest and most important sign of worsening ICP.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0113",
+          "text": "The nurse responds to a call light for a 25-year-old with family history of anesthesia complications (Ms. Wilson) in a surgical suite. The client is on emergency protocol activation. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhich medication should the nurse prepare to administer?",
+          "options": [
+            "Initiate active cooling measures",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Prepare dantrolene sodium for immediate IV administration",
+            "Family history of unexplained perioperative death",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity"
+          ],
+          "correctIndex": 1,
+          "explanation": "First priority is to stop causative agents and increase oxygen delivery.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0132",
+          "text": "An interdisciplinary team in an emergency department is discussing the care plan for Mr. Rossi, a 72-year-old with a history of aortic aneurysm, who is receiving blood pressure management. The client reports a tearing sensation in the chest radiating to the back.\n\nWhich physiological mechanism explains the client's current symptoms?",
+          "options": [
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the second intercostal space right sternal border",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Palpate the carotid arteries simultaneously",
+            "Assess blood pressure in both arms to check for discrepancy"
+          ],
+          "correctIndex": 2,
+          "explanation": "Left ventricular failure causes blood to back up into the pulmonary veins, leading to dyspnea.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0154",
+          "text": "The nurse is caring for a 28-year-old recently started on clozapine (Mx. Santos) in a mental health treatment facility. The client is receiving atypical antipsychotic with weekly monitoring. The client develops fever, confusion, and muscle rigidity.\n\nWhat assessment finding indicates a serious medication reaction?",
+          "options": [
+            "Client reports feeling drowsy in the afternoon",
+            "Weight gain of 5 pounds over 2 months",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Mild hand tremor noted during medication administration",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "White blood cell count of 2,000/mm³ with neutropenia"
+          ],
+          "correctIndex": 2,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0183",
+          "text": "During shift report, the nurse receives information about Mr. Lopez, a 25-year-old with family history of anesthesia complications in a surgical suite who is receiving emergency protocol activation. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhich medication should the nurse prepare to administer?",
+          "options": [
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity",
+            "Temperature spiking to 105°F (40.6°C) or higher",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Initiate active cooling measures",
+            "Family history of unexplained perioperative death"
+          ],
+          "correctIndex": 1,
+          "explanation": "Early signs of MH hypermetabolic state requiring immediate action.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0205",
+          "text": "A 34-year-old with schizophrenia taking haloperidol (Mr. Wallace) is being treated in a psychiatric outpatient clinic with typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich adverse effect requires immediate intervention?",
+          "options": [
+            "Client reports feeling drowsy in the afternoon",
+            "Weight gain of 5 pounds over 2 months",
+            "Involuntary tongue protrusion and facial grimacing",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Mild hand tremor noted during medication administration"
+          ],
+          "correctIndex": 2,
+          "explanation": "Acute dystonia requires immediate treatment with anticholinergic agents.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0215",
+          "text": "The nurse responds to a call light for a 55-year-old with mitral valve stenosis (Ms. Chen) in an outpatient cardiology clinic. The client is on monitoring for valve replacement. The nurse is performing a focused cardiac assessment.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Palpate the carotid arteries simultaneously",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the second intercostal space right sternal border",
+            "Auscultate the fifth intercostal space at the midclavicular line"
+          ],
+          "correctIndex": 0,
+          "explanation": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0247",
+          "text": "A client, Ms. Yamamoto (a 45-year-old with a hemorrhagic stroke), asks the nurse in a neuro step-down unit about their hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhich assessment change requires immediate provider notification?",
+          "options": [
+            "Unequal pupils with sluggish reaction to light",
+            "ICP waveform showing regular P1>P2 pattern",
+            "Temperature of 99.2 F (37.3 C)",
+            "Widening pulse pressure with bradycardia",
+            "Urine output of 55 mL/hour",
+            "Client reports headache rated 4/10"
+          ],
+          "correctIndex": 0,
+          "explanation": "Anisocoria with sluggish response suggests herniation risk.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0270",
+          "text": "The nurse enters the room of a 28-year-old recently started on clozapine (Mr. Carter) in a mental health treatment facility to administer atypical antipsychotic with weekly monitoring. The client develops fever, confusion, and muscle rigidity.\n\nWhat assessment finding indicates a serious medication reaction?",
+          "options": [
+            "Client reports feeling drowsy in the afternoon",
+            "Weight gain of 5 pounds over 2 months",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Mild hand tremor noted during medication administration",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Involuntary tongue protrusion and facial grimacing"
+          ],
+          "correctIndex": 2,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0280",
+          "text": "The nurse responds to a call light for a 72-year-old with a history of aortic aneurysm (Ms. Osei) in an emergency department. The client is on blood pressure management. The client reports a tearing sensation in the chest radiating to the back.\n\nWhich physiological mechanism explains the client's current symptoms?",
+          "options": [
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Palpate the carotid arteries simultaneously",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Auscultate the second intercostal space right sternal border",
+            "Right ventricular failure causing systemic congestion",
+            "Assess blood pressure in both arms to check for discrepancy"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is the mitral area (apex), best for hearing mitral valve sounds and S3/S4.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0281",
+          "text": "A 34-year-old with schizophrenia taking haloperidol (Mr. Ibrahim) is being treated in a psychiatric outpatient clinic with typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich teaching point is most important for this medication?",
+          "options": [
+            "Mild hand tremor noted during medication administration",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Involuntary tongue protrusion and facial grimacing",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Weight gain of 5 pounds over 2 months",
+            "Client reports feeling drowsy in the afternoon"
+          ],
+          "correctIndex": 1,
+          "explanation": "Agranulocytosis from clozapine requires immediate discontinuation to prevent sepsis.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0300",
+          "text": "At the beginning of the shift in a neuro step-down unit, the nurse checks on Ms. Mbatha, a 45-year-old with a hemorrhagic stroke, who is receiving hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhich cue should prompt the nurse to prepare for rapid intervention?",
+          "options": [
+            "Decorticate posturing noted during stimulation",
+            "ICP waveform showing regular P1>P2 pattern",
+            "Urine output of 55 mL/hour",
+            "Client reports headache rated 4/10",
+            "Unequal pupils with sluggish reaction to light",
+            "Temperature of 99.2 F (37.3 C)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Posturing signifies significant neurologic deterioration.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0308",
+          "text": "A client, Mr. Haddad (a 25-year-old with family history of anesthesia complications), is admitted to a surgical suite for emergency protocol activation. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhich medication should the nurse prepare to administer?",
+          "options": [
+            "Prepare dantrolene sodium for immediate IV administration",
+            "Initiate active cooling measures",
+            "Temperature spiking to 105°F (40.6°C) or higher",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity",
+            "Family history of unexplained perioperative death",
+            "Obtain arterial blood gas to assess metabolic acidosis"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dantrolene is the specific antidote and must be given immediately.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0334",
+          "text": "A client, Ms. Kowalski (a 55-year-old with mitral valve stenosis), asks the nurse in an outpatient cardiology clinic about their monitoring for valve replacement. The nurse is performing a focused cardiac assessment.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Right ventricular failure causing systemic congestion",
+            "Palpate the carotid arteries simultaneously",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Auscultate the second intercostal space right sternal border",
+            "Pulmonary venous congestion due to backward failure of the left ventricle"
+          ],
+          "correctIndex": 2,
+          "explanation": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0354",
+          "text": "A nurse in a psychiatric outpatient clinic is managing the care of Mr. Okoye, a 34-year-old with schizophrenia taking haloperidol, who is undergoing typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhat assessment finding indicates a serious medication reaction?",
+          "options": [
+            "Client reports feeling drowsy in the afternoon",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Mild hand tremor noted during medication administration",
+            "Involuntary tongue protrusion and facial grimacing",
+            "Weight gain of 5 pounds over 2 months",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status"
+          ],
+          "correctIndex": 1,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0356",
+          "text": "The nurse is caring for a 45-year-old with a hemorrhagic stroke (Mr. Carter) in a neuro step-down unit. The client is receiving hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhich assessment change requires immediate provider notification?",
+          "options": [
+            "Client reports headache rated 4/10",
+            "Decorticate posturing noted during stimulation",
+            "Temperature of 99.2 F (37.3 C)",
+            "ICP waveform showing regular P1>P2 pattern",
+            "Widening pulse pressure with bradycardia",
+            "Urine output of 55 mL/hour"
+          ],
+          "correctIndex": 1,
+          "explanation": "Posturing signifies significant neurologic deterioration.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0397",
+          "text": "At the beginning of the shift in a cardiac step-down unit, the nurse checks on Mr. Ibrahim, a 68-year-old with left-sided heart failure, who is receiving diuretic therapy and fluid restriction. The client complains of increasing shortness of breath when lying flat.\n\nWhich physiological mechanism explains the client's current symptoms?",
+          "options": [
+            "Auscultate the second intercostal space right sternal border",
+            "Right ventricular failure causing systemic congestion",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Palpate the carotid arteries simultaneously",
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Pulmonary venous congestion due to backward failure of the left ventricle"
+          ],
+          "correctIndex": 2,
+          "explanation": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0405",
+          "text": "The nurse is assigned to a 34-year-old with schizophrenia taking haloperidol (Mx. Jordan) in a psychiatric outpatient clinic. Current therapy includes typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich adverse effect requires immediate intervention?",
+          "options": [
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Weight gain of 5 pounds over 2 months",
+            "Mild hand tremor noted during medication administration",
+            "Client reports feeling drowsy in the afternoon",
+            "Involuntary tongue protrusion and facial grimacing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0428",
+          "text": "A 72-year-old with a history of aortic aneurysm (Ms. Gomez) is being treated in an emergency department with blood pressure management. The client reports a tearing sensation in the chest radiating to the back.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Palpate the carotid arteries simultaneously",
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the second intercostal space right sternal border"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is the mitral area (apex), best for hearing mitral valve sounds and S3/S4.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0440",
+          "text": "The nurse assumes care of a 34-year-old with schizophrenia taking haloperidol (Mr. Carter) in a psychiatric outpatient clinic. The client's current regimen includes typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich teaching point is most important for this medication?",
+          "options": [
+            "Weight gain of 5 pounds over 2 months",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Mild hand tremor noted during medication administration",
+            "Client reports feeling drowsy in the afternoon",
+            "Involuntary tongue protrusion and facial grimacing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0462",
+          "text": "A nurse in a surgical suite is managing the care of Ms. Silva, a 25-year-old with family history of anesthesia complications, who is undergoing emergency protocol activation. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhich assessment finding during surgery suggests malignant hyperthermia?",
+          "options": [
+            "Prepare dantrolene sodium for immediate IV administration",
+            "Initiate active cooling measures",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Family history of unexplained perioperative death",
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dantrolene is the specific antidote and must be given immediately.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0467",
+          "text": "A client, Ms. Romero (a 45-year-old with a hemorrhagic stroke), is admitted to a neuro step-down unit for hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhich cue should prompt the nurse to prepare for rapid intervention?",
+          "options": [
+            "Urine output of 55 mL/hour",
+            "Temperature of 99.2 F (37.3 C)",
+            "ICP waveform showing regular P1>P2 pattern",
+            "Decorticate posturing noted during stimulation",
+            "Widening pulse pressure with bradycardia",
+            "Client reports headache rated 4/10"
+          ],
+          "correctIndex": 3,
+          "explanation": "Posturing signifies significant neurologic deterioration.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0484",
+          "text": "In an outpatient cardiology clinic, the nurse is evaluating a 55-year-old with mitral valve stenosis (Mr. Brown) who is receiving monitoring for valve replacement. The nurse is performing a focused cardiac assessment.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the second intercostal space right sternal border",
+            "Palpate the carotid arteries simultaneously",
+            "Auscultate the fifth intercostal space at the midclavicular line"
+          ],
+          "correctIndex": 0,
+          "explanation": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0495",
+          "text": "The nurse is preparing to assess Mr. Lopez, a 34-year-old with schizophrenia taking haloperidol in a psychiatric outpatient clinic, who is currently on typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich adverse effect requires immediate intervention?",
+          "options": [
+            "Client reports feeling drowsy in the afternoon",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Involuntary tongue protrusion and facial grimacing",
+            "Mild hand tremor noted during medication administration",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Weight gain of 5 pounds over 2 months"
+          ],
+          "correctIndex": 1,
+          "explanation": "Agranulocytosis from clozapine requires immediate discontinuation to prevent sepsis.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0496",
+          "text": "While assessing a 55-year-old with mitral valve stenosis (Mr. Kaur) in an outpatient cardiology clinic, the nurse notes the client is receiving monitoring for valve replacement. The nurse is performing a focused cardiac assessment.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Palpate the carotid arteries simultaneously",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the second intercostal space right sternal border"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is the mitral area (apex), best for hearing mitral valve sounds and S3/S4.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0497",
+          "text": "The nurse responds to a call light for a 25-year-old with family history of anesthesia complications (Dr. Bennett) in a surgical suite. The client is on emergency protocol activation. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhich medication should the nurse prepare to administer?",
+          "options": [
+            "Prepare dantrolene sodium for immediate IV administration",
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Family history of unexplained perioperative death",
+            "Temperature spiking to 105°F (40.6°C) or higher",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Initiate active cooling measures"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dantrolene is the specific antidote and must be given immediately.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0500",
+          "text": "The nurse is preparing to assess Mr. Carter, a 34-year-old with schizophrenia taking haloperidol in a psychiatric outpatient clinic, who is currently on typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich teaching point is most important for this medication?",
+          "options": [
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Weight gain of 5 pounds over 2 months",
+            "Client reports feeling drowsy in the afternoon",
+            "Mild hand tremor noted during medication administration",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "White blood cell count of 2,000/mm³ with neutropenia"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neuroleptic malignant syndrome is a life-threatening emergency requiring immediate discontinuation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0525",
+          "text": "The nurse assumes care of a 45-year-old with a hemorrhagic stroke (Ms. Wilson) in a neuro step-down unit. The client's current regimen includes hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhich cue should prompt the nurse to prepare for rapid intervention?",
+          "options": [
+            "Urine output of 55 mL/hour",
+            "Temperature of 99.2 F (37.3 C)",
+            "Client reports headache rated 4/10",
+            "ICP waveform showing regular P1>P2 pattern",
+            "Decorticate posturing noted during stimulation",
+            "A sudden decrease in level of consciousness"
+          ],
+          "correctIndex": 4,
+          "explanation": "Posturing signifies significant neurologic deterioration.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0543",
+          "text": "During shift report, the nurse receives information about Mr. Al-Rashid, a 34-year-old with schizophrenia taking haloperidol in a psychiatric outpatient clinic who is receiving typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhich teaching point is most important for this medication?",
+          "options": [
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Weight gain of 5 pounds over 2 months",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Client reports feeling drowsy in the afternoon",
+            "Mild hand tremor noted during medication administration"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neuroleptic malignant syndrome is a life-threatening emergency requiring immediate discontinuation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0553",
+          "text": "The nurse reviews the medical record of a 25-year-old with family history of anesthesia complications (Mr. Kaur) in a surgical suite. The client is prescribed emergency protocol activation. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhich medication should the nurse prepare to administer?",
+          "options": [
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Temperature spiking to 105°F (40.6°C) or higher",
+            "Family history of unexplained perioperative death",
+            "Initiate active cooling measures",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Extreme hyperthermia is a late but characteristic sign of MH.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0574",
+          "text": "The nurse is caring for a 58-year-old with severe heart failure and declining cardiac index (Mr. Al-Rashid) in a cardiac ICU. The client is receiving dobutamine infusion. Pulmonary artery catheter shows elevated wedge pressure with low cardiac output.\n\nWhich medication is contraindicated in this situation?",
+          "options": [
+            "Administer morphine for chest pain and anxiety",
+            "Cardiac index below 2.2 L/min/m² with elevated pulmonary capillary wedge pressure",
+            "Blood pressure 88/60 mm Hg",
+            "Initiate dobutamine to improve contractility and cardiac output",
+            "Avoid IV fluid boluses that would worsen pulmonary edema",
+            "Lactate level elevated at 3.2 mmol/L"
+          ],
+          "correctIndex": 1,
+          "explanation": "Defines cardiogenic shock: inadequate cardiac output despite adequate preload.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0575",
+          "text": "The healthcare provider prescribes monitoring for valve replacement for a 55-year-old with mitral valve stenosis (Mr. Kaur) in an outpatient cardiology clinic. The nurse is performing a focused cardiac assessment.\n\nWhich physiological mechanism explains the client's current symptoms?",
+          "options": [
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Auscultate the second intercostal space right sternal border",
+            "Palpate the carotid arteries simultaneously",
+            "Pulmonary venous congestion due to backward failure of the left ventricle"
+          ],
+          "correctIndex": 0,
+          "explanation": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0597",
+          "text": "The nurse is caring for a 55-year-old with mitral valve stenosis (Ms. Yamamoto) in an outpatient cardiology clinic. The client is receiving monitoring for valve replacement. The nurse is performing a focused cardiac assessment.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the second intercostal space right sternal border",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Palpate the carotid arteries simultaneously",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Auscultate the fifth intercostal space at the midclavicular line"
+          ],
+          "correctIndex": 2,
+          "explanation": "Left ventricular failure causes blood to back up into the pulmonary veins, leading to dyspnea.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0600",
+          "text": "A 25-year-old with family history of anesthesia complications (Ms. Silva) is being treated in a surgical suite with emergency protocol activation. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhat is the priority intervention?",
+          "options": [
+            "Initiate active cooling measures",
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Temperature spiking to 105°F (40.6°C) or higher",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity",
+            "Family history of unexplained perioperative death"
+          ],
+          "correctIndex": 2,
+          "explanation": "First priority is to stop causative agents and increase oxygen delivery.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0603",
+          "text": "The nurse is preparing to assess Mx. Santos, a 28-year-old recently started on clozapine in a mental health treatment facility, who is currently on atypical antipsychotic with weekly monitoring. The client develops fever, confusion, and muscle rigidity.\n\nWhat assessment finding indicates a serious medication reaction?",
+          "options": [
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Weight gain of 5 pounds over 2 months",
+            "Mild hand tremor noted during medication administration",
+            "Client reports feeling drowsy in the afternoon"
+          ],
+          "correctIndex": 0,
+          "explanation": "Early signs of agranulocytosis require urgent medical evaluation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0632",
+          "text": "The nurse assumes care of a 28-year-old recently started on clozapine (Ms. Romero) in a mental health treatment facility. The client's current regimen includes atypical antipsychotic with weekly monitoring. The client develops fever, confusion, and muscle rigidity.\n\nWhich adverse effect requires immediate intervention?",
+          "options": [
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately",
+            "Weight gain of 5 pounds over 2 months",
+            "Mild hand tremor noted during medication administration",
+            "Client reports feeling drowsy in the afternoon"
+          ],
+          "correctIndex": 0,
+          "explanation": "Agranulocytosis from clozapine requires immediate discontinuation to prevent sepsis.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0661",
+          "text": "At the beginning of the shift in a neuro step-down unit, the nurse checks on Ms. Chen, a 45-year-old with a hemorrhagic stroke, who is receiving hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhat finding indicates the client's ICP is worsening?",
+          "options": [
+            "ICP waveform showing regular P1>P2 pattern",
+            "Client reports headache rated 4/10",
+            "Widening pulse pressure with bradycardia",
+            "Urine output of 55 mL/hour",
+            "Decorticate posturing noted during stimulation",
+            "Temperature of 99.2 F (37.3 C)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Cushing response indicates rising ICP and brainstem compression.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0674",
+          "text": "The nurse assumes care of a 58-year-old with severe heart failure and declining cardiac index (Ms. Kowalski) in a cardiac ICU. The client's current regimen includes dobutamine infusion. Pulmonary artery catheter shows elevated wedge pressure with low cardiac output.\n\nWhich medication is contraindicated in this situation?",
+          "options": [
+            "Prepare for intra-aortic balloon pump or mechanical circulatory support",
+            "Avoid IV fluid boluses that would worsen pulmonary edema",
+            "Lactate level elevated at 3.2 mmol/L",
+            "Cardiac index below 2.2 L/min/m² with elevated pulmonary capillary wedge pressure",
+            "Blood pressure 88/60 mm Hg",
+            "Administer morphine for chest pain and anxiety"
+          ],
+          "correctIndex": 0,
+          "explanation": "Refractory cardiogenic shock may require mechanical assistance.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0684",
+          "text": "The healthcare provider prescribes emergency protocol activation for a 25-year-old with family history of anesthesia complications (Mr. Singh) in a surgical suite. End-tidal CO2 is rapidly rising with muscle rigidity noted.\n\nWhich assessment finding during surgery suggests malignant hyperthermia?",
+          "options": [
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Initiate active cooling measures",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Family history of unexplained perioperative death",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity",
+            "Prepare dantrolene sodium for immediate IV administration"
+          ],
+          "correctIndex": 2,
+          "explanation": "First priority is to stop causative agents and increase oxygen delivery.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0700",
+          "text": "In a cardiac ICU, the nurse is evaluating a 58-year-old with severe heart failure and declining cardiac index (Mr. Brown) who is receiving dobutamine infusion. Pulmonary artery catheter shows elevated wedge pressure with low cardiac output.\n\nWhich medication is contraindicated in this situation?",
+          "options": [
+            "Avoid IV fluid boluses that would worsen pulmonary edema",
+            "Initiate dobutamine to improve contractility and cardiac output",
+            "Lactate level elevated at 3.2 mmol/L",
+            "Cardiac index below 2.2 L/min/m² with elevated pulmonary capillary wedge pressure",
+            "Blood pressure 88/60 mm Hg",
+            "Administer morphine for chest pain and anxiety"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cardiogenic shock is NOT volume responsive; fluids worsen pulmonary congestion.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0707",
+          "text": "During shift report, the nurse receives information about Mr. Lopez, a 45-year-old with a hemorrhagic stroke in a neuro step-down unit who is receiving hyperosmolar therapy. The nurse performs hourly cranial nerve checks.\n\nWhich assessment change requires immediate provider notification?",
+          "options": [
+            "A sudden decrease in level of consciousness",
+            "Client reports headache rated 4/10",
+            "Temperature of 99.2 F (37.3 C)",
+            "Widening pulse pressure with bradycardia",
+            "Urine output of 55 mL/hour",
+            "ICP waveform showing regular P1>P2 pattern"
+          ],
+          "correctIndex": 0,
+          "explanation": "LOC decline is the earliest and most important sign of worsening ICP.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0708",
+          "text": "In a mental health treatment facility, the nurse is evaluating a 28-year-old recently started on clozapine (Ms. Kowalski) who is receiving atypical antipsychotic with weekly monitoring. The client develops fever, confusion, and muscle rigidity.\n\nWhich teaching point is most important for this medication?",
+          "options": [
+            "Weight gain of 5 pounds over 2 months",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Client reports feeling drowsy in the afternoon",
+            "Involuntary tongue protrusion and facial grimacing",
+            "Mild hand tremor noted during medication administration",
+            "Teach client to report fever, sore throat, or flu-like symptoms immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "Agranulocytosis from clozapine requires immediate discontinuation to prevent sepsis.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0712",
+          "text": "The nurse reviews the medical record of a 72-year-old with a history of aortic aneurysm (Mr. Lopez) in an emergency department. The client is prescribed blood pressure management. The client reports a tearing sensation in the chest radiating to the back.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Right ventricular failure causing systemic congestion",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Auscultate the second intercostal space right sternal border",
+            "Palpate the carotid arteries simultaneously",
+            "Auscultate the fifth intercostal space at the midclavicular line"
+          ],
+          "correctIndex": 1,
+          "explanation": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0722",
+          "text": "The healthcare provider prescribes blood pressure management for a 72-year-old with a history of aortic aneurysm (Ms. Harper) in an emergency department. The client reports a tearing sensation in the chest radiating to the back.\n\nBased on the anatomy involved, what is the nurse's priority assessment?",
+          "options": [
+            "Palpate the carotid arteries simultaneously",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Auscultate the fifth intercostal space at the midclavicular line",
+            "Right ventricular failure causing systemic congestion",
+            "Auscultate the second intercostal space right sternal border",
+            "Pulmonary venous congestion due to backward failure of the left ventricle"
+          ],
+          "correctIndex": 1,
+          "explanation": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0735",
+          "text": "In a cardiac ICU, the nurse is evaluating a 58-year-old with severe heart failure and declining cardiac index (Mr. Yang) who is receiving dobutamine infusion. Pulmonary artery catheter shows elevated wedge pressure with low cardiac output.\n\nWhich hemodynamic finding confirms cardiogenic shock?",
+          "options": [
+            "Avoid IV fluid boluses that would worsen pulmonary edema",
+            "Initiate dobutamine to improve contractility and cardiac output",
+            "Administer morphine for chest pain and anxiety",
+            "Blood pressure 88/60 mm Hg",
+            "Lactate level elevated at 3.2 mmol/L",
+            "Prepare for intra-aortic balloon pump or mechanical circulatory support"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cardiogenic shock is NOT volume responsive; fluids worsen pulmonary congestion.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-0750",
+          "text": "A 34-year-old with schizophrenia taking haloperidol (Mr. Okoye) is being treated in a psychiatric outpatient clinic with typical antipsychotic medication. The client reports new muscle stiffness and difficulty swallowing.\n\nWhat assessment finding indicates a serious medication reaction?",
+          "options": [
+            "Temperature 104°F (40°C) with severe muscle rigidity and altered mental status",
+            "Weight gain of 5 pounds over 2 months",
+            "Mild hand tremor noted during medication administration",
+            "Involuntary tongue protrusion and facial grimacing",
+            "White blood cell count of 2,000/mm³ with neutropenia",
+            "Client reports feeling drowsy in the afternoon"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neuroleptic malignant syndrome is a life-threatening emergency requiring immediate discontinuation.",
+          "type": "mcq",
+          "variants": []
         }
       ]
     }

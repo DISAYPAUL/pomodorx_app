@@ -43,6 +43,13 @@ class SeedService {
     }
   }
 
+  /// Force reload all data from JSON files (useful for development/updates)
+  Future<void> forceReseed() async {
+    final bundle = await _loadSeedBundle();
+    await _storage.saveTopics(bundle.topics);
+    await _storage.saveQuizzes(bundle.quizzes);
+  }
+
   Future<_SeedBundle> _loadSeedBundle() async {
     final topics = <Topic>[];
     final quizzes = <Quiz>[];

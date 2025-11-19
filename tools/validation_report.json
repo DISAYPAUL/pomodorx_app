@@ -1,0 +1,1016 @@
+{
+  "files": {
+    "anatomy_quiz.json": {
+      "path": "C:\\Users\\QCU\\Desktop\\pomodorx_app\\pomodorx_app\\assets\\data\\anatomy_quiz.json",
+      "total_candidates": 61,
+      "problems": [
+        {
+          "quiz_index": 0,
+          "question_index": 136,
+          "text_snippet": "The nurse reviews the medical record of a 25-year-old with family history of anesthesia complications (Mr. Kaur) in a surgical suite. The client is prescribed emergency protocol activation. End-tidal ",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Temperature spiking to 105°F (40.6°C) or higher",
+            "Family history of unexplained perioperative death",
+            "Initiate active cooling measures",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Extreme hyperthermia is a late but characteristic sign of MH."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 149,
+          "text_snippet": "The nurse reviews the medical record of a 72-year-old with a history of aortic aneurysm (Mr. Lopez) in an emergency department. The client is prescribed blood pressure management. The client reports a",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Right ventricular failure causing systemic congestion",
+            "Assess blood pressure in both arms to check for discrepancy",
+            "Pulmonary venous congestion due to backward failure of the left ventricle",
+            "Auscultate the second intercostal space right sternal border",
+            "Palpate the carotid arteries simultaneously",
+            "Auscultate the fifth intercostal space at the midclavicular line"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "A significant difference (>20 mmHg) suggests aortic dissection affecting subclavian arteries."
+        }
+      ]
+    },
+    "pharmacology_quiz.json": {
+      "path": "C:\\Users\\QCU\\Desktop\\pomodorx_app\\pomodorx_app\\assets\\data\\pharmacology_quiz.json",
+      "total_candidates": 83,
+      "problems": [
+        {
+          "quiz_index": 0,
+          "question_index": 115,
+          "text_snippet": "The nurse is assigned to a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma (Mr. Yang) in a cancer center. Current therapy includes rasburicase administration. Urine output has been adequate ",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Maintain urine output of at least 2-3 L/day with IV hydration",
+            "Potassium 6.8 mEq/L, phosphorus 7.2 mg/dL, calcium 6.9 mg/dL",
+            "Urine pH of 6.5",
+            "LDH elevated at twice the upper limit of normal",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "Client reports muscle cramps and tingling"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "High urine flow prevents crystal formation and flushes metabolites."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 127,
+          "text_snippet": "The nurse reviews the medical record of a 23-year-old with a tibial fracture and new cast applied 4 hours ago (Ms. Nguyen) in an orthopedic unit. The client is prescribed elevation and ice application",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Pain with passive stretching of muscles in the affected compartment",
+            "Client reports the cast feels tight",
+            "Bivalve the cast immediately and remove all constrictive dressings",
+            "Affected limb is cool to touch",
+            "Pain that is disproportionate to injury and unrelieved by opioids",
+            "Absence of pulses in the affected extremity"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Passive stretch pain indicates ischemia and impending necrosis."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 140,
+          "text_snippet": "The nurse reviews the medical record of a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma (Ms. Silva) in a cancer center. The client is prescribed rasburicase administration. Urine output ha",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Potassium 6.8 mEq/L, phosphorus 7.2 mg/dL, calcium 6.9 mg/dL",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "Client reports muscle cramps and tingling",
+            "Cardiac monitor showing peaked T waves and widened QRS",
+            "LDH elevated at twice the upper limit of normal",
+            "Urine pH of 6.5"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "The classic TLS triad: hyperkalemia, hyperphosphatemia, hypocalcemia."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 156,
+          "text_snippet": "In a geriatric clinic, the nurse is evaluating an 80-year-old taking 12 daily medications including anticholinergics (Mr. Haddad) who is receiving comprehensive medication review. The client reports n",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client sees multiple specialists",
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "Concurrent use of warfarin, aspirin, and ibuprofen",
+            "Client uses a weekly pill organizer",
+            "Family helps manage medication administration",
+            "New cognitive impairment with urinary retention and dry mouth"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Beers Criteria identifies antihistamines as potentially inappropriate for elderly due to anticholinergic effects."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 158,
+          "text_snippet": "The nurse reviews the medical record of a 66-year-old male two hours post anterior myocardial infarction (Mr. Singh) in a cardiac ICU. The client is prescribed lidocaine loading dose followed by 2 mg/",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula",
+            "Complaint of mild metallic taste",
+            "Telemetry tracing that now shows a broadening QRS duration",
+            "Serum potassium that dropped from 4.2 to 3.1 mEq/L",
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "Client reporting localized IV site warmth"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "A widening QRS indicates progression toward heart block from lidocaine toxicity."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 159,
+          "text_snippet": "The nurse reviews the medical record of a 35-year-old receiving IV antibiotics who suddenly develops hives and throat tightness (Mr. Okoye) in a medical unit. The client is prescribed epinephrine admi",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client reports feeling anxious and dizzy",
+            "Blood pressure 82/50 mm Hg with rapid, weak pulse",
+            "Stop the infusion and maintain IV access with normal saline",
+            "Administer diphenhydramine 50 mg IV after epinephrine",
+            "Administer epinephrine 0.3-0.5 mg IM into the lateral thigh immediately",
+            "Urticaria spreading across the chest and arms"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Distributive shock from massive vasodilation requires immediate treatment."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 172,
+          "text_snippet": "While assessing a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma (Ms. Chen) in a cancer center, the nurse notes the client is receiving rasburicase administration. Urine output has been ade",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Urine pH of 6.5",
+            "Cardiac monitor showing peaked T waves and widened QRS",
+            "Client reports muscle cramps and tingling",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "Potassium 6.8 mEq/L, phosphorus 7.2 mg/dL, calcium 6.9 mg/dL",
+            "LDH elevated at twice the upper limit of normal"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Life-threatening hyperkalemia requires emergent treatment."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 184,
+          "text_snippet": "The nurse enters the room of a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma (Mr. Haddad) in a cancer center to administer rasburicase administration. Urine output has been adequate at 150",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Urine pH of 6.5",
+            "LDH elevated at twice the upper limit of normal",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "Client reports muscle cramps and tingling",
+            "Cardiac monitor showing peaked T waves and widened QRS",
+            "Maintain urine output of at least 2-3 L/day with IV hydration"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Severe hyperuricemia can cause acute kidney injury from crystal deposition."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 195,
+          "text_snippet": "The nurse reviews the medical record of a 23-year-old with a tibial fracture and new cast applied 4 hours ago (Dr. Bennett) in an orthopedic unit. The client is prescribed elevation and ice applicatio",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Bivalve the cast immediately and remove all constrictive dressings",
+            "Client reports the cast feels tight",
+            "Absence of pulses in the affected extremity",
+            "Pain with passive stretching of muscles in the affected compartment",
+            "Paresthesia and decreased sensation in the affected extremity",
+            "Affected limb is cool to touch"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Immediate pressure relief can prevent permanent damage."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 201,
+          "text_snippet": "The nurse reviews the medical record of a 70-year-old opioid-naive patient starting oral oxycodone (Mr. Haddad) in an oncology clinic. The client is prescribed immediate-release opioids for cancer pai",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Pinpoint pupils with decreased level of consciousness",
+            "Inability to arouse the client with verbal or tactile stimulation",
+            "Blood pressure slightly decreased from baseline",
+            "Client sleeping but easily arousable with normal respirations",
+            "Respiratory rate of 8 breaths per minute with sedation score of 3",
+            "Client reports pain level of 6/10"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Classic signs of opioid overdose requiring naloxone administration."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 216,
+          "text_snippet": "Following the initiation of rasburicase administration for a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma (Mr. Al-Rashid) in a cancer center, the nurse performs an assessment. Urine outpu",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "LDH elevated at twice the upper limit of normal",
+            "Client reports muscle cramps and tingling",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "Potassium 6.8 mEq/L, phosphorus 7.2 mg/dL, calcium 6.9 mg/dL",
+            "Urine pH of 6.5",
+            "Maintain urine output of at least 2-3 L/day with IV hydration"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Severe hyperuricemia can cause acute kidney injury from crystal deposition."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 221,
+          "text_snippet": "The nurse enters the room of an 80-year-old taking 12 daily medications including anticholinergics (Mr. Ibrahim) in a geriatric clinic to administer comprehensive medication review. The client reports",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client uses a weekly pill organizer",
+            "Client sees multiple specialists",
+            "Concurrent use of warfarin, aspirin, and ibuprofen",
+            "New cognitive impairment with urinary retention and dry mouth",
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "Family helps manage medication administration"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Triple antithrombotic therapy dramatically increases bleeding risk."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 236,
+          "text_snippet": "The nurse reviews the medical record of an 82-year-old post-op day 2 from hip replacement with sudden confusion (Mr. Lopez) in an orthopedic unit. The client is prescribed pain management and antibiot",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Gradual cognitive decline over several years",
+            "Investigate for underlying infection, hypoxia, or metabolic disturbance",
+            "Recent addition of multiple new medications including opioids and anticholinergics",
+            "Acute onset of confusion with fluctuating level of consciousness",
+            "Family requests pharmacologic sedation",
+            "Client cannot recall short-term events"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Delirium has reversible causes that must be identified and treated."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 241,
+          "text_snippet": "The nurse responds to a call light for a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma (Ms. Kowalski) in a cancer center. The client is on rasburicase administration. Urine output has been",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Urine pH of 6.5",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "LDH elevated at twice the upper limit of normal",
+            "Client reports muscle cramps and tingling",
+            "Potassium 6.8 mEq/L, phosphorus 7.2 mg/dL, calcium 6.9 mg/dL",
+            "Cardiac monitor showing peaked T waves and widened QRS"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Severe hyperuricemia can cause acute kidney injury from crystal deposition."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 244,
+          "text_snippet": "A client, Ms. Patel (an 80-year-old taking 12 daily medications including anticholinergics), is admitted to a geriatric clinic for comprehensive medication review. The client reports new-onset confusi",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Concurrent use of warfarin, aspirin, and ibuprofen",
+            "Client sees multiple specialists",
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "Family helps manage medication administration",
+            "Client uses a weekly pill organizer",
+            "New cognitive impairment with urinary retention and dry mouth"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Triple antithrombotic therapy dramatically increases bleeding risk."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 262,
+          "text_snippet": "While assessing an 80-year-old taking 12 daily medications including anticholinergics (Ms. Silva) in a geriatric clinic, the nurse notes the client is receiving comprehensive medication review. The cl",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client sees multiple specialists",
+            "New cognitive impairment with urinary retention and dry mouth",
+            "Concurrent use of warfarin, aspirin, and ibuprofen",
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "Family helps manage medication administration",
+            "Client uses a weekly pill organizer"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Classic anticholinergic toxicity syndrome requiring medication review."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 268,
+          "text_snippet": "The nurse reviews the medical record of a 17-year-old admitted for major depressive disorder (Ms. Gomez) in an inpatient behavioral health unit. The client is prescribed SSRIs and cognitive behavioral",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client journals feelings during group therapy",
+            "Client hoards medications instead of taking them",
+            "Client attends all therapy groups and participates",
+            "Client sleeps six hours overnight",
+            "Client states, 'I finally figured out how to make the pain stop tonight.'",
+            "Client requests extra art supplies for distraction"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Medication hoarding suggests preparation for overdose."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 271,
+          "text_snippet": "The nurse reviews the medical record of a 28-year-old with sickle cell disease reporting severe chest and back pain (Mr. Alvarez) in an emergency department. The client is prescribed IV opioid analges",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Encourage bed rest to conserve energy",
+            "Initiate aggressive pain management with opioids around-the-clock",
+            "New onset fever, chest pain, and decreased oxygen saturation",
+            "Administer IV fluids at 1.5 times maintenance to promote hemodilution",
+            "Hemoglobin of 8 g/dL",
+            "Client requests heating pad for painful joints"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Adequate analgesia is essential; use scheduled dosing rather than PRN only."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 282,
+          "text_snippet": "While assessing an 80-year-old taking 12 daily medications including anticholinergics (Mr. Alvarez) in a geriatric clinic, the nurse notes the client is receiving comprehensive medication review. The ",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client sees multiple specialists",
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "Client uses a weekly pill organizer",
+            "Concurrent use of warfarin, aspirin, and ibuprofen",
+            "New cognitive impairment with urinary retention and dry mouth",
+            "Family helps manage medication administration"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Beers Criteria identifies antihistamines as potentially inappropriate for elderly due to anticholinergic effects."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 286,
+          "text_snippet": "A client, Ms. Kowalski (a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma), is admitted to a cancer center for rasburicase administration. Urine output has been adequate at 150 mL/hour.\n\nWha",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client reports muscle cramps and tingling",
+            "Urine pH of 6.5",
+            "LDH elevated at twice the upper limit of normal",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "Potassium 6.8 mEq/L, phosphorus 7.2 mg/dL, calcium 6.9 mg/dL",
+            "Cardiac monitor showing peaked T waves and widened QRS"
+          ],
+          "correctIndex": 3,
+          "explanation_snippet": "Severe hyperuricemia can cause acute kidney injury from crystal deposition."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 291,
+          "text_snippet": "The nurse is preparing to assess Mr. Rossi, an 80-year-old taking 12 daily medications including anticholinergics in a geriatric clinic, who is currently on comprehensive medication review. The client",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "Client sees multiple specialists",
+            "New cognitive impairment with urinary retention and dry mouth",
+            "Client uses a weekly pill organizer",
+            "Family helps manage medication administration",
+            "Concurrent use of warfarin, aspirin, and ibuprofen"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Beers Criteria identifies antihistamines as potentially inappropriate for elderly due to anticholinergic effects."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 295,
+          "text_snippet": "The nurse reviews the medical record of a 66-year-old male two hours post anterior myocardial infarction (Mr. Yang) in a cardiac ICU. The client is prescribed lidocaine loading dose followed by 2 mg/m",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "Client reporting localized IV site warmth",
+            "A progressive drop in arterial blood pressure accompanied by bradycardia",
+            "Complaint of mild metallic taste",
+            "Telemetry tracing that now shows a broadening QRS duration",
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Hypotension with bradycardia suggests hemodynamic compromise from the infusion."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 301,
+          "text_snippet": "The nurse is assigned to a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma (Mr. Al-Rashid) in a cancer center. Current therapy includes rasburicase administration. Urine output has been adeq",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Cardiac monitor showing peaked T waves and widened QRS",
+            "Uric acid level of 12 mg/dL with decreased urine output",
+            "Potassium 6.8 mEq/L, phosphorus 7.2 mg/dL, calcium 6.9 mg/dL",
+            "LDH elevated at twice the upper limit of normal",
+            "Client reports muscle cramps and tingling",
+            "Urine pH of 6.5"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Life-threatening hyperkalemia requires emergent treatment."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 309,
+          "text_snippet": "During shift report, the nurse receives information about Ms. Yamamoto, an 80-year-old taking 12 daily medications including anticholinergics in a geriatric clinic who is receiving comprehensive medic",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client uses a weekly pill organizer",
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "New cognitive impairment with urinary retention and dry mouth",
+            "Concurrent use of warfarin, aspirin, and ibuprofen",
+            "Family helps manage medication administration",
+            "Client sees multiple specialists"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Beers Criteria identifies antihistamines as potentially inappropriate for elderly due to anticholinergic effects."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 319,
+          "text_snippet": "A nurse in a cancer center is managing the care of Ms. Okafor, a 45-year-old on day 2 of chemotherapy for Burkitt lymphoma, who is undergoing rasburicase administration. Urine output has been adequate",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "LDH elevated at twice the upper limit of normal",
+            "Maintain urine output of at least 2-3 L/day with IV hydration",
+            "Client reports muscle cramps and tingling",
+            "Urine pH of 6.5",
+            "Cardiac monitor showing peaked T waves and widened QRS",
+            "Uric acid level of 12 mg/dL with decreased urine output"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "High urine flow prevents crystal formation and flushes metabolites."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 321,
+          "text_snippet": "The nurse reviews the medical record of a 24-year-old with major depressive disorder (Mr. Brown) in an emergency department. The client is prescribed psychiatric evaluation. The client admits to havin",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Walk with the client to a quiet area and speak in a calm, low voice",
+            "Administer a sedative immediately",
+            "Contract for safety",
+            "Assign a staff member to stay with the client at all times (1:1 observation)",
+            "I have given away my prized guitar collection",
+            "Ask the client why they feel this way"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Reducing stimulation and using a calm approach helps de-escalate manic behavior."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 323,
+          "text_snippet": "In a geriatric clinic, the nurse is evaluating an 80-year-old taking 12 daily medications including anticholinergics (Ms. Chen) who is receiving comprehensive medication review. The client reports new",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client sees multiple specialists",
+            "Client uses a weekly pill organizer",
+            "Concurrent use of warfarin, aspirin, and ibuprofen",
+            "Diphenhydramine prescribed for sleep in an 82-year-old",
+            "New cognitive impairment with urinary retention and dry mouth",
+            "Family helps manage medication administration"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Triple antithrombotic therapy dramatically increases bleeding risk."
+        }
+      ]
+    },
+    "nursing_quizzes.json": {
+      "path": "C:\\Users\\QCU\\Desktop\\pomodorx_app\\pomodorx_app\\assets\\data\\nursing_quizzes.json",
+      "total_candidates": 26,
+      "problems": [
+        {
+          "quiz_index": 0,
+          "question_index": 7,
+          "text_snippet": "The nurse reviews the medical record of a 45-year-old requiring urinary catheterization (Ms. Kowalski) in a medical-surgical unit. The client is prescribed insertion of an indwelling Foley catheter. T",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Reach over the sterile field to grab a supply",
+            "Place the sterile field 1 inch from the edge of the table",
+            "Pour the saline solution without splashing onto the sterile field",
+            "Use a sterile gloved hand to adjust the face mask",
+            "Discard the entire sterile field and start over with a new kit",
+            "Keep the sterile field in direct line of sight at all times"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Moisture allows bacteria to travel through the sterile drape (wicking), contaminating the field."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 12,
+          "text_snippet": "The nurse reviews the medical record of a 32-year-old undergoing general anesthesia for orthopedic surgery (Mr. Brown) in an operating room. The client is prescribed inhalational anesthetic agents. Th",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Prepare dantrolene sodium for immediate IV administration",
+            "Obtain arterial blood gas to assess metabolic acidosis",
+            "Rapidly rising end-tidal CO2 with unexplained tachycardia and rigidity",
+            "Initiate active cooling measures",
+            "Discontinue all triggering agents and hyperventilate with 100% oxygen",
+            "Family history of unexplained perioperative death"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Dantrolene is the specific antidote and must be given immediately."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 14,
+          "text_snippet": "The nurse reviews the medical record of a 19-year-old with type 1 diabetes presenting with Kussmaul respirations (Ms. Gomez) in an emergency department. The client is prescribed insulin infusion proto",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client reports extreme thirst",
+            "New onset headache, bradycardia, and altered mental status",
+            "Blood glucose of 180 mg/dL after 6 hours of treatment",
+            "Initiate 0.9% normal saline bolus before starting insulin",
+            "Add potassium to IV fluids once level drops below 5.3 mEq/L",
+            "Continue insulin infusion until anion gap closes, not just until glucose normalizes"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Signs of cerebral edema, a life-threatening complication of DKA treatment."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 16,
+          "text_snippet": "The nurse reviews the medical record of a 33-year-old scheduled for elective abdominal surgery (Mr. Rossi) in a preoperative holding area. The client is prescribed a short peripheral catheter. The for",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Use a sterile scalpel to remove hair close to the skin",
+            "Leave the hair intact to avoid upsetting the client",
+            "Smooth the hair with a water-based lubricant before taping",
+            "Apply depilatory cream and wipe it off after three minutes",
+            "Shave the area with a razor just before insertion",
+            "Use a single-patient clipper to trim hair down to stubble"
+          ],
+          "correctIndex": 5,
+          "explanation_snippet": "Clipping removes hair without causing micro-abrasions that raise infection risk."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 33,
+          "text_snippet": "The nurse reviews the medical record of a 40-year-old with bipolar disorder (Ms. Chenoweth) in an inpatient psychiatric unit. The client is prescribed stabilization of acute mania. The client is pacin",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Walk with the client to a quiet area and speak in a calm, low voice",
+            "Ask the client why they feel this way",
+            "I have given away my prized guitar collection",
+            "Assign a staff member to stay with the client at all times (1:1 observation)",
+            "Administer a sedative immediately",
+            "Contract for safety"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Reducing stimulation and using a calm approach helps de-escalate manic behavior."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 42,
+          "text_snippet": "A nurse in a telemetry step-down unit is managing the care of Ms. Rodriguez, a 58-year-old female with dilated cardiomyopathy, who is undergoing continuous lidocaine infusion targeting ventricular tri",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Complaint of mild metallic taste",
+            "Client reporting localized IV site warmth",
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "A progressive drop in arterial blood pressure accompanied by bradycardia",
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula",
+            "Telemetry tracing that now shows a broadening QRS duration"
+          ],
+          "correctIndex": 3,
+          "explanation_snippet": "Hypotension with bradycardia suggests hemodynamic compromise from the infusion."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 67,
+          "text_snippet": "The nurse reviews the medical record of a 28-year-old at a prenatal visit appearing anxious and withdrawn (Ms. Kowalski) in an outpatient obstetric clinic. The client is prescribed routine prenatal ca",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Injuries in various stages of healing with inconsistent explanations",
+            "Delay in seeking treatment after injury",
+            "Provide information about domestic violence resources and safety planning",
+            "Document findings objectively using body maps and photographs with consent",
+            "Partner appears concerned and attentive",
+            "Client denies abuse when partner is present"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Pattern highly suspicious for repeated non-accidental trauma."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 85,
+          "text_snippet": "The nurse reviews the medical record of a 68-year-old with COPD admitted for increased dyspnea and purulent sputum (Ms. Gomez) in a medical unit. The client is prescribed nebulized bronchodilators and",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Bilateral expiratory wheezes throughout lung fields",
+            "Increase oxygen to maintain saturation above 95%",
+            "Administer methylprednisolone to reduce airway inflammation",
+            "Respiratory rate of 24/min with prolonged expiration",
+            "Decreasing level of consciousness with CO2 retention",
+            "Maintain oxygen saturation between 88-92% using low-flow oxygen"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Corticosteroids shorten exacerbation duration and are first-line therapy."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 91,
+          "text_snippet": "The nurse reviews the medical record of a 68-year-old post-op day 3 from bowel resection (Ms. Yamamoto) in a surgical ICU. The client is prescribed vasopressor support. Blood cultures are pending and ",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Lactate level trending down from 4.2 to 2.1 mmol/L",
+            "Temperature of 101.8°F (38.8°C)",
+            "Urine output of 35 mL/hour after fluid bolus",
+            "Obtain blood cultures before initiating antibiotics",
+            "White blood cell count of 18,000/mm³",
+            "Mean arterial pressure drops below 65 mm Hg despite fluids"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Clearing lactate indicates improved tissue perfusion."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 128,
+          "text_snippet": "The nurse is preparing to assess Mr. Park, a 58-year-old female with dilated cardiomyopathy in a telemetry step-down unit, who is currently on continuous lidocaine infusion targeting ventricular trige",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Serum potassium that dropped from 4.2 to 3.1 mEq/L",
+            "Complaint of mild metallic taste",
+            "Sudden confusion and tremors noted during neurologic checks",
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "Client reporting localized IV site warmth",
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Hypokalemia increases ventricular irritability and undermines lidocaine effectiveness."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 145,
+          "text_snippet": "The nurse reviews the medical record of a 9-month-old with bronchiolitis (Ms. Nguyen) in a pediatric step-down unit. The client is prescribed high-flow nasal cannula oxygen. Parents are at the bedside",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Mild inspiratory wheezing improving after treatment",
+            "Grunting with each exhalation",
+            "Capillary refill under 2 seconds",
+            "Pulse oximetry falling to 88% despite oxygen support",
+            "Respiratory rate of 34/min with even chest rise",
+            "Heart rate 160/min while crying"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Grunting indicates the child is trying to maintain airway pressure."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 192,
+          "text_snippet": "The nurse reviews the medical record of a 55-year-old with head injury and impaired swallowing (Ms. Romero) in a rehabilitation unit. The client is prescribed bolus tube feedings four times daily. The",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Gastric residual volume of 350 mL on consecutive checks",
+            "Flush the tube with 30 mL water before and after feeding",
+            "Client reports feeling bloated",
+            "Gastric residual of 75 mL",
+            "Verify tube placement by checking pH of aspirate and comparing to X-ray",
+            "Maintain head of bed elevation at least 30-45 degrees during and after feeding"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "High residual increases aspiration risk and may require holding feeding."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 200,
+          "text_snippet": "The nurse assumes care of a 58-year-old female with dilated cardiomyopathy (Ms. Gomez) in a telemetry step-down unit. The client's current regimen includes continuous lidocaine infusion targeting vent",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula",
+            "Serum potassium that dropped from 4.2 to 3.1 mEq/L",
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "Complaint of mild metallic taste",
+            "Telemetry tracing that now shows a broadening QRS duration",
+            "Client reporting localized IV site warmth"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Hypokalemia increases ventricular irritability and undermines lidocaine effectiveness."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 208,
+          "text_snippet": "The nurse reviews the medical record of a 16-year-old admitted for vaso-occlusive crisis (Mx. Jordan) in a hematology unit. The client is prescribed patient-controlled analgesia. Temperature is 100.8°",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client requests heating pad for painful joints",
+            "Encourage bed rest to conserve energy",
+            "Initiate aggressive pain management with opioids around-the-clock",
+            "Hemoglobin of 8 g/dL",
+            "Administer IV fluids at 1.5 times maintenance to promote hemodilution",
+            "New onset fever, chest pain, and decreased oxygen saturation"
+          ],
+          "correctIndex": 2,
+          "explanation_snippet": "Adequate analgesia is essential; use scheduled dosing rather than PRN only."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 234,
+          "text_snippet": "The nurse reviews the medical record of a 30-year-old multipara at 39 weeks gestation (Ms. Romero) in a birthing center. The client is prescribed labor augmentation with oxytocin. Contractions are occ",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Encourage the client to blow in short breaths and not push",
+            "Administer oxygen via nasal cannula at 2 L/min",
+            "Reposition the client to the left lateral or knee-chest position",
+            "Increase the IV fluid rate",
+            "Discontinue the oxytocin infusion immediately",
+            "Prepare for immediate cesarean section"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Pushing before full dilation can cause cervical edema and lacerations."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 255,
+          "text_snippet": "The nurse reviews the medical record of a 55-year-old with sudden aphasia and facial droop (Mr. Ibrahim) in a comprehensive stroke center. The client is prescribed consideration for IV tPA. The family",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Client had major surgery 10 days ago",
+            "Onset time documented at 4.5 hours ago",
+            "Client takes daily aspirin 81 mg",
+            "Platelet count of 88,000/mm³",
+            "Blood glucose level of 180 mg/dL",
+            "NIH Stroke Scale score of 8"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Recent major surgery within 14 days increases hemorrhage risk."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 256,
+          "text_snippet": "The nurse is planning discharge teaching for a 58-year-old female with dilated cardiomyopathy (Mx. Jordan) in a telemetry step-down unit regarding continuous lidocaine infusion targeting ventricular t",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "Client reporting localized IV site warmth",
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula",
+            "Complaint of mild metallic taste",
+            "A progressive drop in arterial blood pressure accompanied by bradycardia",
+            "Serum potassium that dropped from 4.2 to 3.1 mEq/L"
+          ],
+          "correctIndex": 4,
+          "explanation_snippet": "Hypotension with bradycardia suggests hemodynamic compromise from the infusion."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 300,
+          "text_snippet": "The nurse reviews the medical record of a 68-year-old post-op day 3 from bowel resection (Mr. Haddad) in a surgical ICU. The client is prescribed vasopressor support. Blood cultures are pending and la",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Obtain blood cultures before initiating antibiotics",
+            "Temperature of 101.8°F (38.8°C)",
+            "Mean arterial pressure drops below 65 mm Hg despite fluids",
+            "Administer 30 mL/kg crystalloid bolus within the first 3 hours",
+            "Urine output of 35 mL/hour after fluid bolus",
+            "White blood cell count of 18,000/mm³"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Cultures must be drawn before antibiotics to identify the organism."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 320,
+          "text_snippet": "The healthcare provider prescribes continuous lidocaine infusion targeting ventricular trigeminy for a 58-year-old female with dilated cardiomyopathy (Dr. Bennett) in a telemetry step-down unit. The n",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "A progressive drop in arterial blood pressure accompanied by bradycardia",
+            "Sudden confusion and tremors noted during neurologic checks",
+            "Complaint of mild metallic taste",
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula",
+            "Client reporting localized IV site warmth"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Hypotension with bradycardia suggests hemodynamic compromise from the infusion."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 323,
+          "text_snippet": "The nurse reviews the medical record of a 62-year-old presenting with left-sided weakness and slurred speech (Mr. Yang) in an emergency department. The client is prescribed alteplase infusion. Symptom",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "NIH Stroke Scale score of 8",
+            "Blood pressure of 220/120 mm Hg that remains elevated despite treatment",
+            "Onset time documented at 4.5 hours ago",
+            "Client takes daily aspirin 81 mg",
+            "Blood glucose level of 180 mg/dL",
+            "Platelet count of 88,000/mm³"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Uncontrolled hypertension above 185/110 is a contraindication due to bleeding risk."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 339,
+          "text_snippet": "The nurse reviews the medical record of a 32-year-old post-cesarean section for placenta previa (Mr. Kaur) in a postpartum recovery area. The client is prescribed blood transfusion protocol. Estimated",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Rapid pulse, decreased blood pressure, and restlessness",
+            "Perform vigorous fundal massage while supporting the lower uterine segment",
+            "Blood loss exceeding 500 mL vaginal or 1000 mL cesarean",
+            "Client reports feeling weak and thirsty",
+            "Fundus firm at umbilicus level",
+            "Lochia rubra with small clots"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Signs of hypovolemic shock requiring aggressive fluid resuscitation."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 344,
+          "text_snippet": "During shift report, the nurse receives information about Ms. Gomez, a 58-year-old female with dilated cardiomyopathy in a telemetry step-down unit who is receiving continuous lidocaine infusion targe",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Serum potassium that dropped from 4.2 to 3.1 mEq/L",
+            "Occasional premature ventricular contractions that match baseline frequency",
+            "Telemetry tracing that now shows a broadening QRS duration",
+            "Oxygen saturation trending 96% on 2 L/min nasal cannula",
+            "Client reporting localized IV site warmth",
+            "Complaint of mild metallic taste"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Hypokalemia increases ventricular irritability and undermines lidocaine effectiveness."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 355,
+          "text_snippet": "The nurse reviews the medical record of a 9-month-old with bronchiolitis (Mr. Okoye) in a pediatric step-down unit. The client is prescribed high-flow nasal cannula oxygen. Parents are at the bedside ",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Pulse oximetry falling to 88% despite oxygen support",
+            "Capillary refill under 2 seconds",
+            "Heart rate 160/min while crying",
+            "Grunting with each exhalation",
+            "Respiratory rate of 34/min with even chest rise",
+            "Mild inspiratory wheezing improving after treatment"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Persistent hypoxemia warrants escalation."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 385,
+          "text_snippet": "The nurse reviews the medical record of a 75-year-old with known Alzheimer's disease now more confused (Ms. Okafor) in a skilled nursing facility. The client is prescribed urinary catheter for retenti",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Gradual cognitive decline over several years",
+            "Acute onset of confusion with fluctuating level of consciousness",
+            "Client cannot recall short-term events",
+            "Recent addition of multiple new medications including opioids and anticholinergics",
+            "Family requests pharmacologic sedation",
+            "Investigate for underlying infection, hypoxia, or metabolic disturbance"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Sudden onset and fluctuation are hallmarks of delirium."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 388,
+          "text_snippet": "The nurse reviews the medical record of a 45-year-old with limited English proficiency signing surgical consent (Ms. Osei) in a surgical holding area. The client is prescribed interpreter services. Th",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Family members are present and supportive",
+            "Client asks, 'What exactly are they going to do during this test?'",
+            "Client appears nervous about the procedure",
+            "Client states, 'I don't want the procedure, but my family insists'",
+            "Consent signed while client was under influence of sedative medications",
+            "Witness the client's signature on the consent form"
+          ],
+          "correctIndex": 1,
+          "explanation_snippet": "Indicates lack of understanding; consent may not be truly informed."
+        },
+        {
+          "quiz_index": 0,
+          "question_index": 438,
+          "text_snippet": "The nurse reviews the medical record of a 32-year-old primigravida with epidural analgesia (Mr. Yang) in a birthing center. The client is prescribed internal fetal scalp electrode monitoring. The clie",
+          "problems": [
+            "explanation-mismatch-suspected"
+          ],
+          "options": [
+            "Prolonged deceleration lasting 4 minutes with baseline below 90 bpm",
+            "Baseline fetal heart rate of 145 bpm",
+            "Early decelerations that mirror contraction pattern",
+            "Recurrent late decelerations with minimal variability",
+            "Moderate variability with accelerations during fetal movement",
+            "Absent variability with recurrent variable decelerations"
+          ],
+          "correctIndex": 0,
+          "explanation_snippet": "Prolonged bradycardia suggests cord compression or placental abruption."
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_candidates": 170,
+    "total_problems": 55
+  }
+}

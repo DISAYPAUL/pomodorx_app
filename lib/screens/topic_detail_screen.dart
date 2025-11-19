@@ -43,7 +43,27 @@ class TopicDetailScreen extends StatelessWidget {
                       .bodyMedium
                       ?.copyWith(color: colors.textMuted),
                 ),
-                const Spacer(),
+                if (topic.detailedDescription != null) ...[
+                  SizedBox(height: spacing.s4),
+                  Text(
+                    'About This Topic',
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleMedium
+                        ?.copyWith(fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: spacing.s2),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Text(
+                        topic.detailedDescription!,
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: spacing.s4),
+                ] else
+                  const Spacer(),
                 ElevatedButton.icon(
                   onPressed: () => Navigator.pushNamed(
                     context,

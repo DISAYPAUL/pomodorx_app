@@ -41,8 +41,10 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Question ${provider.currentIndex + 1} of '
-                    '${widget.quiz.questions.length}'),
+                Text(
+                  'Question ${provider.currentIndex + 1} of '
+                  '${widget.quiz.questions.length}',
+                ),
                 SizedBox(height: spacing.s2),
                 Expanded(
                   child: SingleChildScrollView(
@@ -64,7 +66,8 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                       child: const Text('Previous'),
                     ),
                     TextButton(
-                      onPressed: provider.currentIndex ==
+                      onPressed:
+                          provider.currentIndex ==
                               widget.quiz.questions.length - 1
                           ? null
                           : provider.nextQuestion,
@@ -76,7 +79,10 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                 ElevatedButton(
                   onPressed: () async {
                     if (!provider.isQuizCompleted) {
-                      showToast(context, 'Answer all questions before submitting.');
+                      showToast(
+                        context,
+                        'Answer all questions before submitting.',
+                      );
                       return;
                     }
                     final progress = await provider.submitQuiz();
@@ -84,7 +90,10 @@ class _QuizPlayScreenState extends State<QuizPlayScreen> {
                     Navigator.pushReplacementNamed(
                       context,
                       AppRoutes.results,
-                      arguments: ResultsArgs(quizId: widget.quiz.id),
+                      arguments: ResultsArgs(
+                        quizId: widget.quiz.id,
+                        topicId: widget.quiz.topicId,
+                      ),
                     );
                   },
                   child: const Text('Submit'),

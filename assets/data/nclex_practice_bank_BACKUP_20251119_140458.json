@@ -1,0 +1,1353 @@
+{
+  "topic": {
+    "id": "topic-nclex",
+    "name": "NCLEX Practice",
+    "description": "Comprehensive NCLEX-RN practice questions covering all major client needs categories.",
+    "detailedDescription": "Authentic NCLEX-RN style practice questions designed following the NCLEX test plan. This comprehensive question bank covers all Client Needs categories with accurate answer mappings and detailed rationales. Each question has been carefully crafted to match real NCLEX exam standards.",
+    "icon": "assets/icons/logo.png",
+    "slug": "nclex-practice",
+    "createdAt": "2025-11-19T12:00:00.000000Z"
+  },
+  "quizzes": [
+    {
+      "id": "quiz-nclex-easy",
+      "title": "NCLEX Practice - Easy",
+      "difficultySlug": "easy",
+      "durationMinutes": 30,
+      "createdAt": "2025-11-19T12:00:00.000000Z",
+      "isOffline": true,
+      "questions": [
+        {
+          "id": "NCLEX-EASY-001",
+          "text": "A nurse is assigned to care for four clients. Which client should the nurse assess first?",
+          "options": [
+            "A client with diabetes who has a blood glucose of 95 mg/dL",
+            "A client with pneumonia who has an oxygen saturation of 92% on room air",
+            "A client post-operative day 1 with a temperature of 101.2°F (38.4°C)",
+            "A client with chest pain rating 8/10 and diaphoresis"
+          ],
+          "correctIndex": 3,
+          "explanation": "The client with chest pain and diaphoresis is exhibiting signs of possible myocardial infarction, which is life-threatening and requires immediate assessment. The other clients are stable or have expected post-operative findings.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-002",
+          "text": "A nurse is preparing to delegate tasks to unlicensed assistive personnel (UAP). Which task can be safely delegated?",
+          "options": [
+            "Feeding a stable client who can swallow without difficulty",
+            "Administering oral medications to a client",
+            "Performing initial assessment on a newly admitted client",
+            "Teaching a client about insulin injection technique"
+          ],
+          "correctIndex": 0,
+          "explanation": "Feeding a stable client with no swallowing difficulties is within the scope of practice for UAP. Medication administration, assessments, and teaching require professional nursing judgment and cannot be delegated to UAP.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-003",
+          "text": "A client tells the nurse they do not want to undergo a scheduled surgical procedure. What is the nurse's best initial action?",
+          "options": [
+            "Document the client's wishes in the medical record",
+            "Notify the surgeon immediately about the client's decision",
+            "Ask the client to explain their concerns and reasoning",
+            "Encourage the client to reconsider because the surgery is necessary"
+          ],
+          "correctIndex": 2,
+          "explanation": "The nurse should first explore the client's concerns through therapeutic communication to understand their perspective. This allows the nurse to provide support and ensure the client is making an informed decision before notifying the surgeon.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-004",
+          "text": "A nurse discovers that a medication error has occurred. What is the priority nursing action?",
+          "options": [
+            "Complete an incident report",
+            "Notify the nursing supervisor",
+            "Assess the client for adverse effects",
+            "Document the error in the client's chart"
+          ],
+          "correctIndex": 2,
+          "explanation": "Patient safety is the priority. The nurse must first assess the client for any adverse effects from the medication error. After ensuring the client is safe, the nurse should notify the provider, complete documentation, and file an incident report.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-005",
+          "text": "A nurse is caring for a client who is on contact precautions for a multidrug-resistant infection. Which personal protective equipment (PPE) should the nurse use?",
+          "options": [
+            "Gloves only",
+            "Gloves and gown",
+            "Gloves, gown, and N95 respirator",
+            "Gloves, gown, mask, and eye protection"
+          ],
+          "correctIndex": 1,
+          "explanation": "Contact precautions require gloves and gown to prevent transmission of organisms through direct contact or contact with contaminated surfaces. N95 respirators are required for airborne precautions, not contact precautions.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-006",
+          "text": "A client with tuberculosis (TB) is being admitted to the hospital. What type of isolation precautions should be implemented?",
+          "options": [
+            "Standard precautions only",
+            "Droplet precautions",
+            "Airborne precautions",
+            "Contact precautions"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tuberculosis is transmitted via airborne particles (< 5 microns) and requires airborne precautions, including a negative pressure room and N95 respirator use by healthcare workers entering the room.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-007",
+          "text": "A nurse is preparing to administer a blood transfusion. What is the maximum time the blood product can be infused?",
+          "options": [
+            "1 hour",
+            "2 hours",
+            "4 hours",
+            "6 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Blood products must be infused within 4 hours to prevent bacterial growth and ensure product integrity. The transfusion should be completed within this timeframe from when it is removed from refrigerated storage.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-008",
+          "text": "A client is receiving continuous intravenous heparin therapy. Which laboratory value is most important for the nurse to monitor?",
+          "options": [
+            "Platelet count",
+            "Activated partial thromboplastin time (aPTT)",
+            "Prothrombin time (PT)",
+            "International normalized ratio (INR)"
+          ],
+          "correctIndex": 1,
+          "explanation": "aPTT is used to monitor the effectiveness and safety of heparin therapy. The therapeutic range is typically 1.5 to 2.5 times the control value. PT and INR are used to monitor warfarin (Coumadin) therapy, not heparin.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-009",
+          "text": "A nurse is caring for a client at risk for falls. Which intervention is most effective in preventing falls?",
+          "options": [
+            "Keeping the bed in the lowest position with all four side rails up",
+            "Using a bed alarm and placing the call bell within reach",
+            "Applying bilateral wrist restraints",
+            "Keeping the client in bed at all times"
+          ],
+          "correctIndex": 1,
+          "explanation": "A bed alarm alerts staff when the client attempts to get up, and having the call bell within reach allows the client to request assistance. All four side rails up is considered a restraint. Physical restraints should be a last resort, and mobility should be encouraged when safe with appropriate assistance.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-010",
+          "text": "A nurse is caring for a client with a seizure disorder. What is the priority action during an active seizure?",
+          "options": [
+            "Insert a padded tongue blade to prevent tongue biting",
+            "Restrain the client to prevent injury",
+            "Position the client on their side to maintain airway patency",
+            "Administer oxygen at 10 L/min via non-rebreather mask"
+          ],
+          "correctIndex": 2,
+          "explanation": "Positioning the client on their side helps maintain airway patency and allows secretions to drain from the mouth, preventing aspiration. Never insert anything into the mouth during a seizure or physically restrain a seizing client, as this can cause injury.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-011",
+          "text": "A nurse is providing teaching to a pregnant client in the first trimester. Which statement by the client indicates correct understanding?",
+          "options": [
+            "I should avoid taking any folic acid supplements during pregnancy",
+            "I need to take 400-800 micrograms of folic acid daily",
+            "I can continue drinking alcohol in moderation during pregnancy",
+            "I should eat for two people now that I'm pregnant"
+          ],
+          "correctIndex": 1,
+          "explanation": "Folic acid supplementation (400-800 mcg daily) in early pregnancy and throughout the first trimester is essential for preventing neural tube defects. All alcohol should be avoided during pregnancy, and caloric intake only needs minimal increase in the first trimester (approximately 340 additional calories per day in second trimester).",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-012",
+          "text": "A nurse is teaching a group of older adults about fall prevention in the home. Which recommendation should be included?",
+          "options": [
+            "Wear loose-fitting slippers at home for comfort",
+            "Install grab bars in bathrooms and near stairways",
+            "Use decorative throw rugs throughout the house",
+            "Keep the home dimly lit at night to save energy"
+          ],
+          "correctIndex": 1,
+          "explanation": "Grab bars provide support and stability in high-risk areas like bathrooms and stairs. Other fall prevention measures include wearing proper-fitting footwear with non-slip soles, removing throw rugs, and ensuring adequate lighting throughout the home.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-013",
+          "text": "A nurse is assessing a 2-month-old infant during a well-child visit. Which developmental milestone should the nurse expect the infant to demonstrate?",
+          "options": [
+            "Sitting without support for short periods",
+            "Following objects with eyes through a 180-degree arc",
+            "Saying first words like 'mama' or 'dada'",
+            "Grasping small objects with a pincer grasp"
+          ],
+          "correctIndex": 1,
+          "explanation": "By 2 months of age, infants should be able to track objects visually through a 180-degree range. Sitting without support typically occurs around 6-7 months, first words around 10-12 months, and pincer grasp around 9-10 months.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-014",
+          "text": "A nurse is providing dietary teaching to a client newly diagnosed with hypertension. Which food should the client be taught to avoid?",
+          "options": [
+            "Fresh fruits and vegetables",
+            "Processed deli meats and canned soups",
+            "Grilled lean chicken breast",
+            "Brown rice and whole grain bread"
+          ],
+          "correctIndex": 1,
+          "explanation": "Processed meats and canned soups are very high in sodium, which can increase blood pressure. Clients with hypertension should follow a low-sodium diet (DASH diet) including fresh fruits, vegetables, lean proteins, and whole grains while avoiding processed and canned foods.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-015",
+          "text": "A nurse is teaching a female client about breast self-examination. At what time in the menstrual cycle should the examination be performed?",
+          "options": [
+            "During menstruation when breasts are most sensitive",
+            "One week before menstruation is expected to begin",
+            "5-7 days after menstruation begins",
+            "At any random time during the month"
+          ],
+          "correctIndex": 2,
+          "explanation": "Breast self-examination should be performed 5-7 days after menstruation begins when breast tissue is least tender and lumpy from hormonal changes, making it easier to detect abnormalities. Post-menopausal women should choose and remember the same day each month.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-016",
+          "text": "A nurse is caring for a client who is prescribed digoxin 0.25 mg PO daily. Which assessment finding would cause the nurse to hold the medication?",
+          "options": [
+            "Heart rate of 58 beats per minute",
+            "Blood pressure of 128/82 mmHg",
+            "Respiratory rate of 18 breaths per minute",
+            "Temperature of 98.6°F (37°C)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Digoxin is a cardiac glycoside that decreases heart rate. The medication should be held if the heart rate is less than 60 beats per minute in adults. The nurse should notify the healthcare provider before administering the medication.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-017",
+          "text": "A nurse is preparing to administer an intramuscular injection to an adult client. Which needle size is most appropriate?",
+          "options": [
+            "25 gauge, 5/8 inch",
+            "22 gauge, 1 inch",
+            "22 gauge, 1.5 inches",
+            "18 gauge, 1 inch"
+          ],
+          "correctIndex": 2,
+          "explanation": "For an intramuscular injection in an average-sized adult, a 22-23 gauge, 1-1.5 inch needle is appropriate to reach muscle tissue. Shorter needles are used for subcutaneous injections, and smaller gauge numbers (larger needles) are typically used for viscous medications or blood products.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-018",
+          "text": "A client with type 1 diabetes mellitus asks the nurse why blood glucose monitoring is important. What is the best response by the nurse?",
+          "options": [
+            "It helps determine if you need to take your insulin",
+            "It replaces the need for hemoglobin A1C testing",
+            "It helps you adjust your insulin dose based on your current blood glucose level",
+            "It is only necessary when you feel symptoms of low blood sugar"
+          ],
+          "correctIndex": 2,
+          "explanation": "Regular blood glucose monitoring allows clients with diabetes to adjust insulin doses based on current blood glucose levels, activity, and food intake to maintain optimal glycemic control. It complements but does not replace A1C testing, and should be done regularly, not just when symptomatic.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-019",
+          "text": "A nurse is caring for a client receiving oxygen at 2 L/min via nasal cannula. Which statement by the client indicates understanding of oxygen safety?",
+          "options": [
+            "I can smoke cigarettes as long as I step outside",
+            "I should keep the oxygen at least 5 feet away from any heat source",
+            "I can use petroleum-based products on my lips to prevent dryness",
+            "I need to turn off the oxygen when I eat my meals"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oxygen supports combustion and must be kept at least 5 feet away from heat sources, open flames, and smoking materials. Water-based lubricants should be used instead of petroleum-based products. Oxygen should not be discontinued during meals unless specifically ordered.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-020",
+          "text": "A nurse is assessing a client who is receiving a blood transfusion. Which finding indicates a possible transfusion reaction?",
+          "options": [
+            "Temperature of 98.6°F (37°C)",
+            "Blood pressure of 120/80 mmHg",
+            "Development of hives and itching",
+            "Urine output of 50 mL/hour"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hives and itching indicate an allergic transfusion reaction. The transfusion should be stopped immediately, the IV line kept open with normal saline, and the healthcare provider notified. Other signs of transfusion reactions include fever, chills, back pain, dyspnea, and hypotension.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-021",
+          "text": "A nurse is caring for a postoperative client who has a patient-controlled analgesia (PCA) pump. Which action by the nurse is most important?",
+          "options": [
+            "Instruct family members to press the button when the client is sleeping",
+            "Teach the client to press the button before pain becomes severe",
+            "Administer a bolus dose every hour regardless of client request",
+            "Disconnect the PCA pump during physical therapy sessions"
+          ],
+          "correctIndex": 1,
+          "explanation": "The client should be taught to use the PCA before pain becomes severe for better pain control. Only the client should press the button to prevent overdose. The PCA has lockout intervals to prevent overdose, and it should not be disconnected without provider orders.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-022",
+          "text": "A nurse is caring for a client with pneumonia who has a productive cough. What is the priority nursing intervention?",
+          "options": [
+            "Administer an antitussive medication to suppress the cough",
+            "Encourage the client to cough and deep breathe every 2 hours",
+            "Keep the client on strict bed rest to conserve energy",
+            "Limit fluid intake to prevent increased mucus production"
+          ],
+          "correctIndex": 1,
+          "explanation": "Encouraging coughing and deep breathing helps mobilize and expectorate secretions, which is important in treating pneumonia. Antitussives that suppress productive coughs are contraindicated. Adequate fluid intake (not restriction) helps thin secretions, and mobility should be encouraged as tolerated.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-023",
+          "text": "A nurse is teaching a client who has a new prescription for warfarin. Which statement by the client requires further teaching?",
+          "options": [
+            "I will use an electric razor when shaving",
+            "I will eat lots of green leafy vegetables for vitamins",
+            "I will wear a medical alert bracelet",
+            "I will report any signs of unusual bleeding to my doctor"
+          ],
+          "correctIndex": 1,
+          "explanation": "Green leafy vegetables are high in vitamin K, which can decrease the effectiveness of warfarin. Clients should maintain consistent (not increased or decreased) vitamin K intake. Using an electric razor, wearing medical alert identification, and reporting bleeding are all appropriate.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-024",
+          "text": "A nurse is preparing to insert an indwelling urinary catheter. Which action should the nurse take first?",
+          "options": [
+            "Open the catheterization kit using sterile technique",
+            "Inflate the balloon with sterile water to test it",
+            "Perform hand hygiene and apply clean gloves",
+            "Position the client in dorsal recumbent position"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hand hygiene is the first and most important step in any procedure to prevent infection. After hand hygiene and applying clean gloves, the nurse would then position the client, perform perineal care, remove clean gloves, perform hand hygiene again, and then open the sterile catheterization kit.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-EASY-025",
+          "text": "A client is prescribed furosemide 40 mg PO daily. Which assessment finding indicates the medication is having the desired effect?",
+          "options": [
+            "Blood pressure decreases from 160/90 to 130/80 mmHg",
+            "Heart rate increases from 70 to 85 beats per minute",
+            "Respiratory rate decreases from 24 to 16 breaths per minute",
+            "Weight increases by 2 pounds in 24 hours"
+          ],
+          "correctIndex": 0,
+          "explanation": "Furosemide is a loop diuretic used to treat fluid overload and hypertension. A decrease in blood pressure indicates the medication is effective. The nurse should also expect decreased weight (not increased), decreased edema, and possibly decreased respiratory rate if fluid was affecting breathing. Important to monitor potassium levels as loop diuretics cause potassium loss.",
+          "type": "mcq",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "quiz-nclex-medium",
+      "title": "NCLEX Practice - Medium",
+      "difficultySlug": "medium",
+      "durationMinutes": 45,
+      "createdAt": "2025-11-19T12:00:00.000000Z",
+      "isOffline": true,
+      "questions": [
+        {
+          "id": "NCLEX-MED-001",
+          "text": "A nurse is caring for a client with diabetic ketoacidosis (DKA). Which laboratory finding requires immediate intervention?",
+          "options": [
+            "Blood glucose 450 mg/dL",
+            "pH 7.25",
+            "Potassium 3.0 mEq/L",
+            "Sodium 140 mEq/L"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hypokalemia (potassium < 3.5 mEq/L) is life-threatening and can cause fatal cardiac arrhythmias. Although clients with DKA initially have elevated potassium due to acidosis, insulin therapy causes rapid intracellular potassium shift, leading to severe hypokalemia. Potassium must be replaced before or concurrently with insulin therapy once urine output is established.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-002",
+          "text": "A client is admitted with acute exacerbation of COPD. Which arterial blood gas (ABG) result would the nurse expect?",
+          "options": [
+            "pH 7.50, PaCO2 30 mmHg, HCO3 24 mEq/L",
+            "pH 7.30, PaCO2 60 mmHg, HCO3 28 mEq/L",
+            "pH 7.35, PaCO2 40 mmHg, HCO3 24 mEq/L",
+            "pH 7.28, PaCO2 35 mmHg, HCO3 18 mEq/L"
+          ],
+          "correctIndex": 1,
+          "explanation": "COPD causes chronic respiratory acidosis due to CO2 retention from impaired gas exchange. The expected ABG shows: low pH (acidosis), elevated PaCO2 (respiratory cause), and elevated HCO3 (metabolic compensation over time). In COPD exacerbation, maintain SpO2 88-92% as these clients rely on hypoxic drive.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-003",
+          "text": "A nurse is caring for a client receiving magnesium sulfate for preeclampsia. Which assessment finding indicates magnesium toxicity?",
+          "options": [
+            "Deep tendon reflexes 2+",
+            "Respiratory rate 10 breaths per minute",
+            "Urine output 40 mL/hour",
+            "Blood pressure 140/90 mmHg"
+          ],
+          "correctIndex": 1,
+          "explanation": "Respiratory depression (rate < 12 breaths/min) is a critical sign of magnesium toxicity. Signs progress: loss of deep tendon reflexes (first), respiratory depression, cardiac arrest. Stop infusion, notify provider, prepare calcium gluconate (antidote). Therapeutic level: 4-7 mg/dL. Monitor: reflexes, respirations (>12/min), urine output (>30 mL/hr).",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-004",
+          "text": "A client with heart failure is prescribed spironolactone. Which food should the nurse teach the client to avoid?",
+          "options": [
+            "Bananas and oranges",
+            "Whole grain breads",
+            "Lean chicken breast",
+            "Green beans"
+          ],
+          "correctIndex": 0,
+          "explanation": "Spironolactone is a potassium-sparing diuretic. Clients should avoid high-potassium foods (bananas, oranges, tomatoes, potatoes, spinach) to prevent hyperkalemia which can cause life-threatening cardiac arrhythmias. Monitor potassium levels and ECG for peaked T waves. Avoid salt substitutes containing potassium.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-005",
+          "text": "A nurse is assessing a client 24 hours after thyroidectomy. Which finding requires immediate action?",
+          "options": [
+            "Hoarseness when speaking",
+            "Serosanguineous drainage on dressing",
+            "Numbness and tingling around the mouth",
+            "Neck discomfort rating 4/10"
+          ],
+          "correctIndex": 2,
+          "explanation": "Numbness and tingling around the mouth (Chvostek's sign) indicates hypocalcemia from accidental parathyroid removal/damage. This can progress to tetany, laryngospasm, and respiratory arrest. Check calcium level, administer IV calcium gluconate. Monitor for Trousseau's sign, muscle twitching, seizures. Mild hoarseness is common from intubation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-006",
+          "text": "A client with cirrhosis develops ascites. Which dietary modification should the nurse recommend?",
+          "options": [
+            "Increase protein intake to 2 g/kg/day",
+            "Restrict sodium to 2000 mg/day or less",
+            "Increase fluid intake to 3-4 liters daily",
+            "Eliminate all dietary fat"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sodium restriction (2000 mg/day or less) is essential for managing ascites as sodium retention causes fluid accumulation. Fluid restriction (1000-1500 mL/day) is often added if hyponatremia develops. Monitor: daily weights, abdominal girth, respiratory status, electrolytes. Interventions may include diuretics and paracentesis.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-007",
+          "text": "A nurse is caring for a client receiving warfarin who has an INR of 5.5. Which action should the nurse anticipate?",
+          "options": [
+            "Administering vitamin K",
+            "Increasing the warfarin dose",
+            "Continuing current warfarin dose",
+            "Administering protamine sulfate"
+          ],
+          "correctIndex": 0,
+          "explanation": "An INR of 5.5 is dangerously high (therapeutic 2-3) and increases bleeding risk. Vitamin K reverses warfarin effects. Hold warfarin and administer vitamin K per protocol. Protamine sulfate is the antidote for heparin, not warfarin. Assess for bleeding: bruising, hematuria, blood in stool.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-008",
+          "text": "A client is admitted with acute pancreatitis. Which laboratory value would the nurse expect to be elevated?",
+          "options": [
+            "Serum amylase",
+            "Hemoglobin",
+            "Serum calcium",
+            "Platelet count"
+          ],
+          "correctIndex": 0,
+          "explanation": "Serum amylase rises within hours of pancreatic injury and is a key diagnostic marker. Lipase is also elevated. Calcium often DECREASES due to fat necrosis binding calcium. Management: NPO status, IV fluids, pain management (avoid morphine), monitor for complications.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-009",
+          "text": "A client with myasthenia gravis is experiencing increased muscle weakness. Which medication should the nurse anticipate administering?",
+          "options": [
+            "Atropine",
+            "Pyridostigmine",
+            "Diazepam",
+            "Prednisone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pyridostigmine (Mestinon) is an acetylcholinesterase inhibitor that increases acetylcholine at the neuromuscular junction, improving muscle strength. Take with food to reduce GI upset. Monitor for myasthenic crisis (insufficient medication) vs. cholinergic crisis (too much medication). Edrophonium test helps differentiate.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-010",
+          "text": "A nurse is caring for a client with SIADH. Which intervention should be implemented?",
+          "options": [
+            "Encourage fluid intake of 3-4 liters daily",
+            "Administer hypertonic saline as prescribed",
+            "Monitor for signs of dehydration",
+            "Provide a high-sodium diet"
+          ],
+          "correctIndex": 1,
+          "explanation": "SIADH causes excessive water retention and dilutional hyponatremia. Hypertonic saline (3% NaCl) corrects severe hyponatremia carefully to avoid osmotic demyelination. Fluid restriction (500-1000 mL/day) is primary treatment for mild-moderate SIADH. Monitor: sodium, I&O, daily weights, neurological status.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-011",
+          "text": "A client is receiving continuous IV heparin for DVT. Which assessment finding indicates a potential complication?",
+          "options": [
+            "aPTT of 70 seconds (control 30 seconds)",
+            "Platelet count drops from 200,000 to 80,000/mm³",
+            "Slight bruising at IV insertion site",
+            "Pink-tinged urine"
+          ],
+          "correctIndex": 1,
+          "explanation": "A 50% drop in platelet count suggests heparin-induced thrombocytopenia (HIT), which paradoxically increases thrombosis risk. Stop all heparin immediately and start alternative anticoagulation (argatroban). An aPTT of 70 seconds (2.3x control) is therapeutic. Mild bruising and slightly pink urine may occur with therapeutic anticoagulation.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-012",
+          "text": "A client with chronic kidney disease has a potassium level of 6.8 mEq/L. Which ECG change would the nurse expect?",
+          "options": [
+            "Prolonged PR interval",
+            "Peaked T waves",
+            "Widened QRS complex",
+            "ST segment elevation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Peaked T waves are the earliest ECG change in hyperkalemia (> 6.5 mEq/L). As hyperkalemia worsens: widened QRS, prolonged PR, loss of P wave, sine wave pattern, cardiac arrest. Emergency treatment: calcium gluconate (stabilizes cardiac membrane), insulin with glucose (shifts K+ into cells), dialysis if severe. Monitor ECG continuously.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-013",
+          "text": "A nurse is caring for a client with suspected meningitis. Which assessment finding would the nurse expect?",
+          "options": [
+            "Positive Kernig's sign",
+            "Decreased level of consciousness only",
+            "Bradycardia and hypotension",
+            "Flaccid muscle tone"
+          ],
+          "correctIndex": 0,
+          "explanation": "Positive Kernig's sign (pain and resistance when extending leg with hip flexed) indicates meningeal irritation. Other findings: positive Brudzinski's sign, nuchal rigidity, photophobia, severe headache, fever. Isolate immediately (droplet precautions), obtain blood cultures before antibiotics, perform lumbar puncture, administer antibiotics immediately.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-014",
+          "text": "A client with Addison's disease is experiencing an addisonian crisis. Which intervention is the priority?",
+          "options": [
+            "Administering oral corticosteroids",
+            "Administering IV hydrocortisone",
+            "Restricting fluid intake",
+            "Providing a high-potassium diet"
+          ],
+          "correctIndex": 1,
+          "explanation": "Addisonian crisis is life-threatening requiring immediate IV hydrocortisone (100-300 mg) and aggressive fluid resuscitation with normal saline to treat shock and hypoglycemia. Oral medications cannot be absorbed quickly enough. This crisis causes: severe hypotension, hyponatremia, hyperkalemia, hypoglycemia. Triggered by stress, infection, surgery.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-015",
+          "text": "A nurse is teaching a client with newly diagnosed diabetes about sick day management. Which instruction is most important?",
+          "options": [
+            "Stop taking insulin if not eating",
+            "Continue taking insulin even if unable to eat solid foods",
+            "Decrease insulin dose by half",
+            "Only monitor blood glucose twice daily"
+          ],
+          "correctIndex": 1,
+          "explanation": "Insulin should NEVER be stopped during illness - stress hormones cause blood glucose to rise even without eating. If unable to eat solids, consume carbohydrate-containing liquids. Monitor blood glucose every 2-4 hours, check ketones if glucose > 240 mg/dL, maintain hydration. Illness can trigger DKA.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-016",
+          "text": "A client is receiving a continuous tube feeding at 75 mL/hour. Which assessment finding requires immediate intervention?",
+          "options": [
+            "Gastric residual volume of 180 mL",
+            "Bowel sounds present in all quadrants",
+            "Blood glucose 140 mg/dL",
+            "Head of bed elevated 45 degrees"
+          ],
+          "correctIndex": 0,
+          "explanation": "Gastric residual volume (GRV) of 180 mL may indicate delayed gastric emptying and aspiration risk. Hold feeding temporarily and reassess. Always keep HOB elevated 30-45 degrees during and 30-60 minutes after feeding to prevent aspiration. Check placement before each feeding (PH < 5). Monitor for: aspiration pneumonia, diarrhea, hyperglycemia.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-017",
+          "text": "A client with a chest tube has continuous bubbling in the water seal chamber. What action should the nurse take?",
+          "options": [
+            "Document this expected finding",
+            "Increase the suction pressure",
+            "Check for an air leak in the system",
+            "Clamp the chest tube immediately"
+          ],
+          "correctIndex": 2,
+          "explanation": "Continuous bubbling in the water seal chamber indicates an air leak - either in the drainage system or from the client (pneumothorax). Check all connections and dressing. Intermittent bubbling with exhalation/cough is normal. Never clamp a chest tube except per specific protocol. Monitor: respiratory status, drainage amount/type, subcutaneous emphysema.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-018",
+          "text": "A nurse is caring for a client with acute glomerulonephritis. Which finding would the nurse expect in the urinalysis?",
+          "options": [
+            "Glucose and ketones",
+            "Protein and red blood cells",
+            "Bacteria and white blood cells",
+            "Crystals and low specific gravity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Acute glomerulonephritis (often post-streptococcal) causes inflammation of glomeruli leading to hematuria (RBCs, smoky/tea-colored urine) and proteinuria. Other manifestations: hypertension, edema (especially periorbital), oliguria, elevated BUN/creatinine. Treatment: rest, sodium/protein restriction, diuretics, antihypertensives. Monitor: I&O, daily weights, blood pressure, renal function.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-019",
+          "text": "A client is prescribed phenytoin for seizures. Which instruction should the nurse include in teaching?",
+          "options": [
+            "Take the medication on an empty stomach",
+            "Practice good oral hygiene and see a dentist regularly",
+            "Expect urine to turn orange-red",
+            "Avoid all physical activity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Phenytoin (Dilantin) causes gingival hyperplasia (gum overgrowth), making good oral hygiene and regular dental care essential. Other teaching: take with food, avoid alcohol, don't stop abruptly, use reliable contraception (decreases oral contraceptive effectiveness), monitor drug levels (therapeutic 10-20 mcg/mL). Side effects: hirsutism, ataxia, nystagmus, confusion at toxic levels.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-020",
+          "text": "A client with peptic ulcer disease is prescribed omeprazole. What is the primary action of this medication?",
+          "options": [
+            "Neutralizes stomach acid",
+            "Inhibits gastric acid secretion",
+            "Protects the gastric mucosa",
+            "Increases gastric motility"
+          ],
+          "correctIndex": 1,
+          "explanation": "Omeprazole is a proton pump inhibitor (PPI) that blocks the final step of gastric acid production, significantly reducing acid secretion. Take 30-60 minutes before meals. Long-term use risks: decreased calcium absorption, B12 deficiency, C. difficile infection. PPIs are used for: GERD, peptic ulcers, H. pylori eradication (with antibiotics).",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-021",
+          "text": "A nurse is assessing a client with suspected compartment syndrome following a tibia fracture. Which finding is the earliest sign?",
+          "options": [
+            "Absence of peripheral pulses",
+            "Severe pain unrelieved by opioids",
+            "Pallor and coolness of the extremity",
+            "Paralysis of the affected limb"
+          ],
+          "correctIndex": 1,
+          "explanation": "Severe, progressive pain out of proportion to injury and unrelieved by opioids is the earliest and most reliable sign of compartment syndrome. The '6 Ps' progress: Pain (earliest), Pressure, Paresthesias, Pallor, Pulselessness (late), Paralysis (late - indicates irreversible damage). Emergency fasciotomy is required to prevent permanent nerve/muscle damage and limb loss.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-022",
+          "text": "A client with atrial fibrillation is prescribed warfarin. Which INR value indicates the medication is within therapeutic range?",
+          "options": [
+            "1.0",
+            "1.5",
+            "2.5",
+            "4.5"
+          ],
+          "correctIndex": 2,
+          "explanation": "The therapeutic INR for atrial fibrillation is 2.0-3.0 (2.5 is in the middle). For mechanical heart valves, the range is 2.5-3.5. INR < 2.0: risk of clot formation. INR > 3.0: increased bleeding risk. Normal INR without anticoagulation: 0.8-1.2. Monitor INR regularly, maintain consistent vitamin K intake, avoid NSAIDs and excessive alcohol.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-023",
+          "text": "A nurse is caring for a client receiving total parenteral nutrition (TPN). Which complication is the priority to monitor?",
+          "options": [
+            "Infection at the insertion site",
+            "Hyperglycemia",
+            "Fluid overload",
+            "Electrolyte imbalances"
+          ],
+          "correctIndex": 0,
+          "explanation": "While all are important, infection is priority with TPN due to concentrated glucose providing ideal medium for bacterial growth and central line providing direct bloodstream access. Use strict sterile technique, change dressing per protocol, monitor for fever/chills. Also monitor: blood glucose every 4-6 hours initially, daily weights, I&O, electrolytes. Use dedicated line, use filter, infuse via pump.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-024",
+          "text": "A client with heart failure has gained 5 pounds in 2 days. Which intervention should the nurse implement first?",
+          "options": [
+            "Restrict oral fluid intake",
+            "Auscultate lung sounds",
+            "Increase dietary sodium",
+            "Encourage bedrest"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rapid weight gain indicates fluid retention and worsening heart failure. Priority is to assess for pulmonary edema by auscultating lung sounds for crackles (ABC priority). Then assess: peripheral edema, JVD, dyspnea, orthopnea. Interventions: notify provider, administer prescribed diuretics, restrict fluids and sodium, elevate HOB, monitor I&O and daily weights.",
+          "type": "mcq",
+          "variants": []
+        },
+        {
+          "id": "NCLEX-MED-025",
+          "text": "A nurse is teaching a client about lithium therapy for bipolar disorder. Which symptom indicates lithium toxicity?",
+          "options": [
+            "Fine hand tremor",
+            "Coarse tremor and confusion",
+            "Metallic taste in mouth",
+            "Increased thirst and urination"
+          ],
+          "correctIndex": 1,
+          "explanation": "Coarse tremor and confusion indicate lithium toxicity (levels > 1.5 mEq/L), which can progress to seizures, coma, death. Hold medication and notify provider immediately. Fine tremor, metallic taste, increased thirst/urination are common side effects at therapeutic levels (0.6-1.2 mEq/L). Teaching: maintain consistent sodium/fluid intake, avoid NSAIDs and thiazide diuretics, monitor levels regularly.",
+          "type": "mcq",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "quiz-nclex-hard",
+      "title": "NCLEX Practice - Hard",
+      "difficultySlug": "hard",
+      "durationMinutes": 60,
+      "createdAt": "2025-11-19T12:00:00.000000Z",
+      "isOffline": true,
+      "questions": [
+        {
+          "id": "q-nclex-hard-001",
+          "text": "A nurse is caring for four clients. Which client should the nurse assess first?",
+          "options": [
+            "A client with COPD who has an O2 saturation of 90% on room air.",
+            "A client with pneumonia who has a productive cough and a temperature of 100.4°F (38°C).",
+            "A client who had a hip replacement 2 days ago and reports calf pain and redness.",
+            "A client with type 2 diabetes who has a blood glucose of 180 mg/dL before lunch."
+          ],
+          "correctIndex": 2,
+          "explanation": "The client with calf pain and redness after hip replacement is displaying signs of a Deep Vein Thrombosis (DVT), which is a potential medical emergency due to the risk of Pulmonary Embolism. The COPD client's saturation is at baseline. The pneumonia client is stable. The diabetic client's sugar is elevated but not critical."
+        },
+        {
+          "id": "q-nclex-hard-002",
+          "text": "The charge nurse is making assignments. Which client is most appropriate to assign to an LPN/LVN?",
+          "options": [
+            "A client admitted with new onset atrial fibrillation requiring IV diltiazem.",
+            "A client 2 days post-op appendectomy needing wound care and oral analgesics.",
+            "A client with severe exacerbation of asthma requiring frequent nebulizer treatments.",
+            "A client being discharged today who needs teaching about insulin administration."
+          ],
+          "correctIndex": 1,
+          "explanation": "LPNs/LVNs can care for stable clients with predictable outcomes. A 2-day post-op client needing wound care is stable. New onset arrhythmias, severe asthma, and discharge teaching (complex education) require the RN's scope of practice."
+        },
+        {
+          "id": "q-nclex-hard-003",
+          "text": "A client taking digoxin reports nausea, vomiting, and seeing yellow halos around lights. What is the nurse's priority action?",
+          "options": [
+            "Administer an antiemetic.",
+            "Check the client's apical pulse and hold the next dose.",
+            "Document the findings and continue monitoring.",
+            "Request an order for a potassium supplement."
+          ],
+          "correctIndex": 1,
+          "explanation": "These are classic signs of digoxin toxicity. The priority is to assess the heart rate (apical pulse) and hold the medication to prevent further toxicity and arrhythmias. The provider should then be notified."
+        },
+        {
+          "id": "q-nclex-hard-004",
+          "text": "A pregnant client at 34 weeks gestation presents with a blood pressure of 160/110 mmHg, proteinuria, and severe headache. Which order should the nurse anticipate?",
+          "options": [
+            "Administer IV Magnesium Sulfate.",
+            "Prepare for immediate vaginal delivery.",
+            "Administer oral furosemide.",
+            "Send the client home on bed rest."
+          ],
+          "correctIndex": 0,
+          "explanation": "The client is exhibiting signs of severe preeclampsia. Magnesium Sulfate is the drug of choice to prevent seizures (eclampsia). Immediate delivery might be needed but stabilization with Mag Sulfate comes first."
+        },
+        {
+          "id": "q-nclex-hard-005",
+          "text": "A child presents with drooling, stridor, and a tripod position. The nurse suspects epiglottitis. What is the priority nursing intervention?",
+          "options": [
+            "Inspect the throat with a tongue depressor.",
+            "Obtain a throat culture.",
+            "Keep the child calm and prepare for emergency airway management.",
+            "Administer oral antibiotics immediately."
+          ],
+          "correctIndex": 2,
+          "explanation": "Epiglottitis is a medical emergency. Agitating the child or inspecting the throat can cause complete airway obstruction. The priority is to keep the child calm and have emergency airway equipment ready."
+        },
+        {
+          "id": "q-nclex-hard-006",
+          "text": "A client on lithium therapy has a level of 2.0 mEq/L. Which assessment finding corresponds with this level?",
+          "options": [
+            "Fine hand tremors.",
+            "Polyuria and mild thirst.",
+            "Coarse tremors, confusion, and ataxia.",
+            "Seizures and oliguria."
+          ],
+          "correctIndex": 2,
+          "explanation": "Therapeutic lithium levels are 0.6-1.2 mEq/L. A level of 2.0 mEq/L indicates toxicity. Signs include coarse tremors, confusion, ataxia, and giddiness. Fine tremors are a common side effect, not necessarily toxicity."
+        },
+        {
+          "id": "q-nclex-hard-007",
+          "text": "A client with Addison's disease arrives in the ER with hypotension, tachycardia, and hyperkalemia. What is the priority treatment?",
+          "options": [
+            "Administer IV hydrocortisone.",
+            "Administer IV insulin and dextrose.",
+            "Restrict fluid intake.",
+            "Administer oral fludrocortisone."
+          ],
+          "correctIndex": 0,
+          "explanation": "The client is in Addisonian crisis (adrenal crisis). The priority is to replace the missing cortisol with IV hydrocortisone to reverse shock. Fluids are also needed, not restricted."
+        },
+        {
+          "id": "q-nclex-hard-008",
+          "text": "During a disaster triage, which client should be tagged 'Red'?",
+          "options": [
+            "A client with a closed fracture of the radius.",
+            "A client with massive head trauma and agonal breathing.",
+            "A client with a sucking chest wound and respiratory distress.",
+            "A client with multiple abrasions and a sprained ankle."
+          ],
+          "correctIndex": 2,
+          "explanation": "Red tag indicates immediate threat to life but treatable. A sucking chest wound affects breathing but can be managed. Massive head trauma with agonal breathing is likely Black tag (expectant). Fractures are Yellow or Green."
+        },
+        {
+          "id": "q-nclex-hard-009",
+          "text": "A client receives NPH insulin at 08:00. At what time is the client at highest risk for hypoglycemia?",
+          "options": [
+            "09:00 to 10:00",
+            "12:00 to 14:00",
+            "16:00 to 18:00",
+            "22:00 to 24:00"
+          ],
+          "correctIndex": 2,
+          "explanation": "NPH is an intermediate-acting insulin with a peak effect around 4-12 hours after administration. If given at 08:00, the peak (highest risk for hypoglycemia) is likely between 16:00 (4 PM) and 20:00 (8 PM)."
+        },
+        {
+          "id": "q-nclex-hard-010",
+          "text": "A client with a head injury develops Cushing's Triad. Which vital signs indicate this?",
+          "options": [
+            "Hypotension, tachycardia, tachypnea.",
+            "Hypertension with widening pulse pressure, bradycardia, irregular respirations.",
+            "Hypertension, tachycardia, irregular respirations.",
+            "Hypotension, bradycardia, shallow respirations."
+          ],
+          "correctIndex": 1,
+          "explanation": "Cushing's Triad indicates increased Intracranial Pressure (ICP). It consists of systolic hypertension with a widening pulse pressure, bradycardia, and irregular respirations (Cheyne-Stokes)."
+        },
+        {
+          "id": "q-nclex-hard-011",
+          "text": "A client reports chest pain. Which finding suggests a Myocardial Infarction (MI) rather than Angina Pectoris?",
+          "options": [
+            "Pain is relieved by rest.",
+            "Pain is relieved by nitroglycerin.",
+            "Pain lasts less than 15 minutes.",
+            "Pain radiates to the left arm and is unrelieved by rest or nitroglycerin."
+          ],
+          "correctIndex": 3,
+          "explanation": "MI pain is typically severe, lasts longer than 30 minutes, is not relieved by rest or nitroglycerin, and often radiates. Angina is usually relieved by rest or nitro."
+        },
+        {
+          "id": "q-nclex-hard-012",
+          "text": "A child with acute glomerulonephritis presents with periorbital edema and tea-colored urine. Which nursing intervention is most important?",
+          "options": [
+            "Encourage high protein diet.",
+            "Monitor blood pressure closely.",
+            "Encourage ambulation.",
+            "Administer IV fluids rapidly."
+          ],
+          "correctIndex": 1,
+          "explanation": "Acute glomerulonephritis can cause severe hypertension due to fluid retention and kidney damage. Monitoring BP is critical to prevent hypertensive encephalopathy. Fluids and sodium are usually restricted."
+        },
+        {
+          "id": "q-nclex-hard-013",
+          "text": "A client is admitted with acute pancreatitis. Which laboratory finding does the nurse expect?",
+          "options": [
+            "Decreased serum amylase.",
+            "Elevated serum lipase and amylase.",
+            "Elevated serum calcium.",
+            "Decreased white blood cell count."
+          ],
+          "correctIndex": 1,
+          "explanation": "In acute pancreatitis, pancreatic enzymes (amylase and lipase) leak into the blood, causing significant elevation. Hypocalcemia (not hyper) is a common complication."
+        },
+        {
+          "id": "q-nclex-hard-014",
+          "text": "Which task is appropriate for the nurse to delegate to the Unlicensed Assistive Personnel (UAP)?",
+          "options": [
+            "Assessing a client's skin for breakdown.",
+            "Feeding a client with dysphagia.",
+            "Measuring urine output from a Foley catheter.",
+            "Teaching a client how to use a walker."
+          ],
+          "correctIndex": 2,
+          "explanation": "UAPs can perform standard, unchanging procedures like measuring output. Assessment, teaching, and feeding clients with swallowing difficulties (dysphagia) require nursing judgment and skill."
+        },
+        {
+          "id": "q-nclex-hard-015",
+          "text": "A client is suspected of having active pulmonary tuberculosis (TB). Which isolation precaution should be implemented immediately?",
+          "options": [
+            "Contact Precautions.",
+            "Droplet Precautions.",
+            "Airborne Precautions.",
+            "Standard Precautions only."
+          ],
+          "correctIndex": 2,
+          "explanation": "TB is transmitted via small airborne particles. Airborne precautions (negative pressure room, N95 respirator) are required. Droplet is for larger particles (flu), Contact for surface transmission."
+        },
+        {
+          "id": "q-nclex-hard-016",
+          "text": "A pregnant client presents with painless, bright red vaginal bleeding. The nurse suspects Placenta Previa. Which action is contraindicated?",
+          "options": [
+            "Monitoring fetal heart rate.",
+            "Assessing maternal vital signs.",
+            "Performing a vaginal exam.",
+            "Initiating IV access."
+          ],
+          "correctIndex": 2,
+          "explanation": "In Placenta Previa, the placenta covers the cervix. A vaginal exam can puncture the placenta and cause massive, life-threatening hemorrhage. Ultrasound is used for diagnosis."
+        },
+        {
+          "id": "q-nclex-hard-017",
+          "text": "An infant with Tetralogy of Fallot becomes cyanotic and hyperpneic after crying (Tet spell). What is the nurse's first action?",
+          "options": [
+            "Administer oxygen.",
+            "Place the infant in a knee-chest position.",
+            "Administer morphine.",
+            "Start an IV line."
+          ],
+          "correctIndex": 1,
+          "explanation": "The knee-chest position increases systemic vascular resistance, which forces more blood through the pulmonary artery, improving oxygenation. This is the most immediate and effective intervention."
+        },
+        {
+          "id": "q-nclex-hard-018",
+          "text": "A client taking haloperidol develops high fever, muscle rigidity, and altered mental status. The nurse suspects Neuroleptic Malignant Syndrome (NMS). What is the priority?",
+          "options": [
+            "Administer an anticholinergic.",
+            "Stop the medication and initiate cooling measures.",
+            "Monitor vital signs every 4 hours.",
+            "Place the client in isolation."
+          ],
+          "correctIndex": 1,
+          "explanation": "NMS is a life-threatening reaction to antipsychotics. The priority is to stop the drug immediately and treat the hyperthermia and rigidity (cooling, hydration, dantrolene/bromocriptine)."
+        },
+        {
+          "id": "q-nclex-hard-019",
+          "text": "A client has severe burns covering 40% of their body. Using the Parkland formula, the nurse calculates fluid needs. How is the fluid administered?",
+          "options": [
+            "Total calculated volume over 24 hours.",
+            "Half of the total volume in the first 8 hours, the rest over the next 16 hours.",
+            "One-third in the first 8 hours, one-third in the next 8, one-third in the last 8.",
+            "Bolus the total volume immediately."
+          ],
+          "correctIndex": 1,
+          "explanation": "The Parkland formula dictates that 50% of the calculated 24-hour fluid requirement is given in the first 8 hours from the time of the burn, and the remaining 50% over the subsequent 16 hours."
+        },
+        {
+          "id": "q-nclex-hard-020",
+          "text": "A post-operative client reports a 'popping' sensation in the abdomen and the nurse observes loops of bowel protruding from the incision. What is the priority action?",
+          "options": [
+            "Push the bowel back in and apply a binder.",
+            "Cover the wound with a sterile saline-soaked dressing.",
+            "Call the surgeon and leave the room.",
+            "Apply a dry sterile dressing."
+          ],
+          "correctIndex": 1,
+          "explanation": "This is evisceration. The priority is to protect the protruding organs from drying out and infection. Cover with a sterile, saline-soaked dressing. Do not attempt to reinsert. Stay with the client."
+        },
+        {
+          "id": "q-nclex-hard-021",
+          "text": "A client taking an MAOI (Monoamine Oxidase Inhibitor) for depression should avoid which food to prevent a hypertensive crisis?",
+          "options": [
+            "Fresh spinach.",
+            "Aged cheese and pepperoni.",
+            "Grilled chicken breast.",
+            "Apples and oranges."
+          ],
+          "correctIndex": 1,
+          "explanation": "MAOIs inhibit the breakdown of tyramine. Consuming high-tyramine foods like aged cheese, cured meats (pepperoni), wine, and beer can cause a hypertensive crisis."
+        },
+        {
+          "id": "q-nclex-hard-022",
+          "text": "A client with a T6 spinal cord injury complains of a severe headache and has a BP of 190/100. What is the nurse's first action?",
+          "options": [
+            "Administer an antihypertensive.",
+            "Check for bladder distention.",
+            "Place the client in a flat position.",
+            "Notify the physician."
+          ],
+          "correctIndex": 1,
+          "explanation": "This suggests Autonomic Dysreflexia, often triggered by a noxious stimulus below the injury level (like a full bladder or fecal impaction). Checking the bladder is the first assessment step to remove the cause. Sit the client up (do not lay flat)."
+        },
+        {
+          "id": "q-nclex-hard-023",
+          "text": "A client with left-sided heart failure is most likely to exhibit which symptom?",
+          "options": [
+            "Jugular vein distention.",
+            "Peripheral edema.",
+            "Dyspnea and crackles.",
+            "Hepatosplenomegaly."
+          ],
+          "correctIndex": 2,
+          "explanation": "Left-sided heart failure causes blood to back up into the lungs, leading to pulmonary symptoms like dyspnea, orthopnea, and crackles. Right-sided failure causes systemic backup (JVD, edema, liver enlargement)."
+        },
+        {
+          "id": "q-nclex-hard-024",
+          "text": "A client with Chronic Kidney Disease (CKD) should be instructed to limit intake of which nutrients?",
+          "options": [
+            "Carbohydrates and fats.",
+            "Protein, sodium, potassium, and phosphorus.",
+            "Calcium and Vitamin D.",
+            "Water and fiber."
+          ],
+          "correctIndex": 1,
+          "explanation": "CKD kidneys cannot filter waste effectively. Limiting protein (reduces urea), sodium (fluid retention), potassium (hyperkalemia risk), and phosphorus (bone health) is standard management."
+        },
+        {
+          "id": "q-nclex-hard-025",
+          "text": "A client with liver cirrhosis develops asterixis and confusion. This indicates which complication?",
+          "options": [
+            "Esophageal varices.",
+            "Hepatic encephalopathy.",
+            "Portal hypertension.",
+            "Ascites."
+          ],
+          "correctIndex": 1,
+          "explanation": "Hepatic encephalopathy is caused by elevated ammonia levels affecting the brain. Asterixis (flapping tremor) and confusion are hallmark signs. Varices are bleeding risks; ascites is fluid accumulation."
+        }
+      ]
+    },
+    {
+      "id": "quiz-nclex-rnworthy",
+      "title": "NCLEX Practice - RN Worthy",
+      "difficultySlug": "rnworthy",
+      "durationMinutes": 90,
+      "createdAt": "2025-11-19T12:00:00.000000Z",
+      "isOffline": true,
+      "questions": [
+        {
+          "id": "q-nclex-rnworthy-001",
+          "text": "A nurse arrives at the scene of a bus accident. Which victim should the nurse attend to first?",
+          "options": [
+            "A victim with a severed arm who is bleeding profusely and screaming.",
+            "A victim who is not breathing and has fixed, dilated pupils.",
+            "A victim with a penetrating abdominal wound who is confused and pale.",
+            "A victim holding their chest complaining of severe pain."
+          ],
+          "correctIndex": 2,
+          "explanation": "In a mass casualty, triage prioritizes those with life-threatening injuries who are likely to survive with immediate care (Red Tag). The confused, pale victim with an abdominal wound has signs of shock and internal bleeding but a patent airway. The screamer has a patent airway. The non-breather is Black Tag. Chest pain is urgent but shock takes precedence in trauma triage."
+        },
+        {
+          "id": "q-nclex-rnworthy-002",
+          "text": "A client is receiving a dopamine infusion at 5 mcg/kg/min. The nurse notes the urine output has dropped to 15 mL/hr and blood pressure is 90/60 mmHg. What is the nurse's best action?",
+          "options": [
+            "Increase the infusion rate.",
+            "Decrease the infusion rate.",
+            "Administer a fluid bolus.",
+            "Notify the healthcare provider."
+          ],
+          "correctIndex": 3,
+          "explanation": "Dopamine at low doses (renal dose) improves perfusion. At higher doses, it causes vasoconstriction. A drop in output and low BP suggests the current therapy is ineffective or the client needs volume. The provider must be notified to adjust the order (e.g., fluid challenge or titration), as the nurse cannot arbitrarily titrate without parameters."
+        },
+        {
+          "id": "q-nclex-rnworthy-003",
+          "text": "A client with a history of heart failure presents with a BNP level of 800 pg/mL. Which assessment finding correlates with this result?",
+          "options": [
+            "Clear lung sounds and trace edema.",
+            "Dry mucous membranes and tenting skin.",
+            "Shortness of breath and crackles in lung bases.",
+            "Increased urinary output and thirst."
+          ],
+          "correctIndex": 2,
+          "explanation": "BNP (Brain Natriuretic Peptide) is released in response to ventricular stretch. Levels >100 indicate heart failure. 800 is severe elevation, correlating with fluid overload, pulmonary edema (crackles), and dyspnea. Dry membranes suggest dehydration."
+        },
+        {
+          "id": "q-nclex-rnworthy-004",
+          "text": "A client is admitted with a cervical spine injury at level C4. Which assessment is the priority?",
+          "options": [
+            "Muscle strength in upper extremities.",
+            "Respiratory rate and effort.",
+            "Bladder distention.",
+            "Skin integrity on the sacrum."
+          ],
+          "correctIndex": 1,
+          "explanation": "C4 injury poses a high risk for respiratory compromise because the phrenic nerve (C3-C5) innervates the diaphragm. 'C3, 4, 5 keep the diaphragm alive.' Respiratory assessment is the absolute priority over motor function or bladder."
+        },
+        {
+          "id": "q-nclex-rnworthy-005",
+          "text": "The high-pressure alarm on a mechanical ventilator sounds. Which action should the nurse take first?",
+          "options": [
+            "Suction the client.",
+            "Check for a kink in the tubing.",
+            "Assess the client's lung sounds.",
+            "Manually ventilate the client."
+          ],
+          "correctIndex": 2,
+          "explanation": "Always assess the client first. The alarm could be due to secretions, biting the tube, pneumothorax, or fighting the vent. Assessing lung sounds helps differentiate the cause. Suctioning is only done if secretions are identified."
+        },
+        {
+          "id": "q-nclex-rnworthy-006",
+          "text": "A client with a potassium level of 6.5 mEq/L is receiving sodium polystyrene sulfonate (Kayexalate). Which finding indicates the therapy is effective?",
+          "options": [
+            "Urine output increases to 50 mL/hr.",
+            "The client has frequent bowel movements.",
+            "The EKG shows peaked T waves.",
+            "Serum sodium level decreases."
+          ],
+          "correctIndex": 1,
+          "explanation": "Kayexalate works by exchanging sodium for potassium in the gut, which is then excreted in stool. Frequent bowel movements are the mechanism of excretion. Peaked T waves are a sign of hyperkalemia, not improvement."
+        },
+        {
+          "id": "q-nclex-rnworthy-007",
+          "text": "A nurse is caring for a client with a chest tube. The nurse observes continuous bubbling in the water seal chamber. What does this indicate?",
+          "options": [
+            "The system is functioning normally.",
+            "There is an air leak in the system.",
+            "The lung has fully re-expanded.",
+            "The suction pressure is too high."
+          ],
+          "correctIndex": 1,
+          "explanation": "Intermittent bubbling in the water seal is normal (air draining). Continuous bubbling indicates an air leak in the system (tubing or connection) or a large pneumothorax. It is not a normal finding."
+        },
+        {
+          "id": "q-nclex-rnworthy-008",
+          "text": "A client in labor is receiving oxytocin. The fetal heart rate monitor shows late decelerations. What is the nurse's priority action?",
+          "options": [
+            "Increase the IV fluid rate.",
+            "Turn the client to the left side.",
+            "Stop the oxytocin infusion.",
+            "Administer oxygen via face mask."
+          ],
+          "correctIndex": 2,
+          "explanation": "Late decelerations indicate uteroplacental insufficiency. The first action is to stop the stressor (oxytocin) to relax the uterus and improve blood flow. Then reposition, give O2, and increase fluids."
+        },
+        {
+          "id": "q-nclex-rnworthy-009",
+          "text": "A client with Myasthenia Gravis is prescribed pyridostigmine. The nurse instructs the client to take the medication:",
+          "options": [
+            "30-45 minutes before meals.",
+            "With meals to prevent GI upset.",
+            "At bedtime to prevent morning weakness.",
+            "Only when feeling weak."
+          ],
+          "correctIndex": 0,
+          "explanation": "Pyridostigmine increases muscle strength. Taking it before meals ensures peak effect during eating, reducing the risk of aspiration and dysphagia (difficulty swallowing), which is a major concern in MG."
+        },
+        {
+          "id": "q-nclex-rnworthy-010",
+          "text": "A client with a history of alcoholism is admitted with Wernicke's encephalopathy. The nurse anticipates an order for which medication?",
+          "options": [
+            "Folic acid.",
+            "Thiamine (Vitamin B1).",
+            "Vitamin B12.",
+            "Magnesium sulfate."
+          ],
+          "correctIndex": 1,
+          "explanation": "Wernicke's encephalopathy is caused by thiamine deficiency. Administering glucose before thiamine can precipitate Korsakoff's psychosis. Thiamine replacement is the critical intervention."
+        },
+        {
+          "id": "q-nclex-rnworthy-011",
+          "text": "A client is suspected of having a Pheochromocytoma. Which assessment finding is most characteristic of this condition?",
+          "options": [
+            "Hypoglycemia and bradycardia.",
+            "Severe hypertension and palpitations.",
+            "Weight gain and moon face.",
+            "Bronze pigmentation of the skin."
+          ],
+          "correctIndex": 1,
+          "explanation": "Pheochromocytoma is a tumor of the adrenal medulla that secretes catecholamines (epinephrine/norepinephrine). This causes paroxysmal severe hypertension, tachycardia, palpitations, and sweating."
+        },
+        {
+          "id": "q-nclex-rnworthy-012",
+          "text": "After a thyroidectomy, a client reports tingling around the mouth and muscle twitching. The nurse suspects hypocalcemia. Which sign should the nurse check for?",
+          "options": [
+            "Babinski sign.",
+            "Chvostek's sign.",
+            "Kernig's sign.",
+            "Homan's sign."
+          ],
+          "correctIndex": 1,
+          "explanation": "Hypocalcemia (due to accidental parathyroid removal) causes neuromuscular irritability. Chvostek's sign (facial twitching when tapping the cheek) and Trousseau's sign (carpal spasm with BP cuff) are classic indicators."
+        },
+        {
+          "id": "q-nclex-rnworthy-013",
+          "text": "A client is receiving a blood transfusion and develops flank pain and reddish urine. What type of reaction does the nurse suspect?",
+          "options": [
+            "Febrile non-hemolytic reaction.",
+            "Allergic reaction.",
+            "Acute hemolytic reaction.",
+            "Circulatory overload."
+          ],
+          "correctIndex": 2,
+          "explanation": "Flank pain and hemoglobinuria (red urine) are classic signs of an acute hemolytic reaction (ABO incompatibility), where the immune system destroys the donor red blood cells. This is a medical emergency."
+        },
+        {
+          "id": "q-nclex-rnworthy-014",
+          "text": "A client with Guillain-Barré syndrome is admitted. Which assessment is most critical to monitor for complications?",
+          "options": [
+            "Deep tendon reflexes.",
+            "Vital capacity and respiratory effort.",
+            "Sensation in the lower extremities.",
+            "Urinary retention."
+          ],
+          "correctIndex": 1,
+          "explanation": "Guillain-Barré causes ascending paralysis. The most life-threatening complication is respiratory failure as the paralysis reaches the diaphragm. Monitoring vital capacity and respiratory status is paramount."
+        },
+        {
+          "id": "q-nclex-rnworthy-015",
+          "text": "A client taking warfarin has an INR of 4.5. The nurse observes bleeding gums. Which medication should the nurse prepare to administer?",
+          "options": [
+            "Protamine sulfate.",
+            "Vitamin K (Phytonadione).",
+            "Calcium gluconate.",
+            "Aminocaproic acid."
+          ],
+          "correctIndex": 1,
+          "explanation": "Vitamin K is the antidote for warfarin toxicity. An INR of 4.5 is supratherapeutic (normal therapeutic 2-3), and bleeding indicates toxicity. Protamine is for heparin."
+        },
+        {
+          "id": "q-nclex-rnworthy-016",
+          "text": "A client with a T-tube after cholecystectomy has drained 300 mL of green fluid in the first 24 hours. What is the appropriate nursing action?",
+          "options": [
+            "Clamp the T-tube immediately.",
+            "Notify the surgeon of excessive drainage.",
+            "Document the finding as normal.",
+            "Irrigate the tube with saline."
+          ],
+          "correctIndex": 2,
+          "explanation": "A T-tube drains bile while the common bile duct heals. Drainage of 300-500 mL in the first 24 hours is expected. It should decrease over time. Clamping is done later to test patency."
+        },
+        {
+          "id": "q-nclex-rnworthy-017",
+          "text": "A client with SIADH (Syndrome of Inappropriate Antidiuretic Hormone) has a serum sodium of 115 mEq/L. Which order should the nurse question?",
+          "options": [
+            "Fluid restriction 1000 mL/day.",
+            "Seizure precautions.",
+            "Administer 0.45% Sodium Chloride IV.",
+            "Administer 3% Sodium Chloride IV."
+          ],
+          "correctIndex": 2,
+          "explanation": "SIADH causes dilutional hyponatremia due to water retention. Administering a hypotonic solution (0.45% NaCl) would worsen the hyponatremia and cerebral edema. Hypertonic saline (3%) is used cautiously. Fluid restriction is standard."
+        },
+        {
+          "id": "q-nclex-rnworthy-018",
+          "text": "A nurse is caring for a client with a central venous pressure (CVP) of 2 mmHg. Which intervention is appropriate?",
+          "options": [
+            "Administer a diuretic.",
+            "Increase the IV fluid rate.",
+            "Slow the IV fluid rate.",
+            "Administer a vasodilator."
+          ],
+          "correctIndex": 1,
+          "explanation": "Normal CVP is 2-8 mmHg (or higher depending on source, but 2 is low). Low CVP indicates hypovolemia. The appropriate intervention is to increase fluids to restore volume. Diuretics would lower it further."
+        },
+        {
+          "id": "q-nclex-rnworthy-019",
+          "text": "A client with a history of peptic ulcer disease presents with a rigid, board-like abdomen. What does this finding suggest?",
+          "options": [
+            "Perforation of the ulcer.",
+            "Gastric outlet obstruction.",
+            "Pancreatitis.",
+            "Gastroesophageal reflux."
+          ],
+          "correctIndex": 0,
+          "explanation": "A rigid, board-like abdomen is a classic sign of peritonitis caused by perforation of the bowel or stomach. This is a surgical emergency."
+        },
+        {
+          "id": "q-nclex-rnworthy-020",
+          "text": "A client is prescribed clozapine. Which laboratory value requires weekly monitoring?",
+          "options": [
+            "Liver function tests.",
+            "White blood cell count (WBC).",
+            "Serum creatinine.",
+            "Blood glucose."
+          ],
+          "correctIndex": 1,
+          "explanation": "Clozapine carries a high risk of agranulocytosis (severe drop in WBCs), which can be fatal. Weekly WBC/ANC monitoring is mandatory for clients on this medication."
+        },
+        {
+          "id": "q-nclex-rnworthy-021",
+          "text": "A client with a pulmonary embolism is receiving a heparin infusion. The PTT is 90 seconds. The control is 30 seconds. What is the nurse's action?",
+          "options": [
+            "Increase the infusion rate.",
+            "Maintain the current rate.",
+            "Decrease or hold the infusion per protocol.",
+            "Give a bolus of heparin."
+          ],
+          "correctIndex": 2,
+          "explanation": "Therapeutic PTT is usually 1.5-2.5 times the control (45-75 seconds). A PTT of 90 is prolonged, increasing bleeding risk. The nurse should decrease or hold the dose according to the facility's heparin nomogram."
+        },
+        {
+          "id": "q-nclex-rnworthy-022",
+          "text": "A client with systemic lupus erythematosus (SLE) is being discharged. Which instruction is most important?",
+          "options": [
+            "Avoid sunlight and use sunscreen.",
+            "Eat a high-protein diet.",
+            "Take antibiotics prophylactically.",
+            "Avoid all physical activity."
+          ],
+          "correctIndex": 0,
+          "explanation": "Photosensitivity is a major trigger for SLE flares (and the butterfly rash). Sun avoidance and protection are critical lifestyle modifications. Activity should be balanced, not avoided."
+        },
+        {
+          "id": "q-nclex-rnworthy-023",
+          "text": "A client with a new colostomy is concerned about odor. Which food should the nurse suggest avoiding?",
+          "options": [
+            "Yogurt.",
+            "Parsley.",
+            "Eggs and broccoli.",
+            "Cranberry juice."
+          ],
+          "correctIndex": 2,
+          "explanation": "Gas-forming and odor-producing foods include eggs, broccoli, cabbage, beans, and fish. Yogurt, parsley, and cranberry juice can actually help reduce odor."
+        },
+        {
+          "id": "q-nclex-rnworthy-024",
+          "text": "A client in the manic phase of bipolar disorder is pacing and talking rapidly. Which nursing intervention is best?",
+          "options": [
+            "Isolate the client in a quiet room.",
+            "Provide high-calorie finger foods.",
+            "Engage the client in a group activity.",
+            "Restrain the client for safety."
+          ],
+          "correctIndex": 1,
+          "explanation": "Manic clients have high energy and often forget to eat. They cannot sit for meals. High-calorie finger foods allow them to eat while moving, preventing malnutrition and exhaustion. Isolation is a last resort."
+        },
+        {
+          "id": "q-nclex-rnworthy-025",
+          "text": "A client with a fractured femur develops confusion, petechiae on the chest, and shortness of breath. The nurse suspects:",
+          "options": [
+            "Pulmonary Embolism.",
+            "Fat Embolism Syndrome.",
+            "Compartment Syndrome.",
+            "Pneumonia."
+          ],
+          "correctIndex": 1,
+          "explanation": "The triad of hypoxemia (SOB), neurological abnormalities (confusion), and a petechial rash (especially on the chest/axilla) after a long bone fracture is diagnostic for Fat Embolism Syndrome."
+        }
+      ]
+    }
+  ]
+}
